@@ -1,1 +1,1 @@
-# E-wasteManagement
+# scAvenger
