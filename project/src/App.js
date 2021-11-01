@@ -12,10 +12,16 @@ import { Page5 } from './components/Page5'
 // import Page1 from './components/Page1'
 import Home from './components/Home'
 import Page2 from './components/Page2'
+import Page3 from './components/Page3'
+
 function App() {
   return (
     <div className='app'>
       <Switch>
+        <Route path='/page3'>
+          <Page3 />
+        </Route>
+
         <Route path='/scrap_sold'>
           <Page7></Page7>
         </Route>
@@ -23,8 +29,6 @@ function App() {
         <Route path='/page8'>
           <Page8></Page8>
         </Route>
-
-
 
         <Route path='/page5'>
           <Page5 />
