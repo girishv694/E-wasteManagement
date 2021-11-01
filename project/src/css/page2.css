@@ -1,0 +1,20 @@
+#language{
+    position: absolute;
+width: 171px;
+height: 22px;
+left: 120px;
+top: 303px;
+
+font-family: Avenir Next;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #292D32;
+}

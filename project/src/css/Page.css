@@ -1,0 +1,48 @@
+
+
+
+.header{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+ 
+
+}
+
+.header img{
+    margin-top: 90px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+#heading{
+    text-align: center;
+    margin-top: 53.2px;
+    
+}
+
+#heading > p{
+    font-weight: 400;
+    font-family: Crimson Text;
+    font-size: 48px;
+}
+
+#para{
+    text-align: center;
+    margin-top: 15px;
+}
+
+#para > p{
+    font-size: 24px;
+    line-height: 33.16px;
+    font-family: Crimson Text;
+}
