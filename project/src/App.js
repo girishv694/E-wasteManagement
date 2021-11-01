@@ -12,6 +12,7 @@ import Page8 from './components/Page8'
 import Home from './components/Home'
 import Page2 from './components/Page2'
 import Page3 from "./components/Page3"
+import Page10 from './components/Page10'
 
 function App() {
   return (
@@ -44,8 +45,11 @@ function App() {
         </Route>
 
         <Route path="/">
-          <Page1 />
+          
+          <Page10/>
         </Route>
+
+    
 
       </Switch>
    
