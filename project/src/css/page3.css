@@ -5,17 +5,14 @@
   top: 32px;
 }
 
-p {
-  margin-left: 24px;
-  margin-right: 24px;
-}
+
 img {
   margin-left: 24px;
 }
 .page3-sell {
   margin-top: 18px;
   /* border: 1px solid black; */
-  margin-right: 56px;
+  /* margin-right: 56px; */
   margin-left: 24px;
   font-family: Avenir_next;
   font-style: normal;
@@ -79,4 +76,7 @@ color: #292D32;
   }
   .roller > div:nth-child(1) {
     background-color: #41c8b7;
+  }
+  .roller > div:nth-child(2) {
+    background-color: #c4c4c4;
   }
