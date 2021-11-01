@@ -1,37 +1,45 @@
-#language{
-    position: absolute;
-width: 171px;
-height: 22px;
-left: 120px;
-top: 303px;
+#language {
+  position: absolute;
+  width: 171px;
+  height: 22px;
+  left: 120px;
+  margin-top: 303px;
 
-font-family: Avenir Next;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 22px;
-/* identical to box height */
+  /* identical to box height */
 
-display: flex;
-align-items: center;
-text-align: center;
+  display: flex;
+  align-items: center;
 
-color: #292D32;
+  color: #292d32;
 }
-button{
-    
-position: relative;
-width: 363px;
-height: 60px;
-left: 24px;
-top: 382px;
+.front {
+  width: 100%;
+}
+.front > h1 {
+  text-align: center;
+  font-family: 'Avenir_Next';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+button {
+  position: relative;
+  width: 363px;
+  height: 60px;
+  left: 24px;
+  top: 382px;
+  font-family: 'Avenir_Next';
 
-background: #FFFFFF;
-border: 0.1px solid #CACACA;
-box-sizing: border-box;
-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.09);
-border-radius: 30px;
-margin-top: 20px;
-font-size: 20px;
-
+  background: #ffffff;
+  border: 0.1px solid #cacaca;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.09);
+  border-radius: 30px;
+  margin-top: 20px;
+  font-size: 24px;
+  transition-duration: 0.4s;
+}
+button:hover {
+  background-color: #41c8b7;
 }

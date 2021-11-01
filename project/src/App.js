@@ -34,7 +34,7 @@ function App() {
           <Page5 />
         </Route>
 
-        <Route path='/login'>
+        <Route path='/page2'>
           <Page2 />
         </Route>
 
