@@ -24,19 +24,19 @@ border-radius: 0px;
 
 } */
 
- img{
-    position: absolute;
+ /* img{
+position: absolute;
 width: 411px;
 height: 303px;
 left: 0px;
 margin-top: 20px;
 
 
-}
+} */
 
 
- #heading{
-    position: absolute;
+ /* #heading{
+position: absolute;
 width: 282px;
 height: 88px;
 left: 65px;
@@ -50,10 +50,10 @@ line-height: 66px;
 display: flex;
 align-items: center;
 
-/* #292D32 */
+
 
 color: #292D32;
-}
+} */
 
  #para{
     position: absolute;

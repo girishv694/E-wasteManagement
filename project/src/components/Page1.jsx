@@ -1,4 +1,24 @@
 import React from 'react'
+<<<<<<< HEAD
+import { Link } from 'react-router-dom'
+import '../css/page1.css'
+import { Div } from './Container'
+function Page1() {
+    return (
+        <div className="header">
+            <Link to="/scrap_sold">
+                <Div>
+                    <img src="Images/page1Image.png" ></img>
+
+
+                    <div id="heading">
+                        SCAVENGER
+                    </div>
+
+                    <div id="para">
+                        With more scraps comes  more responsibility
+                    </div>
+=======
 import {Link } from 'react-router-dom'
 import '../css/Page.css'
 import {Div} from './Container'
@@ -18,10 +38,11 @@ function Page1() {
             <div id="para">
         <p>With more scraps comes  more responsibility</p>
             </div>
+>>>>>>> 0249b97862b14e6edf775d46f85c83e43609b573
 
-      </Div>
+                </Div>
 
-    </Link> 
+            </Link>
         </div>
     )
 }
