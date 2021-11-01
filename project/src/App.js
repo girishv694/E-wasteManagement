@@ -24,7 +24,7 @@ function App() {
 
         <Route path="/">
          <Page1/>
-          <h1>hi there</h1>
+          
         </Route>
 
 
