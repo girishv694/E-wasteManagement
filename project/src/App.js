@@ -3,6 +3,7 @@ import './App.css'
 import { Switch, Route } from 'react-router-dom'
 import Page1 from './components/Page1'
 import Home from './components/Home'
+import Page2 from './components/Page2'
 function App() {
   return (
 
@@ -10,7 +11,7 @@ function App() {
       <Switch>
 
         <Route path="/login">
-          <h1>Login Page</h1>
+         <Page2/>
         </Route>
 
         <Route path="/signup">
