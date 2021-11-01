@@ -2,16 +2,16 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../css/Page.css'
 import { Div } from './Container'
-// PLEASE PUT FONT LINKS ON INDEX.HTML
-function Page1() {
+
+function Page3() {
   return (
     <div className='header'>
-      <Link to='/login'>
+      <Link to='/page3'>
         <Div>
           <img src='Images/page1Image.png' alt='home'></img>
 
           <div id='headers'>
-            <p> SCAVENGER</p>
+            <p> AVENGER</p>
           </div>
 
           <div id='para'>
@@ -23,4 +23,4 @@ function Page1() {
   )
 }
 
-export default Page1
+export default Page3
