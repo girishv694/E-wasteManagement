@@ -23,7 +23,7 @@
   font-size: 16px;
   line-height: 22px;
 }
-button {
+.lang_btn {
   position: relative;
   width: 363px;
   height: 60px;
@@ -40,6 +40,6 @@ button {
   font-size: 24px;
   transition-duration: 0.4s;
 }
-button:hover {
+.lang_btn:hover {
   background-color: #41c8b7;
 }

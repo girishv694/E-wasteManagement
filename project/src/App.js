@@ -14,6 +14,7 @@ import Home from './components/Home'
 import Page2 from './components/Page2'
 import Page3 from "./components/Page3"
 import Page10 from './components/Page10'
+import Page151 from './components/Page151'
 
 
 function App() {
@@ -51,6 +52,10 @@ function App() {
         <Route path="/page10">
           
           <Page10/>
+        </Route>
+
+        <Route path="/page151">
+          <Page151/>
         </Route>
 
     

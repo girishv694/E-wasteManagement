@@ -56,7 +56,7 @@ color: #292D32;
 }
 
 #getStart_btn{
-    display: flex;
+display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;

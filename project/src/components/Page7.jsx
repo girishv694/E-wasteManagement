@@ -1,10 +1,10 @@
 import "../css/page7.css"
 import { Link } from 'react-router-dom'
-
+import { Container } from "./Container_sk"
 const Page7 = () => {
     return (
 
-        <div id="Container_p7">
+        <Container>
 
             <div id="scrap_sold_img">
                 <img src="Images/scrap_sold.png" alt="" />
@@ -23,7 +23,8 @@ const Page7 = () => {
                     Get Started
                 </button>
             </Link>
-        </div>
+            
+        </Container>
 
     )
 }
