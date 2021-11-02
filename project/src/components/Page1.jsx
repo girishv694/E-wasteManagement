@@ -6,12 +6,14 @@ import { Div } from './Container'
 function Page1() {
   return (
     <div className='header'>
-      <Link to='/login'>
+      <Link to='/page2'>
         <Div>
-          <img src='Images/page1Image.png' alt='home'></img>
+          <div className='firstImg'>
+            <img src='Images/page1Image.png' alt='home'></img>
+          </div>
 
           <div id='headers'>
-            <p> SCAVENGER</p>
+            <img src='Images/SCAVENGER.png' alt='home'></img>
           </div>
 
           <div id='para'>

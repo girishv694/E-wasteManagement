@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+.MAINS{
+background : #EAF1F2;
+height: 823px;
+
+}
 .header {
   width: 100vw;
   height: 100vh;
@@ -5,7 +12,7 @@
   justify-content: center;
 }
 
-.header img {
+.firstImg > img {
   margin-top: 90px;
 }
 
@@ -22,14 +29,13 @@ a {
 #headers {
   margin-top: 53.2px;
   margin-bottom: 50px;
+  display: flex;
+  /* background-color: aquamarine; */
+  justify-content: center;
 }
 
-#headers > p {
-  text-align: center;
-  font-weight: 400;
-  font-family: Crimson Text;
-  font-size: 48px;
-  color: black;
+#headers > img {
+  width: 282px;
 }
 
 #para {
@@ -40,5 +46,6 @@ a {
 #para > p {
   font-size: 24px;
   line-height: 33.16px;
-  font-family: Crimson Text;
+  font-family: 'Crimson Text', serif;
+  color: black;
 }

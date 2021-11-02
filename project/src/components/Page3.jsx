@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 // import"../css/Page.css"
 import "../css/page3.css";
 import { Div } from "./Container";
-
+// Page-3 Pushpendra
 function Page3() {
   return (
     <div className="header">
-      <Link to="/page3">
+      <Link to="/page5">
         <Div>
           <div className="page3-img">
             <img src="Images/page-3.png" alt="Page"></img>
@@ -23,7 +23,7 @@ function Page3() {
           </div>
           <div className="page3-waste">
               <p>We collect metals, electronic waste, machines and plastics</p></div>
-              <div className='roller'>
+              <div className='rollers'>
               <div></div>
               <div></div>
               <div></div>
