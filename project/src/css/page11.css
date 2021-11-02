@@ -14,7 +14,7 @@
   color: #292d32;
 }
 .login {
-  font-family: "Avenir_Next";
+  font-family: 'Avenir_Next';
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
@@ -22,25 +22,25 @@
   /* margin-bottom: 25px; */
 }
 .page11-phone {
-  font-family: "Avenir_Next";
+  font-family: 'Avenir_Next';
   font-style: normal;
   font-weight: 900;
   font-size: 14px;
   line-height: 19px;
   margin-top: 20px;
 }
-input {
+.input_p11 {
   position: absolute;
   width: 363px;
   height: 55px;
   margin-left: 24px;
   top: 394px;
-
-  background: #ffffff;
+  border: none;
+  background: rgba(1, 1, 1, 0.06);
   border-radius: 6px;
   color: black;
 }
-button {
+.but_p11 {
   position: relative;
   width: 325px;
   height: 51px;
@@ -51,11 +51,11 @@ button {
   border: 0.1px solid rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
   border-radius: 6px;
-  cursor:pointer;
+  cursor: pointer;
 
   /* position: static; */
 }
-input p {
+.input_p11 p {
   width: 77px;
   height: 25px;
   left: 8px;
@@ -66,45 +66,40 @@ input p {
   font-size: 18px;
   line-height: 25px;
   /* identical to box height */
-
+  border: none;
   /* display: flex; */
   align-items: center;
 
   color: #191d1e;
 }
-button:hover {
-    background-color: #41c8b7;
-    
-  }
-  .grid-container {
-    Width :411px;
-    Height :206px;
-    position: relative;
-    left: 0%;
-    right: 0%;
-    top:617px;
+.but_p11:hover {
+  background-color: #41c8b7;
+}
+.grid-container {
+  width: 411px;
+  height: 206px;
+  position: relative;
+  left: 0%;
+  right: 0%;
+  top: 617px;
 
-    
-    background: #E9EAEE;
-    display: grid;
-    
-    grid-template-columns: 24% 24% 24% 24%;
-    grid-gap: 5px;
-    /* background-color: #2196F3; */
-    padding: 5px;
-  }
-  .grid-container > div {
-    background-color:#FFFFFF;
-    text-align: center;
-    padding: 5px 0;
+  background: #e9eaee;
+  display: grid;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-line-height: 35px;
-color: #000000;
+  grid-template-columns: 24% 24% 24% 24%;
+  grid-gap: 5px;
+  /* background-color: #2196F3; */
+  padding: 5px;
+}
+.grid-container > div {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 5px 0;
 
-
-  }  
-  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 35px;
+  color: #000000;
+}

@@ -1,47 +1,51 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router-dom'
 // import"../css/Page.css"
-import "../css/page11.css";
-import { Div } from "./Container";
+import '../css/page11.css'
+import { Div } from './Container'
 // Page-3 Pushpendra
 function Page11() {
   return (
-    <div className="header">
-      <Link to="/page11">
+    <div className='header'>
+      <Link to='/page11'>
         <Div>
-          <div className="page11-login">
-            <p clasName="login">Please Login</p>
-            <p className="page11-phone">
-                Please 
-                 enter your phone number</p>
+          <div className='page11-login'>
+            <p clasName='login'>Please Login</p>
+            <p className='page11-phone'>Please enter your phone number</p>
           </div>
-          <div className="page11-input">
-              <input type="text" palceholder="+91-Mobile Number"></input>
+          <div className='page11-input'>
+            <input
+              type='text'
+              placeholder='     +91-Mobile Number'
+              className='input_p11'
+            ></input>
           </div>
-         <button><p>Continue</p></button>
-          <div className="grid-container">
-              <div>1</div>
-              <div>2</div>
-              <div>3</div>
-              <div>-</div>
-              
-              <div>4</div>
-              <div>5</div>
-              <div>6</div>
-              <div>++</div>
-              <div>7</div>
-              <div>8</div>
-              <div>9</div>
-              <div>++</div>
-              <div>,</div>
-              <div>0</div>
-              <div>.</div>
-              <div>--</div>
+          <button className='but_p11'>
+            <p>Continue</p>
+          </button>
+          <div className='grid-container'>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>-</div>
+
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>++</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>++</div>
+            <div>,</div>
+            <div>0</div>
+            <div>.</div>
+            <div>--</div>
           </div>
         </Div>
       </Link>
     </div>
-  );
+  )
 }
 
-export { Page11 };
+export { Page11 }
