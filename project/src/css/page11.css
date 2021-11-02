@@ -24,7 +24,7 @@
 .page11-phone {
   font-family: "Avenir_Next";
   font-style: normal;
-  font-weight: bolder;
+  font-weight: 900;
   font-size: 14px;
   line-height: 19px;
   margin-top: 20px;
@@ -76,4 +76,35 @@ button:hover {
     background-color: #41c8b7;
     
   }
+  .grid-container {
+    Width :411px;
+    Height :206px;
+    position: relative;
+    left: 0%;
+    right: 0%;
+    top:617px;
+
+    
+    background: #E9EAEE;
+    display: grid;
+    
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-gap: 5px;
+    /* background-color: #2196F3; */
+    padding: 5px;
+  }
+  .grid-container > div {
+    background-color:#FFFFFF;
+    text-align: center;
+    padding: 5px 0;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 35px;
+color: #000000;
+
+
+  }  
   
