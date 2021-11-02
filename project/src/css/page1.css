@@ -1,78 +1,66 @@
-.logo{
-    width: 60px;
-    height:40px ;
-    margin-top: 10px;
-    margin-left: 10px;
+.header{
+    width: 100vw;
+    height: 100vh;
 }
-/* .header{
-    height: 60px;
-    width: 100%;
-    background-color: aqua;
-    position: sticky;
-    top:0;
-    z-index: 100;
-} */
-
-/* #container{
-    height: 823px;
-width: 411px;
-left: 870px;
-top: -394px;
-border-radius: 0px;
- background : #EAF1F2;
 
 
-} */
+#container{
+    width: 33%;
+    margin: auto;
+    height: 100vh;
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    justify-content: center;
+}
 
- /* img{
-position: absolute;
-width: 411px;
-height: 303px;
-left: 0px;
-margin-top: 20px;
+#container > div{
+  
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+  
+}
 
+#container img{
+    max-width: 100%;
+    margin-top: 15px;
+}
 
-} */
-
-
- /* #heading{
-position: absolute;
-width: 282px;
-height: 88px;
-left: 65px;
-top: 446px;
-
+#heading p{
+    
+color: black;
 font-family: Crimson Text;
 font-style: normal;
 font-weight: normal;
-font-size: 48px;
-line-height: 66px;
-display: flex;
-align-items: center;
-
-
-
-color: #292D32;
-} */
-
- #para{
-    position: absolute;
-width: 363px;
-height: 66px;
-left: 24px;
-top: 549px;
-
-font-family: Crimson Text;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 33px;
-display: flex;
-align-items: center;
+font-size: 40px;
 text-align: center;
-
-/* #292D32 */
-
-color: #292D32;
+margin: 2px;
 
 }
+
+#para p{
+    color: #292D32;
+    position: relative;
+    text-align: center;
+    font-size: 24px;
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #container{
+        width: 100%;
+       
+    }
+  }
+
+  
+  
