@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
-
+import './fonts/Avenir_next/AvenirNextLTPro-Regular.otf'
 ReactDOM.render(
   <Router>
     

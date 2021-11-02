@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Avenir_next';
+  src: local('Aveniir_next'),
+    url('./fonts/Avenir_next/AvenirNextLTPro-Regular.otf') format('truetype');
+}
