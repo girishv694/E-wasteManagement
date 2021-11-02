@@ -14,7 +14,7 @@ img {
   /* border: 1px solid black; */
   /* margin-right: 56px; */
   margin-left: 24px;
-  font-family: Avenir_next;
+  font-family: "Avenir_next";
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -29,7 +29,7 @@ img {
     /* border:1px solid black; */
 margin-top:30px;
 margin-right: 56px;
-font-family: Avenir_next;
+font-family: "Avenir_next";
 margin-left:24px;
 font-style: normal;
 font-weight: 500;
@@ -57,7 +57,7 @@ align-items: center;
 color: #292D32;
 }
 
-.roller {
+.rollers {
     position: absolute;
     top: 678px;
     margin-left:184px;
@@ -68,15 +68,15 @@ color: #292D32;
     /* background-color: aquamarine; */
     justify-content: space-between;
   }
-  .roller > div {
+  .rollers > div {
     width: 10px;
     height: 10px;
     border-radius: 10px;
     background-color: #c4c4c4;
   }
-  .roller > div:nth-child(1) {
+  .rollers > div:nth-child(1) {
     background-color: #41c8b7;
   }
-  .roller > div:nth-child(2) {
+  .rollers > div:nth-child(2) {
     background-color: #c4c4c4;
   }

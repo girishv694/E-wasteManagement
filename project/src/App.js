@@ -12,8 +12,15 @@ import { Page5 } from './components/Page5'
 // import Page1 from './components/Page1'
 // import Home from './components/Home'
 import Page2 from './components/Page2'
+<<<<<<< HEAD
 import Page3 from './components/Page3'
 import { Page11 } from './components/Page11'
+=======
+import Page3 from "./components/Page3"
+import Page10 from './components/Page10'
+
+
+>>>>>>> 4380ee2c28e815cca37c78d14590c3a2005e2c11
 function App() {
   return (
     <div className='app'>
@@ -21,10 +28,15 @@ function App() {
         <Route path='/page3'>
           <Page3 />
         </Route>
+<<<<<<< HEAD
 <Route path='/page11'>
   <Page11/>
   </Route>
         <Route path='/scrap_sold'>
+=======
+
+        <Route path='/page7'>
+>>>>>>> 4380ee2c28e815cca37c78d14590c3a2005e2c11
           <Page7></Page7>
         </Route>
 
@@ -36,7 +48,7 @@ function App() {
           <Page5 />
         </Route>
 
-        <Route path='/login'>
+        <Route path='/page2'>
           <Page2 />
         </Route>
 
@@ -47,6 +59,13 @@ function App() {
         <Route path='/checkout'>
           <h1>Checkout Page</h1>
         </Route>
+
+        <Route path="/page10">
+          
+          <Page10/>
+        </Route>
+
+    
 
         <Route path='/'>
           <Page1 />

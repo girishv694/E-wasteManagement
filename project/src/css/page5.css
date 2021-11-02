@@ -71,6 +71,11 @@
   border-radius: 10px;
   background-color: #c4c4c4;
 }
+<<<<<<< HEAD
 .roller > div:nth-child(1) {
   background-color: #41c8b7;
+=======
+.roller > div:nth-child(2) {
+ background-color: #41C8B7;;
+>>>>>>> 4380ee2c28e815cca37c78d14590c3a2005e2c11
 }

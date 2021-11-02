@@ -1,4 +1,4 @@
-import "../css/container7.css"
+import "../css/page7.css"
 import { Link } from 'react-router-dom'
 
 const Page7 = () => {
