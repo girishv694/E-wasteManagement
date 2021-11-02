@@ -10,10 +10,10 @@ import Page8 from './components/Page8'
 import { Page5 } from './components/Page5'
 
 // import Page1 from './components/Page1'
-import Home from './components/Home'
+// import Home from './components/Home'
 import Page2 from './components/Page2'
 import Page3 from './components/Page3'
-
+import { Page11 } from './components/Page11'
 function App() {
   return (
     <div className='app'>
@@ -21,7 +21,9 @@ function App() {
         <Route path='/page3'>
           <Page3 />
         </Route>
-
+<Route path='/page11'>
+  <Page11/>
+  </Route>
         <Route path='/scrap_sold'>
           <Page7></Page7>
         </Route>
