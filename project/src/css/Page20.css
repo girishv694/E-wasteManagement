@@ -18,6 +18,17 @@
   letter-spacing: 0em;
   text-align: center;
 }
+.back_p20 {
+  display: flex;
+  width: 25px;
+  height: 80%;
+  justify-content: right;
+}
+.back_p20 > img {
+  align-self: flex-end;
+  width: 24px;
+  height: 24px;
+}
 .block_p20 {
   display: flex;
   flex-direction: column;
@@ -107,7 +118,7 @@
   margin-left: 25px;
 }
 .time_p20 {
-  width: 315px;
+  width: 320px;
   height: 95px;
   margin-top: 8px;
   display: flex;
