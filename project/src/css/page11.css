@@ -51,6 +51,7 @@ button {
   border: 0.1px solid rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
   border-radius: 6px;
+  cursor:pointer;
 
   /* position: static; */
 }
@@ -71,3 +72,8 @@ input p {
 
   color: #191d1e;
 }
+button:hover {
+    background-color: #41c8b7;
+    
+  }
+  
