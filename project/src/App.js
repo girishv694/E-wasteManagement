@@ -24,7 +24,7 @@ function App() {
           <Page3 />
         </Route>
 
-        <Route path='/scrap_sold'>
+        <Route path='/page7'>
           <Page7></Page7>
         </Route>
 
