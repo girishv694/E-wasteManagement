@@ -8,7 +8,9 @@ export const Page20 = () => {
         <div className='Container_p5'>
           <div className='header_p20'>
             <Link>
-              <h2 className="back_p20"><img src="Images/backarrow.png" alt="" /></h2>
+              <h2 className='back_p20'>
+                <img src='Images/backarrow.png' alt='' />
+              </h2>
             </Link>
             <h1>Appointment</h1>
           </div>
@@ -51,7 +53,7 @@ export const Page20 = () => {
               <button className=''>10:00 AM - 01:00PM</button>
             </div>
             <div className='CONT_p20'>
-              <Link>
+              <Link to='/page21'>
                 <button className='but_p20'>Continue</button>
               </Link>
             </div>

@@ -1,18 +1,20 @@
-import React from "react";
-import "./App.css";
-import { Switch, Route } from "react-router-dom";
+import React from 'react'
+import './App.css'
+import { Switch, Route } from 'react-router-dom'
 
 // import Header from './components/Header'
 // import Home from './components/Home'
-import Page1 from "./components/Page1";
-import Page2 from "./components/Page2";
-import Page3 from "./components/Page3";
+import Page1 from './components/Page1'
+import Page2 from './components/Page2'
+import Page3 from './components/Page3'
 import { Page5 } from './components/Page5'
-import { Page20 } from "./components/Page20";
-import Page7 from "./components/Page7";
-import Page8 from "./components/Page8";
-import Page10 from "./components/Page10";
-import { Page11 } from "./components/Page11";
+import { Page20 } from './components/Page20'
+import { Page21 } from './components/Page21'
+
+import Page7 from './components/Page7'
+import Page8 from './components/Page8'
+import Page10 from './components/Page10'
+import { Page11 } from './components/Page11'
 import Page151 from './components/Page151'
 
 function App() {
@@ -33,6 +35,10 @@ function App() {
 
         <Route path='/page11'>
           <Page11 />
+        </Route>
+
+        <Route path='/page21'>
+          <Page21 />
         </Route>
 
         <Route path='/page20'>
@@ -71,4 +77,4 @@ function App() {
   )
 }
 
-export default App;
+export default App

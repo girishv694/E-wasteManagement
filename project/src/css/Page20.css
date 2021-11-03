@@ -21,7 +21,7 @@
 .back_p20 {
   display: flex;
   width: 25px;
-  height: 80%;
+  height: 90%;
   justify-content: right;
 }
 .back_p20 > img {
