@@ -9,7 +9,7 @@ export const Page21 = () => {
           <div className='header_p21'>
             <Link to='/page20'>
               <h2 className='back_p20'>
-                <img src='Images/backarrow.png' alt='' />
+                <img src='Images/backarrow1.svg' alt='' />
               </h2>
             </Link>
             <h1>App</h1>

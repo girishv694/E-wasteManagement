@@ -9,7 +9,7 @@ export const Page20 = () => {
           <div className='header_p20'>
             <Link>
               <h2 className='back_p20'>
-                <img src='Images/backarrow.png' alt='' />
+                <img src='Images/backarrow1.svg' alt='' />
               </h2>
             </Link>
             <h1>Appointment</h1>
