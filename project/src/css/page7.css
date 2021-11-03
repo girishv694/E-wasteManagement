@@ -16,7 +16,7 @@ border: 1px solid rgb(236, 229, 229);
 position: relative;
 width: 363px;
 height: 286px;
-left: 24px;
+left: 0px;
 top: 32px;
 }
 
@@ -44,7 +44,7 @@ height: 100px;
 left: 24px;
 top: 127px;
 
-font-family: Avenir Next;
+font-family: 'Avenir_Next';
 font-style: normal;
 font-weight: 500;
 font-size: 18px;
@@ -72,7 +72,7 @@ background: #41C8B7;
 border-radius: 10px;
 outline: none;
 
-font-family: Avenir Next;
+font-family: 'Avenir_Next';
 font-style: normal;
 font-weight: 500;
 font-size: 18px;

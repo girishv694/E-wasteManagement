@@ -1,14 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../css/page1.css'
-
+import { Div } from './Container'
 function Page1() {
     return (
         <div className="header">
             <Link to="/scrap_sold">
-                <div id="container">
+                <Div>
+               <div  id="container">
+               <div>
              <div>
-             <img src="Images/page1Image.png" ></img>
+             <img src="Images/page1Image.png" alt="" ></img>
 
              </div>
 
@@ -21,7 +23,8 @@ function Page1() {
                     </div>
 
                     </div>
-
+               </div>
+                    </Div>
             </Link>
         </div>
     )

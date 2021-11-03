@@ -10,9 +10,10 @@ import { Page5 } from './components/Page5'
 
 
 import Page2 from './components/Page2'
-
-import Page10 from './components/Page10'
 import Page3 from './components/Page3'
+import Page10 from './components/Page10'
+import { Category } from './components/selectCategory'
+
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
           <Page3 />
         </Route>
 
-        <Route path='/scrap_sold'>
+        <Route path='/page7'>
           <Page7></Page7>
         </Route>
 
@@ -53,8 +54,13 @@ function App() {
 
     
 
-        <Route path='/'>
+        <Route path='/page1'>
           <Page1 />
+        </Route>
+
+
+        <Route path='/category'>
+         <Category/>
         </Route>
       </Switch>
     </div>

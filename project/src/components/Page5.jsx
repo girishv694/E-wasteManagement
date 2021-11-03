@@ -5,7 +5,7 @@ export const Page5 = () => {
   return (
     <>
       <div className='container_mainp5'>
-        {/* <Link to='/page6'> */}
+        <Link to='/page6'>
         <div className='Container_p5'>
           <div className='img'>
             <img src='Images/IMGpage5.png' alt='someImage' />
@@ -23,7 +23,7 @@ export const Page5 = () => {
             <div></div>
           </div>
         </div>
-        {/* </Link> */}
+        </Link>
       </div>
     </>
   )
