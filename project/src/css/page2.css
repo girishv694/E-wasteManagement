@@ -1,19 +1,14 @@
 #language {
-  position: absolute;
+  position: relative;
   width: 171px;
   height: 22px;
-  left: 120px;
-  margin-top: 303px;
-
-  /* identical to box height */
-
-  display: flex;
-  align-items: center;
-
   color: #292d32;
 }
 .front {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .front > h1 {
   text-align: center;
@@ -22,13 +17,18 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
+  position: relative;
+  top: 250px;
+  left: 100px;
 }
+
+
 .lang_btn {
   position: relative;
   width: 363px;
   height: 60px;
   left: 24px;
-  top: 382px;
+  top: 282px;
   font-family: 'Avenir_Next';
 
   background: #ffffff;

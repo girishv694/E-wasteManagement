@@ -5,7 +5,7 @@ import { Div } from './Container'
 function Page1() {
     return (
         <div className="header">
-            <Link to="/scrap_sold">
+            <Link to="/page2">
                 <Div>
                <div  id="container">
                <div>
