@@ -15,6 +15,8 @@ export const Category=()=>{
 
 
 <Div>
+
+    <img src="Images/backarrow1.svg" alt="" id="arrow" />
     <div id="categoryDiv">AC</div>
 
     <div id="selectCategory">
@@ -38,7 +40,7 @@ export const Category=()=>{
 
     {
         show?<div className="imgupload" >
-        <div>Upload scrap item's image</div>
+        <div><img src="Images/upload.svg" alt="" />  Upload scrap item's image</div>
      </div>:null
     }
 

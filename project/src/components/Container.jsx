@@ -7,6 +7,6 @@ width: 411px;
 left: 70px;
 top: -394px;
 border-radius: 0px;
-background : #EAF1F2;
-border-radius : 10px;
+background : #E5E5E5;
+
 `

@@ -2,7 +2,7 @@
     position: relative;
 left: 0%;
 right: 0%;
-top: 10.45%;
+top: 5.45%;
 bottom: 84.2%;
 
 /* COLOUR BASE-1 */
@@ -28,7 +28,7 @@ line-height: 25px;
 #selectCategory{
     position: relative;
     
-    top: 117px;
+    top: 100px;
     font-family: 'Avenir_Next';
     font-style: normal;
     font-weight: 500;
@@ -47,7 +47,7 @@ line-height: 25px;
     margin: 5px auto;
    flex-direction: column;
     position: relative;
-    top:150px;
+    top:120px;
     
 }
 
@@ -61,7 +61,7 @@ line-height: 25px;
    
     text-align: center;
     height: 55px;
-    margin:5px auto;
+    margin:10px auto;
     background: #FFFFFF;
     padding: 15px 0px;
     display: flex;
@@ -69,6 +69,13 @@ line-height: 25px;
     box-sizing: border-box;
     border-radius: 10px;
     text-align: center;
+}
+
+
+#arrow{
+    position: relative;
+    top: 10px;
+    left: 15px;
 }
 
 .ton{
@@ -101,12 +108,10 @@ color: #292D32;
     margin: 10px auto;
     background-color: white;
     position: relative;
-    top: 170px;
-    padding: 5px;
+    top: 150px;
     text-align: center;
     border-radius: 5px;
-
-
+   padding: 5px;
     font-family: 'Avenir_Next';
 font-style: normal;
 font-weight: normal;
@@ -123,7 +128,7 @@ color: #000000;
     margin: 10px auto;
     background-color: white;
     position: relative;
-    top: 190px;
+    top: 170px;
     padding: 5px;
     text-align: center;
     border-radius: 5px;
@@ -143,4 +148,11 @@ color: #000000;
 
 .select:hover{
     background-color: #8DDED4;
+}
+
+.imgupload img{
+    position: relative;
+    margin-top: 1px;
+    width: 20px;
+   
 }
