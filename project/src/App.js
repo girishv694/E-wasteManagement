@@ -4,16 +4,26 @@ import { Switch, Route } from 'react-router-dom'
 
 
 import Page1 from './components/Page1'
-import Page7 from './components/Page7'
-import Page8 from './components/Page8'
+import Page2 from './components/Page2'
+import Page3 from './components/Page3'
 import { Page5 } from './components/Page5'
+import { Page20 } from './components/Page20'
+import { Page21 } from './components/Page21'
 
+<<<<<<< HEAD
 
 import Page2 from './components/Page2'
 import Page3 from './components/Page3'
 import Page10 from './components/Page10'
 import { Category } from './components/selectCategory'
 
+=======
+import Page7 from './components/Page7'
+import Page8 from './components/Page8'
+import Page10 from './components/Page10'
+import { Page11 } from './components/Page11'
+import Page151 from './components/Page151'
+>>>>>>> 8da6758745a678979a50bd157096454d151acf46
 
 function App() {
   return (
@@ -29,6 +39,18 @@ function App() {
 
         <Route path='/page8'>
           <Page8></Page8>
+        </Route>
+
+        <Route path='/page11'>
+          <Page11 />
+        </Route>
+
+        <Route path='/page21'>
+          <Page21 />
+        </Route>
+
+        <Route path='/page20'>
+          <Page20 />
         </Route>
 
         <Route path='/page5'>
@@ -47,12 +69,13 @@ function App() {
           <h1>Checkout Page</h1>
         </Route>
 
-        <Route path="/page10">
-          
-          <Page10/>
+        <Route path='/page10'>
+          <Page10 />
         </Route>
 
-    
+        <Route path='/page151'>
+          <Page151 />
+        </Route>
 
         <Route path='/page1'>
           <Page1 />

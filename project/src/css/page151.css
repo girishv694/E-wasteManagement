@@ -1,0 +1,179 @@
+#top_bar{
+height: 81px;
+background: #41C8B7;
+border-radius: 0px 0px 20px 20px;
+
+}
+
+#city_name{
+    position: relative;
+    top: 25px;
+    left: 25px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+#cityname_label{
+    font-family: "Avenir_Next";
+    font-size: 14;
+    margin-bottom: 3px;
+    line-height:19.12px;
+    font-weight: 500;
+}
+#city_select{
+    font-family: "Avenir_Next";
+    font-size: 18;
+    line-height:24.59px;
+    background-color: #41C8B7;
+    border: none;
+    font-weight: 600;
+    width: 100px;
+    
+}
+
+#img_div{
+    position: relative;
+    top: -7px;
+    left: 320px;
+}
+#trans_img{
+    width: 8%;
+}
+
+#inp_div{
+    position: relative;
+    width: 363px;
+    height: 44px;
+    left: 5.84%;
+    right: 5.84%;
+    top: 25px;
+    bottom: 81.65%;
+    
+    /* COLOUR BASE-1 */
+
+    background: #FFFFFF;
+    /* COLOUR divider */
+    
+    border: 2px solid #E9EEF2;
+    box-sizing: border-box;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+
+#search_btn{
+   background-color: #FFFFFF;
+   height: 100%;
+   width: 13%;
+   border: none;
+}
+#search_img{
+   width: 80%;
+   margin-left: 0px;
+}
+
+#search_inp{
+ width: 87%;
+ height: 100%;
+ border: none;
+ outline: none;
+ font-size: 18px;
+}
+
+#content_div{
+    position: relative;
+    top:70px;
+    display: grid;
+    grid-template-columns: 172px 172px;
+    grid-template-rows: 192px 192px 44px;
+    column-gap: 30px;
+    row-gap: 25px;
+    width: 92%;
+    margin: auto;
+    height: 500px;
+
+}
+
+.waste_div{
+
+background: #FFFFFF;
+/* COLOUR divider */
+border: 2px solid #E9EEF2;
+box-sizing: border-box;
+border-radius: 20px;
+display: flex;
+flex-direction: column ;
+justify-content: center;
+align-items: center;
+}
+
+.waste_div p{
+margin-top: 7px;
+font-family: "Avenir_Next";
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+}
+
+#sell_div{
+display: flex;
+justify-content: center;
+align-items: center;
+
+font-family: "Avenir_Next";
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+}
+#rate_div{
+display: flex;
+justify-content: center;
+align-items: center;
+
+font-family: "Avenir_Next";
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+}
+
+.waste_img{
+    width: 96px;
+    margin-left: 5px;
+}
+
+#bottom_bar{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 10px 24px;
+
+position: absolute;
+width: 411px;
+height: 68px;
+
+bottom: 0px;
+
+background: #41C8B7;
+border-radius: 10px 10px 0px 0px;
+}
+
+#bottom_bar div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.bottom_img{
+width: 24px;
+height: 24px;
+margin-left: 8px;
+
+}

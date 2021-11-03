@@ -1,0 +1,118 @@
+.header_p21 {
+  display: flex;
+  margin-top: 36px;
+  width: 80%;
+}
+.header_p21 > h1 {
+  margin-left: 25px;
+  font-family: 'Avenir_Next';
+  font-size: 0px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.front_p21 {
+  margin-top: 28px;
+  width: 363px;
+  height: 79px;
+  text-align: center;
+  line-height: 79px;
+  font-family: 'Avenir_Next';
+}
+.front_p21 > h1 {
+  font-size: 24px;
+}
+.block_p21 {
+  margin-top: 51px;
+  width: 363px;
+  min-height: 202px;
+  border-radius: 6px;
+  background-color: white;
+}
+.block_p21 > div {
+  width: 100%;
+  min-height: 30%;
+  border: 1px solid #c4c4c4;
+  border-style: none none solid none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.block_p21 > div > h1 {
+  font-family: 'Avenir_Next';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 10px;
+}
+.block_p21 > div:nth-child(3) {
+  height: 40%;
+  border-style: none;
+}
+.mid_p21 {
+  margin-top: 86px;
+  display: flex;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 40px;
+}
+.mid_p21 > h3 {
+  width: 287px;
+  height: 22px;
+  font-family: 'Avenir_Next';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+#locus_p21,
+#down_p21 {
+  width: 24px;
+  height: 24px;
+}
+#down_p21 {
+  /* position: absolute;
+  left: 540px;
+  right: 13.89%;
+  top: 513px;
+  bottom: 30%; */
+}
+.intr_p21 {
+  margin-top: 50px;
+  width: 75%;
+  font-family: 'Avenir_Next';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  width: 80%;
+}
+.form_p21 {
+  margin-top: 32px;
+}
+.form_p21 > input {
+  width: 363px;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+}
+.but_p21 {
+  width: 171px;
+  height: 51px;
+  background: #41c8b7;
+  box-shadow: 0px 4px 44px -6px rgba(24, 39, 75, 0.09),
+    0px 8px 24px -4px rgba(24, 39, 75, 0.08);
+  border-radius: 6px;
+  border: none;
+  margin-top: 65px;
+  font-family: 'Avenir_Next';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}

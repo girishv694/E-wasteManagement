@@ -15,8 +15,8 @@ const Page2 = () => {
         {/* <Button>Hindi</Button>
         <Button>English</Button> */}
         <Link to='/page3'>
-          <button>English</button>
-          <button>Hindi</button>
+          <button className="lang_btn">English</button>
+          <button className="lang_btn">Hindi</button>
         </Link>
       </Div>
     </>
