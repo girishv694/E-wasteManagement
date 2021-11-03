@@ -10,20 +10,12 @@ import { Page5 } from './components/Page5'
 import { Page20 } from './components/Page20'
 import { Page21 } from './components/Page21'
 
-<<<<<<< HEAD
-
-import Page2 from './components/Page2'
-import Page3 from './components/Page3'
-import Page10 from './components/Page10'
-import { Category } from './components/selectCategory'
-
-=======
 import Page7 from './components/Page7'
 import Page8 from './components/Page8'
 import Page10 from './components/Page10'
 import { Page11 } from './components/Page11'
 import Page151 from './components/Page151'
->>>>>>> 8da6758745a678979a50bd157096454d151acf46
+import { Category } from './components/selectCategory'
 
 function App() {
   return (
