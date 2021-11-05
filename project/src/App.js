@@ -15,6 +15,7 @@ import Page8 from './components/Page8'
 import Page10 from './components/Page10'
 import { Page11 } from './components/Page11'
 import Page151 from './components/Page151'
+import Page93 from './components/Page93'
 import { Category } from './components/selectCategory'
 
 function App() {
@@ -67,6 +68,10 @@ function App() {
 
         <Route path='/page151'>
           <Page151 />
+        </Route>
+
+        <Route path='/page93'>
+          <Page93 />
         </Route>
 
         <Route path='/page1'>
