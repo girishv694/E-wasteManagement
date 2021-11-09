@@ -5,7 +5,7 @@ import { Container } from './Container_sk'
 function Page1() {
     return (
 
-        <Link to="/page2">
+        // <Link to="/page2">
             <Container>
                 <div id="container">
                     <div>
@@ -25,7 +25,7 @@ function Page1() {
                     </div>
                 </div>
             </Container>
-        </Link>
+        // </Link>
 
     )
 }
