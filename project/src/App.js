@@ -20,6 +20,7 @@ import { Category } from './components/selectCategory'
 import Miniature from './components/Miniature'
 import Ewaste from './components/Ewaste'
 import Congratulation from './components/Congratulation'
+import Pickup from './components/Pickup'
 
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
           <Page3 />
         </Route>
 
-        <Route path='/page7'>
+        {/* <Route path='/page7'>
           <Page7></Page7>
         </Route>
 
@@ -82,7 +83,7 @@ function App() {
 
         <Route path='/'>
           <Page1 />
-        </Route>
+        </Route> */}
 
 
         <Route path='/category'>
@@ -93,8 +94,8 @@ function App() {
          <Miniature/>
         </Route>
 
-           <Route path='/'>
-          <Page1 />
+           <Route path='/pick'>
+          <Pickup/>
         </Route>
       </Switch>
     </div>

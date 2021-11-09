@@ -1,0 +1,54 @@
+#pickimg{
+    width: 363px;
+height: 286px;
+left: 24px;
+top: 100px;
+position: relative;
+
+
+}
+
+#pick-statement{
+    width: 349px;
+height: 66px;
+left: 24px;
+top: 8px;
+
+font-family: 'Avenir_Next';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 33px;
+display: flex;
+align-items: center;
+text-align: center;
+position: relative;
+top: 150px;
+text-align: center;
+/* #292D32 */
+
+color: #292D32;
+
+
+}
+
+#pick-btn{
+    position: relative;
+    top: 200px;
+    width: 325px;
+height: 51px;
+left: 43px;
+text-align: center;
+background: #41C8B7;
+box-shadow: 0px 4px 44px -6px rgba(24, 39, 75, 0.09), 0px 8px 24px -4px rgba(24, 39, 75, 0.08);
+border-radius: 6px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+font-family: 'Avenir_Next';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+}
