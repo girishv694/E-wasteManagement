@@ -12,11 +12,15 @@ import { Page21 } from './components/Page21'
 
 import Page7 from './components/Page7'
 import Page8 from './components/Page8'
-import Page10 from './components/Page10'
+
 import { Page11 } from './components/Page11'
-import Page151 from './components/Page151'
+
+import Page93 from './components/Page93'
 import { Category } from './components/selectCategory'
 import Miniature from './components/Miniature'
+import Ewaste from './components/Ewaste'
+import Congratulation from './components/Congratulation'
+
 
 function App() {
   return (
@@ -62,15 +66,21 @@ function App() {
           <h1>Checkout Page</h1>
         </Route>
 
-        <Route path='/page10'>
-          <Page10 />
+        
+        <Route path='/congrats'>
+          <Congratulation />
         </Route>
 
-        <Route path='/page151'>
-          <Page151 />
+        <Route path='/ewaste'>
+          <Ewaste />
+        </Route>
+       
+
+        <Route path='/page93'>
+          <Page93 />
         </Route>
 
-        <Route path='/page1'>
+        <Route path='/'>
           <Page1 />
         </Route>
 

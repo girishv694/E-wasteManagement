@@ -1,22 +1,27 @@
+// import { Link } from 'react-router-dom'
+import { Container } from "./Container_sk"
 import "../css/page8.css"
 
 const Page8 = () => {
     return (
-        <div id="Container_p7">
+        <Container>
             <div id="page8_div">
-                <p id="page8_content1">
-                Allow SCAVENGER to access this device’s location? 
-                </p>
+                <div className="loc_icon">
+                    <img className="loc_icon" src="Images/location_icon.png" alt="" />
+                </div>
+                <div id="page8_content1">
+                    Allow SCAVENGER to access this device’s location?
+                </div>
 
-                <p id="page8_content2">
-                Allow only while using the app  
-                </p>
+                <div id="page8_content2">
+                    Allow only while using the app
+                </div>
 
-                <p id="page8_content3">
+                <div id="page8_content3">
                     Deny
-                </p>
+                </div>
             </div>
-        </div>
+        </Container>
     )
 }
 

@@ -1,0 +1,50 @@
+#e-waste{
+margin-top: 86px;
+height: 44px;
+/* text-align: center; */
+display: flex;
+align-items: center;
+justify-content: center;
+background: #FFFFFF;
+border-radius: 6px;
+
+font-family: "Avenir_Next";
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+}
+
+#content_div{
+    /* margin-top: 110px; */
+    width: 363px;
+    height: 390px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 111px 111px 111px;
+    grid-template-rows: 113px 113px 113px;
+    grid-column-gap: 15px;
+    grid-row-gap: 28px;
+    
+}
+#content_div div{
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Avenir_Next";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.prod_img{
+    width: 64px;
+    height: 64px;
+}
+
