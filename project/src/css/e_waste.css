@@ -1,9 +1,11 @@
 #top_bar{
-height: 81px;
-background: #41C8B7;
-border-radius: 0px 0px 20px 20px;
-
+    margin-top: 0px;
+    height: 81px;
+    background: #41C8B7;
+    border-radius: 0px 0px 20px 20px;
+    
 }
+
 
 #city_name{
     position: relative;
@@ -42,14 +44,19 @@ border-radius: 0px 0px 20px 20px;
     width: 8%;
 }
 
+
+
 #inp_div{
     position: relative;
     width: 363px;
     height: 44px;
-    left: 5.84%;
-    right: 5.84%;
-    top: 25px;
-    bottom: 81.65%;
+    margin-left: 24px;
+    margin-top: 26px;
+    /* left: 5.84%;
+    right: 5.84%; */
+    /* top: 25px; */
+
+    /* bottom: 81.65%; */
     
     /* COLOUR BASE-1 */
 
@@ -83,69 +90,78 @@ border-radius: 0px 0px 20px 20px;
  font-size: 18px;
 }
 
+
 #content_div{
-    position: relative;
-    top:70px;
+    /* position: relative; */
+    /* top:70px; */
     display: grid;
-    grid-template-columns: 172px 172px;
-    grid-template-rows: 192px 192px 44px;
-    column-gap: 30px;
+    grid-template-columns: 173px 173px;
+    grid-template-rows: 190px 190px 44px;
+    column-gap: 20px;
     row-gap: 25px;
     width: 92%;
-    margin: auto;
+    margin: 54px 24px 0px 24px;
     height: 500px;
 
 }
 
+
 .waste_div{
 
-background: #FFFFFF;
-/* COLOUR divider */
-border: 2px solid #E9EEF2;
-box-sizing: border-box;
-border-radius: 20px;
-display: flex;
-flex-direction: column ;
-justify-content: center;
-align-items: center;
-}
+    background: #FFFFFF;
+    /* COLOUR divider */
+    border: 2px solid #E9EEF2;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .waste_div p{
+    margin-top: 7px;
+    font-family: "Avenir_Next";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    }
+    
+    #sell_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: "Avenir_Next";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    }
+    #rate_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: "Avenir_Next";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    }
+    
+    .waste_img{
+        width: 96px;
+        margin-left: 5px;
+    }
 
-.waste_div p{
-margin-top: 7px;
-font-family: "Avenir_Next";
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 19px;
-}
 
-#sell_div{
-display: flex;
-justify-content: center;
-align-items: center;
 
-font-family: "Avenir_Next";
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 25px;
-}
-#rate_div{
-display: flex;
-justify-content: center;
-align-items: center;
 
-font-family: "Avenir_Next";
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 25px;
-}
 
-.waste_img{
-    width: 96px;
-    margin-left: 5px;
-}
+
+
 
 #bottom_bar{
 display: flex;
@@ -176,9 +192,4 @@ width: 24px;
 height: 24px;
 margin-left: 8px;
 
-}
-
-#Link{
-    text-decoration: none;
-    
-}
+}    

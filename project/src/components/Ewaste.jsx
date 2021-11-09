@@ -1,6 +1,7 @@
 import { Container } from "./Container_sk"
-import "../css/page151.css"
-const Page151 = () => {
+import "../css/e_waste.css"
+
+const Ewaste = () => {
     return (
         <Container>
             <div id="top_bar">
@@ -23,13 +24,16 @@ const Page151 = () => {
 
             </div>
 
+            
+
             <div id="inp_div">
                 <button id="search_btn"><img id="search_img" src="Images/search_Icons.png" alt="" /></button>
                 <input id="search_inp" type="text" placeholder="What you want to sell?" />
             </div>
+            
 
             <div id="content_div">
-                <div className="waste_div">
+            <div className="waste_div">
                     <img className="waste_img" src="Images/E-waste.png" alt="" />
                     <p>E-waste</p>
                 </div>
@@ -51,7 +55,12 @@ const Page151 = () => {
                 <div id="rate_div" className="waste_div">
                     Rate List
                 </div>
+               
             </div>
+
+
+
+
 
             <div id="bottom_bar">
                 <div>
@@ -72,10 +81,8 @@ const Page151 = () => {
                 </div>
                 
             </div>
-
-
         </Container>
     )
 }
 
-export default Page151
+export default Ewaste
