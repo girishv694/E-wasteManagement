@@ -1,4 +1,4 @@
-import { Div } from './Container'
+import { Container } from './Container_sk'
 import '../css/page2.css'
 import { Link } from 'react-router-dom'
 
@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const Page2 = () => {
   return (
     <>
-      <Div>
+      <Container>
         <p id='language'>
           <div className='front'>
             <h1>Select app language</h1>
@@ -16,7 +16,7 @@ const Page2 = () => {
           <button className="lang_btn">English</button>
           <button className="lang_btn">Hindi</button>
         </Link>
-      </Div>
+        </Container>
     </>
   )
 }
