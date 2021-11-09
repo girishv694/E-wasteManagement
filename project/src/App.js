@@ -12,7 +12,7 @@ import { Page21 } from './components/Page21'
 
 import Page7 from './components/Page7'
 import Page8 from './components/Page8'
-import Page10 from './components/Page10'
+
 import { Page11 } from './components/Page11'
 
 import Page93 from './components/Page93'
@@ -65,9 +65,7 @@ function App() {
           <h1>Checkout Page</h1>
         </Route>
 
-        <Route path='/page10'>
-          <Page10 />
-        </Route>
+        
         <Route path='/congrats'>
           <Congratulation />
         </Route>
