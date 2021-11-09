@@ -1,0 +1,24 @@
+.c_img_div{
+    margin: 32px 24px 0px 24px;
+}
+
+.c_img{
+    width: 363px;
+    height: 286px;
+}
+
+#content_div{
+    width: 363px;
+    height: 165px;
+    margin: 45px 24px 0px 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 29px 33px 30px 29px;
+
+    background: #FFFFFF;
+    border-radius: 16px;
+
+    font-family: "Avenir_Next";
+}

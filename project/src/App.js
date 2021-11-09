@@ -18,6 +18,7 @@ import { Page11 } from './components/Page11'
 import Page93 from './components/Page93'
 import { Category } from './components/selectCategory'
 import Ewaste from './components/Ewaste'
+import Congratulation from './components/Congratulation'
 
 
 function App() {
@@ -66,6 +67,9 @@ function App() {
 
         <Route path='/page10'>
           <Page10 />
+        </Route>
+        <Route path='/congrats'>
+          <Congratulation />
         </Route>
 
         <Route path='/ewaste'>
