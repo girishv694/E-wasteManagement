@@ -1,21 +1,25 @@
 #page8_div{
-position: relative;
 width: 363px;
 height: 236px;
-left: 24px;
-top: 294px;
+margin-top: 294px;
+margin-left: 24px;
 /* overflow-y: scroll; */
-
 background: #FFFFFF;
 border-radius: 16px;
 }
 
+
+.loc_icon{
+    width: 24px;
+    height: 24px;
+    margin: auto;
+}
+
 #page8_content1{
-position: relative;
 width: 297px;
 height: 50px;
-left: 33px;
-top: 57px;
+margin-left: 33px;
+margin-top: 5px;
 
 font-family: 'Avenir_Next';
 font-style: normal;
@@ -28,33 +32,34 @@ text-align: center;
 
 color: #292D32;
 }
+
+
+
 #page8_content2{
-    position: relative;
     width: 254px;
     height: 25px;
-    left: 55px;
-    top: 60px;
+    margin-left: 55px;
+    margin-top: 15px;
     
-    font-family: 'Avenir_Next';
+    font-family: "Avenir_Next";
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 25px;
     /* identical to box height */
-    
+
     display: flex;
     align-items: center;
     text-align: center;
-    
-    color: #292D32;
+
+    color: #407BFF;
 }
 
 #page8_content3{
-position: relative;
 width: 44px;
 height: 25px;
-left: 160px;
-top: 60px;
+margin-left: 160px;
+margin-top: 15px;
 
 font-family: 'Avenir_Next';
 font-style: normal;
@@ -67,5 +72,5 @@ display: flex;
 align-items: center;
 text-align: center;
 
-color: #292D32;
+color: #407BFF;
 }

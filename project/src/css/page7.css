@@ -13,20 +13,18 @@ border: 1px solid rgb(236, 229, 229);
 }
 
 #scrap_sold_img{
-position: relative;
 width: 363px;
 height: 286px;
-left: 0px;
-top: 32px;
+margin-top: 32px;
+margin-left: 24px;
+
 }
 
 #heading{
-   
-position: relative;
 width: 331px;
 height: 33px;
-left: 24px;
-top: 31px;
+margin-top: 49px;
+margin-left: 24px;
 
 font-family: Avenir Next;
 font-style: normal;
@@ -38,11 +36,10 @@ color: #292D32;
 }
 
 #para_div{
-position: relative;
 width: 331px;
 height: 100px;
-left: 24px;
-top: 127px;
+margin-top: 63px;
+margin-left: 24px;
 
 font-family: 'Avenir_Next';
 font-style: normal;
@@ -51,7 +48,6 @@ font-size: 18px;
 line-height: 25px;
 display: flex;
 align-items: center;
-
 color: #292D32;
 }
 
@@ -62,11 +58,10 @@ justify-content: center;
 align-items: center;
 padding: 10px 16px;
 
-position: relative;
 width: 210px;
 height: 45px;
-left: 100px;
-top: 180px;
+margin-top: 139px;
+margin-left: 100px;
 
 background: #41C8B7;
 border-radius: 10px;
