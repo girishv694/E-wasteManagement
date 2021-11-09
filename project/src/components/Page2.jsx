@@ -12,8 +12,6 @@ const Page2 = () => {
             <h1>Select app language</h1>
           </div>
         </p>
-        {/* <Button>Hindi</Button>
-        <Button>English</Button> */}
         <Link to='/page3'>
           <button className="lang_btn">English</button>
           <button className="lang_btn">Hindi</button>

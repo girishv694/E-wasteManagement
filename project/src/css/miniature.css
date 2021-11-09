@@ -50,12 +50,11 @@ color: #292D32;
     flex-direction: column;
     width: 88%;
     margin: auto;
-    height: 360px;
+    height: 380px;
     position: relative;
     top: 60px;
     border-radius: 10px;
     background-color: #fff;
-    padding: 5px ;
     align-items: center;
 }
 
@@ -83,6 +82,7 @@ line-height: 22px;
 color: #292D32;
 position: relative;
 top: 30px;
+padding-bottom: 5px;
 }
 
 #cont-btn{

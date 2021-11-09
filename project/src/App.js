@@ -53,7 +53,7 @@ function App() {
         <Route path='/page5'>
           <Page5 />
         </Route>
-
+{/* 
         <Route path='/page2'>
           <Page2 />
         </Route>
@@ -64,9 +64,9 @@ function App() {
 
         <Route path='/checkout'>
           <h1>Checkout Page</h1>
-        </Route>
+        </Route> */}
 
-        
+{/*         
         <Route path='/congrats'>
           <Congratulation />
         </Route>
@@ -87,10 +87,14 @@ function App() {
 
         <Route path='/category'>
          <Category/>
+        </Route> */}
+
+        <Route path='/mini/miniature'>
+         <Miniature/>
         </Route>
 
-        <Route path='/miniature'>
-         <Miniature/>
+           <Route path='/'>
+          <Page1 />
         </Route>
       </Switch>
     </div>

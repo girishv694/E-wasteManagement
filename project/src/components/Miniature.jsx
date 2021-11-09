@@ -1,11 +1,12 @@
 
-import { Div } from "./Container";
+
 import '../css/miniature.css'
+import {Div} from './Container'
 const Miniature=()=>{
     return <>
 <Div>
 
-<img src="Images/backarrow1.svg" alt="" id="arrow" />
+<img src="http://localhost:3000/Images/backarrow1.svg" alt="" id="arrow" />
 
 <div id="statement">
 Do you want to a Memorabilia miniature of the sold item
@@ -19,13 +20,13 @@ Do you want to a Memorabilia miniature of the sold item
 
 <div id="img-cont">
     <div>
-        <img src="Images/clayimg1.png" alt="" />
+        <img src="http://localhost:3000/Images/clayimg1.png" alt="" />
     </div>
     <div>
-    <img src="Images/clayimg2.png" alt="" />
+    <img src="http://localhost:3000/Images/clayimg2.png" alt="" />
     </div>
     <div>
-    <img src="Images/clayimg3.png" alt="" />
+    <img src="http://localhost:3000/Images/clayimg3.png" alt="" />
     </div>
 
     <p>We charge only Rs 50 for this service</p>
