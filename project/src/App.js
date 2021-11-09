@@ -16,6 +16,7 @@ import Page10 from './components/Page10'
 import { Page11 } from './components/Page11'
 import Page151 from './components/Page151'
 import { Category } from './components/selectCategory'
+import Miniature from './components/Miniature'
 
 function App() {
   return (
@@ -76,6 +77,10 @@ function App() {
 
         <Route path='/category'>
          <Category/>
+        </Route>
+
+        <Route path='/miniature'>
+         <Miniature/>
         </Route>
       </Switch>
     </div>
