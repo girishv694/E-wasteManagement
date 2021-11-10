@@ -31,13 +31,6 @@ function Page3() {
             </div>
           </div>
 
-<<<<<<< HEAD
-
-        </Div>
-      </Link>
-=======
-       
->>>>>>> 5f47eb4099ea75cd6d7ccdb52e6d52321541ea77
     </div>
       
     </Div>
