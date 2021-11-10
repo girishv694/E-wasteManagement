@@ -9,6 +9,8 @@ function Login() {
         password : ""
     })
 
+    const [message,setmessage] = useState("")
+
     const {email,password} = user;
 
     const oninput = e =>{
@@ -48,10 +50,11 @@ function Login() {
 
     if(data.User){
         alert("login successful")
+        setmessage("successful");
         window.location.href="/page5"
     }
     else{
-        alert("unsucessful")
+        setmessage("Email or Password do not match");
     }
   }
 
@@ -64,6 +67,9 @@ function Login() {
                 <input type="email" name="email"  placeholder="Enter email"  value={email} onChange={e=>oninput(e)}/><br/><br/>
                 <input type="text" name="password" placeholder="Enter password" value={password} onChange={e=>oninput(e)}/><br/><br/>
                 <button>Sign in</button>
+                {
+                    message
+                }
             </form>
             </Div>
         </div>
