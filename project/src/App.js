@@ -31,7 +31,7 @@ function App() {
           <Page3 />
         </Route>
 
-        {/* <Route path='/page7'>
+        <Route path='/page7'>
           <Page7></Page7>
         </Route>
 
@@ -81,22 +81,23 @@ function App() {
           <Page93 />
         </Route>
 
-        <Route path='/'>
-          <Page1 />
-        </Route> */}
-
-
         <Route path='/category'>
-         <Category/>
+          <Category />
         </Route>
 
         <Route path='/mini/miniature'>
-         <Miniature/>
+          <Miniature />
         </Route>
 
-           <Route path='/pick'>
-          <Pickup/>
+        <Route path='/pick'>
+          <Pickup />
         </Route>
+
+        <Route path='/'>
+          <Page1 />
+        </Route>
+
+
       </Switch>
     </div>
   )

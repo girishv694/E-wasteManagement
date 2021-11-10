@@ -1,17 +1,21 @@
 import '../css/page5.css'
+import { Container } from "./Container_sk"
 import { Link } from 'react-router-dom'
 
 export const Page5 = () => {
   return (
     <>
-      <div className='container_mainp5'>
-        <Link to='/page6'>
-        <div className='Container_p5'>
-          <div className='img'>
+
+      <Link to='/pick'>
+        <Container>
+          <div className='img_div'>
             <img src='Images/IMGpage5.png' alt='someImage' />
           </div>
-          <div className='headerp5'>
-            <h1>Choose a date for scrap pickup</h1>
+          <div id='heading_date'>
+            Choose a date for scrap pickup
+          </div>
+          
+          <div id='para_div'>
             <p>
               Pick a date that works for you. We will arrive as per your
               convenience.
@@ -22,9 +26,9 @@ export const Page5 = () => {
             <div></div>
             <div></div>
           </div>
-        </div>
-        </Link>
-      </div>
+        </Container>
+      </Link>
+
     </>
   )
 }

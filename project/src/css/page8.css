@@ -1,8 +1,9 @@
 #page8_div{
+position: relative;
+top: 294px;
 width: 363px;
 height: 236px;
-margin-top: 294px;
-margin-left: 24px;
+margin: 0px 24px 0px 24px;
 /* overflow-y: scroll; */
 background: #FFFFFF;
 border-radius: 16px;

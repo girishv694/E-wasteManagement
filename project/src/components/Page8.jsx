@@ -6,6 +6,7 @@ const Page8 = () => {
     return (
         <Container>
             <div id="page8_div">
+                
                 <div className="loc_icon">
                     <img className="loc_icon" src="Images/location_icon.png" alt="" />
                 </div>
