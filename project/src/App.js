@@ -27,11 +27,23 @@ function App() {
   return (
     <div className='app'>
       <Switch>
+      <Route path='/page1'>
+          <Page1 />
+        </Route>
+
+        <Route path='/page2'>
+          <Page2 />
+        </Route>
+
         <Route path='/page3'>
           <Page3 />
         </Route>
 
-        {/* <Route path='/page7'>
+        <Route path='/page5'>
+          <Page5 />
+        </Route>
+
+        <Route path='/page7'>
           <Page7></Page7>
         </Route>
 
@@ -39,11 +51,19 @@ function App() {
           <Page8></Page8>
         </Route>
 
-        <Route path='/page11'>
+        <Route path='/congrats'>
+          <Congratulation />
+        </Route> 
+         <Route path='/page11'>
           <Page11 />
         </Route>
 
-        <Route path='/page21'>
+        <Route path='/category'>
+         <Category/>
+        </Route>
+
+
+        {/* <Route path='/page21'>
           <Page21 />
         </Route>
 
@@ -51,14 +71,9 @@ function App() {
           <Page20 />
         </Route>
 
-        <Route path='/page5'>
-          <Page5 />
-        </Route>
+         */}
 
-        <Route path='/page2'>
-          <Page2 />
-        </Route>
-
+        
         <Route path='/signup'>
           <h1>Signup Page</h1>
         </Route>
@@ -68,11 +83,9 @@ function App() {
         </Route>
 
         
-        <Route path='/congrats'>
-          <Congratulation />
-        </Route>
+        
 
-        <Route path='/ewaste'>
+        {/* <Route path='/ewaste'>
           <Ewaste />
         </Route>
        
@@ -81,22 +94,16 @@ function App() {
           <Page93 />
         </Route>
 
-        <Route path='/'>
-          <Page1 />
-        </Route> */}
+        
 
-
-        <Route path='/category'>
-         <Category/>
-        </Route>
-
+       
         <Route path='/mini/miniature'>
          <Miniature/>
         </Route>
 
            <Route path='/pick'>
           <Pickup/>
-        </Route>
+        </Route> */}
       </Switch>
     </div>
   )

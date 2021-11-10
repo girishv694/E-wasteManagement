@@ -1,11 +1,13 @@
 import '../css/page5.css'
 import { Link } from 'react-router-dom'
-
+import { Div } from './Container'
 export const Page5 = () => {
   return (
     <>
+    <Link to='/page7'>
+      <Div>
       <div className='container_mainp5'>
-        <Link to='/page6'>
+        
         <div className='Container_p5'>
           <div className='img'>
             <img src='Images/IMGpage5.png' alt='someImage' />
@@ -23,8 +25,10 @@ export const Page5 = () => {
             <div></div>
           </div>
         </div>
-        </Link>
+        
       </div>
+      </Div>
+      </Link>
     </>
   )
 }

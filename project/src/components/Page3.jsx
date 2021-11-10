@@ -6,9 +6,10 @@ import { Div } from "./Container";
 // Page-3 Pushpendra
 function Page3() {
   return (
-    <div className="header">
-      <Link to="/page5">
+    <Link to="/page5">
         <Div>
+    <div className="header">
+      
           <div className="page3-img">
             <img src="Images/page-3.png" alt="Page"></img>
             <div className="page3-sell">
@@ -30,10 +31,11 @@ function Page3() {
             </div>
           </div>
 
-         
-        </Div>
-      </Link>
+       
     </div>
+      
+    </Div>
+      </Link>
   );
 }
 

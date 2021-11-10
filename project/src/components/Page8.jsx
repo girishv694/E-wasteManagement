@@ -1,10 +1,11 @@
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { Container } from "./Container_sk"
 import "../css/page8.css"
 
 const Page8 = () => {
     return (
         <Container>
+            <Link to="/congrats">
             <div id="page8_div">
                 <div className="loc_icon">
                     <img className="loc_icon" src="Images/location_icon.png" alt="" />
@@ -20,7 +21,9 @@ const Page8 = () => {
                 <div id="page8_content3">
                     Deny
                 </div>
+                
             </div>
+            </Link>
         </Container>
     )
 }
