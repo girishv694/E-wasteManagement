@@ -39,13 +39,6 @@ function App() {
           <Page3 />
         </Route>
 
-<<<<<<< HEAD
-=======
-        <Route path='/page5'>
-          <Page5 />
-        </Route>
-
->>>>>>> 5f47eb4099ea75cd6d7ccdb52e6d52321541ea77
         <Route path='/page7'>
           <Page7></Page7>
         </Route>
@@ -88,7 +81,7 @@ function App() {
         
         
 
-        {/* <Route path='/ewaste'>
+        <Route path='/ewaste'>
           <Ewaste />
         </Route>
        
@@ -97,13 +90,9 @@ function App() {
           <Page93 />
         </Route>
 
-<<<<<<< HEAD
         <Route path='/category'>
           <Category />
         </Route>
-=======
-        
->>>>>>> 5f47eb4099ea75cd6d7ccdb52e6d52321541ea77
 
        
         <Route path='/mini/miniature'>
@@ -114,17 +103,11 @@ function App() {
           <Pickup />
         </Route>
 
-<<<<<<< HEAD
         <Route path='/'>
           <Page1 />
         </Route>
 
 
-=======
-           <Route path='/pick'>
-          <Pickup/>
-        </Route> */}
->>>>>>> 5f47eb4099ea75cd6d7ccdb52e6d52321541ea77
       </Switch>
     </div>
   )
