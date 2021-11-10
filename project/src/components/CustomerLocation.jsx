@@ -25,10 +25,10 @@ const CustomerLocation = () => {
     });
   }, []);
 
-  
+
   useEffect(() => {
     navigator.geolocation.getCurrentPosition((position) => {
-      setLatitude(position.coords.latitude); //getting lattitude from api and setting latitude ;
+      setLatitude(position.coords.latitude); 
       setLongitude(position.coords.longitude);
       
     });
