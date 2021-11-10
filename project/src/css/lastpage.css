@@ -1,0 +1,27 @@
+#last-statement{
+    position: relative;
+    top: 300px;
+    left: 30px;
+
+    width: 363px;
+height: 132px;
+
+
+font-family: 'Avenir_Next';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 33px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* #292D32 */
+
+color: #292D32;
+}
+
+#arrow{
+    position: relative;
+    top: 10px;
+}

@@ -21,6 +21,8 @@ import Miniature from './components/Miniature'
 import Ewaste from './components/Ewaste'
 import Congratulation from './components/Congratulation'
 import Pickup from './components/Pickup'
+import Lastpage from './components/Lastpage'
+import Upi from './components/Upiaddress'
 
 
 function App() {
@@ -70,9 +72,22 @@ function App() {
         </Route>
 
 
+        <Route path='/pick'>
+          <Pickup />
+        </Route>
         <Route path='/category'>
          <Category/>
         </Route>
+
+        <Route path='/end'>
+         <Lastpage/>
+        </Route>
+
+        <Route path='/upi'>
+         <Upi/>
+        </Route>
+
+
 
 
         {/* <Route path='/page21'>
@@ -110,9 +125,7 @@ function App() {
           <Miniature />
         </Route>
 
-        <Route path='/pick'>
-          <Pickup />
-        </Route>
+        
 
        
         */}

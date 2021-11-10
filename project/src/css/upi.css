@@ -1,0 +1,30 @@
+#upi{position: relative;
+    top: 100px;
+    left: 30px;
+    
+    font-family:' Avenir_Next';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 33px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* #292D32 */
+
+color: #292D32;
+
+}
+
+#add{
+
+
+background: #FFFFFF;
+/* COLOUR divider */
+
+border: 2px solid #E9EEF2;
+box-sizing: border-box;
+border-radius: 6px;
+}

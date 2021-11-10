@@ -17,7 +17,9 @@ function Page11() {
             <p className='page11-phone'>Please enter your phone number</p>
           </div>
           <div className='page11-input'>
-            <input 
+            <input onFocus={()=>{
+              setShow(true)
+            }}
               type='text'
               placeholder='     +91-Mobile Number'
               className='input_p11'
@@ -28,24 +30,24 @@ function Page11() {
             <p>Continue</p>
           </button>
           </Link>
-          <div className='grid-container'>
+          <div className='grid-container' id={show? "disp":""}>
             <div>1</div>
             <div>2</div>
             <div>3</div>
-            <div>-</div>
+            <div id="blue">-</div>
 
             <div>4</div>
             <div>5</div>
             <div>6</div>
-            <div>++</div>
+            <div id="blue">+</div>
             <div>7</div>
             <div>8</div>
             <div>9</div>
-            <div>++</div>
+            <div id="blue">*</div>
             <div>,</div>
             <div>0</div>
-            <div>.</div>
-            <div>--</div>
+            <div>/</div>
+            <div id="blue"></div>
           </div>
       
     </div>
