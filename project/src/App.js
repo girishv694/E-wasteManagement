@@ -20,6 +20,7 @@ import { Category } from './components/selectCategory'
 import Miniature from './components/Miniature'
 import Ewaste from './components/Ewaste'
 import Congratulation from './components/Congratulation'
+import { CustomerLocation } from './components/CustomerLocation'
 
 
 function App() {
@@ -81,7 +82,9 @@ function App() {
         </Route>
 
         <Route path='/'>
-          <Page1 />
+          {/* <Page1 /> */}
+          <CustomerLocation/>
+
         </Route>
 
 
@@ -92,7 +95,10 @@ function App() {
         <Route path='/miniature'>
          <Miniature/>
         </Route>
+        
       </Switch>
+      {/* <CustomerLocation/> */}
+
     </div>
   )
 }
