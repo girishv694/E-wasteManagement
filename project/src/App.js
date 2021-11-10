@@ -23,6 +23,8 @@ import Congratulation from './components/Congratulation'
 import Pickup from './components/Pickup'
 import Lastpage from './components/Lastpage'
 import Upi from './components/Upiaddress'
+import { Register } from './components/Register'
+import Login from './components/Login'
 
 
 function App() {
@@ -86,6 +88,14 @@ function App() {
         <Route path='/upi'>
          <Upi/>
         </Route>
+
+        <Route path='/register'>
+          <Register/>
+          </Route>
+
+          <Route path='/login'>
+            <Login/>
+            </Route>
 
 
 
