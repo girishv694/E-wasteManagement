@@ -3,26 +3,31 @@ import { Link } from 'react-router-dom'
 // import"../css/Page.css"
 import '../css/page11.css'
 import { Div } from './Container'
+import {useState} from 'react'
 // Page-3 Pushpendra
 function Page11() {
+  const [show,setShow] = useState(false)
   return (
-    <div className='header'>
-      <Link to='/page11'>
+   
+     
         <Div>
+        <div className='header'>
           <div className='page11-login'>
             <p clasName='login'>Please Login</p>
             <p className='page11-phone'>Please enter your phone number</p>
           </div>
           <div className='page11-input'>
-            <input
+            <input 
               type='text'
               placeholder='     +91-Mobile Number'
               className='input_p11'
             ></input>
           </div>
+          <Link to='/ewaste'>
           <button className='but_p11'>
             <p>Continue</p>
           </button>
+          </Link>
           <div className='grid-container'>
             <div>1</div>
             <div>2</div>
@@ -42,9 +47,10 @@ function Page11() {
             <div>.</div>
             <div>--</div>
           </div>
-        </Div>
-      </Link>
+      
     </div>
+    </Div>
+    
   )
 }
 

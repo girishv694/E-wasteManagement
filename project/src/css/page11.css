@@ -1,12 +1,10 @@
 .page11-login {
   /* border:1px solid black; */
-  position: absolute;
+  position: relative;
   width: 297px;
   height: 74px;
-  margin-left: 24px;
-  margin-top: 297px;
-  margin-right: 90px;
-
+  top: 150px;
+  left: 30px;
   line-height: 33px;
   /* display: flex; */
   align-items: center;
@@ -30,11 +28,11 @@
   margin-top: 20px;
 }
 .input_p11 {
-  position: absolute;
+  position:relative;
   width: 363px;
   height: 55px;
   margin-left: 24px;
-  top: 394px;
+  top: 200px;
   border: none;
   background: rgba(1, 1, 1, 0.06);
   border-radius: 6px;
@@ -45,8 +43,8 @@
   width: 325px;
   height: 51px;
   left: 43px;
-  top: 473px;
-
+  top: 210px;
+  border: none;
   background: #ffffff;
   border: 0.1px solid rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
@@ -76,13 +74,13 @@
   background-color: #41c8b7;
 }
 .grid-container {
-  width: 411px;
+  width: 390px;
   height: 206px;
   position: relative;
+  margin: auto;
   left: 0%;
   right: 0%;
-  top: 617px;
-
+  top: 240px;
   background: #e9eaee;
   display: grid;
 
@@ -102,4 +100,8 @@
   font-size: 30px;
   line-height: 35px;
   color: #000000;
+}
+
+#disp{
+  display: none;
 }

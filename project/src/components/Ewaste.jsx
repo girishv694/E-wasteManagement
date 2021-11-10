@@ -1,5 +1,6 @@
 import { Container } from "./Container_sk"
 import "../css/e_waste.css"
+import { Link } from "react-router-dom"
 
 const Ewaste = () => {
     return (
@@ -31,10 +32,12 @@ const Ewaste = () => {
 
 
             <div id="first_row">
+                <Link to="page93">
                 <div className="waste_div">
                     <img className="waste_img" src="Images/E-waste.png" alt="" />
                     <p>E-waste</p>
                 </div>
+                </Link>
                 <div className="waste_div">
                 <img className="waste_img" src="Images/med-waste.png" alt="" />
                     <p>Medical-waste</p>

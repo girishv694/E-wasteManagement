@@ -39,6 +39,12 @@ function App() {
           <Page3 />
         </Route>
 
+
+        <Route path='/page5'>
+          <Page5 />
+        </Route>
+
+
         <Route path='/page7'>
           <Page7></Page7>
         </Route>
@@ -53,6 +59,16 @@ function App() {
          <Route path='/page11'>
           <Page11 />
         </Route>
+
+        <Route path='/ewaste'>
+          <Ewaste />
+        </Route>
+
+
+        <Route path='/page93'>
+          <Page93 />
+        </Route>
+
 
         <Route path='/category'>
          <Category/>
@@ -81,15 +97,10 @@ function App() {
         
         
 
-        <Route path='/ewaste'>
-          <Ewaste />
-        </Route>
+        {/* 
        
 
-        <Route path='/page93'>
-          <Page93 />
-        </Route>
-
+       
         <Route path='/category'>
           <Category />
         </Route>
@@ -103,10 +114,8 @@ function App() {
           <Pickup />
         </Route>
 
-        <Route path='/'>
-          <Page1 />
-        </Route>
-
+       
+        */}
 
       </Switch>
     </div>
