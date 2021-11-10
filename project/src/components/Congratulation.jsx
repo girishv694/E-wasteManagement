@@ -1,11 +1,12 @@
-import { Container } from "./Container_sk"
+//import { Div } from "./Container_"
 import "../css/congratulation.css"
+import { Link } from "react-router-dom"
 
-
-
+import { Div } from "./Container"
 const Congratulation = () => {
     return (
-        <Container>
+        <Div>
+            <Link to="/page11">
             <div className="c_img_div">
                 <img src="Images/congrats.png" alt="" className="c_img" />
             </div>
@@ -14,7 +15,8 @@ const Congratulation = () => {
                 <h2>Congratulations! </h2>
                 <p>You are just one sign up away from us</p>
             </div>
-       </Container>
+            </Link>
+       </Div>
     )
 }
 

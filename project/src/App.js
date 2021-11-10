@@ -20,16 +20,30 @@ import { Category } from './components/selectCategory'
 import Miniature from './components/Miniature'
 import Ewaste from './components/Ewaste'
 import Congratulation from './components/Congratulation'
-import { CustomerLocation } from './components/CustomerLocation'
+import Pickup from './components/Pickup'
 
 
 function App() {
   return (
     <div className='app'>
-      <Switch>
+      {/* <Switch><Switch/> */}
+      <Route path='/page1'>
+          <Page1 />
+        </Route>
+
+        <Route path='/page2'>
+          <Page2 />
+        </Route>
+
         <Route path='/page3'>
           <Page3 />
         </Route>
+
+
+        <Route path='/page5'>
+          <Page5 />
+        </Route>
+
 
         <Route path='/page7'>
           <Page7></Page7>
@@ -39,11 +53,29 @@ function App() {
           <Page8></Page8>
         </Route>
 
-        <Route path='/page11'>
+        <Route path='/congrats'>
+          <Congratulation />
+        </Route> 
+         <Route path='/page11'>
           <Page11 />
         </Route>
 
-        <Route path='/page21'>
+        <Route path='/ewaste'>
+          <Ewaste />
+        </Route>
+
+
+        <Route path='/page93'>
+          <Page93 />
+        </Route>
+
+
+        <Route path='/category'>
+         <Category/>
+        </Route>
+
+
+        {/* <Route path='/page21'>
           <Page21 />
         </Route>
 
@@ -51,14 +83,9 @@ function App() {
           <Page20 />
         </Route>
 
-        <Route path='/page5'>
-          <Page5 />
-        </Route>
+         */}
 
-        <Route path='/page2'>
-          <Page2 />
-        </Route>
-
+        
         <Route path='/signup'>
           <h1>Signup Page</h1>
         </Route>
@@ -68,39 +95,21 @@ function App() {
         </Route>
 
         
-        <Route path='/congrats'>
-          <Congratulation />
-        </Route>
+        
 
-        <Route path='/ewaste'>
-          <Ewaste />
-        </Route>
+        {/* 
        
 
-        <Route path='/page93'>
-          <Page93 />
-        </Route>
-
-        <Route path='/'>
-          {/* <Page1 /> */}
-          <CustomerLocation/>
-
-        </Route>
-
-
+       
         <Route path='/category'>
-         <Category/>
+          <Category />
         </Route>
 
-        <Route path='/miniature'>
-         <Miniature/>
-        </Route>
-        
-      </Switch>
       {/* <CustomerLocation/> */}
+     
 
     </div>
-  )
+    )
 }
 
 export default App

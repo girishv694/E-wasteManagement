@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../css/page1.css'
-import { Container } from './Container_sk'
+import { Div } from './Container'
 function Page1() {
     return (
 
         <Link to="/page2">
-            <Container>
+            <Div>
                 <div id="container">
                     <div>
                         <div>
@@ -24,7 +24,7 @@ function Page1() {
 
                     </div>
                 </div>
-            </Container>
+            </Div>
         </Link>
 
     )

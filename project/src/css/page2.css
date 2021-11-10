@@ -1,3 +1,9 @@
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
 #language {
   position: relative;
   width: 171px;
@@ -10,7 +16,7 @@
   justify-content: center;
   align-items: center;
 }
-.front > h1 {
+ h1 {
   text-align: center;
   font-family: 'Avenir_Next';
   font-style: normal;

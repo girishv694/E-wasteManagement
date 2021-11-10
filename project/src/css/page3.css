@@ -1,11 +1,13 @@
-.page3-img {
-  height: 823px;
-  width: 411px;
-  /* margin-left: 24px; */
-  top: 32px;
+
+.page3-img img{
+  position: relative;
+  left: 30px;
 }
 
-
+.header{
+  position: relative;
+  top: 7px;
+}
 
 .page3-sell {
   margin-top: 18px;
@@ -56,8 +58,8 @@ color: #292D32;
 }
 
 .rollers {
-    position: absolute;
-    top: 678px;
+    position: relative;
+    top: 10px;
     margin-left:184px;
     margin-top:41px;
     width: 43px;
