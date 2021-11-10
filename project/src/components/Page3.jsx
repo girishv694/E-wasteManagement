@@ -8,7 +8,7 @@ function Page3() {
   return (
     <Link to="/page5">
         <Div>
-    <div className="header">
+    <div >
       
           <div className="page3-img">
             <img src="Images/page-3.png" alt="Page"></img>
