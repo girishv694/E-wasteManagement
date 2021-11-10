@@ -28,7 +28,7 @@ import Upi from './components/Upiaddress'
 function App() {
   return (
     <div className='app'>
-      <Switch>
+       <Switch>
       <Route path='/page1'>
           <Page1 />
         </Route>
@@ -110,10 +110,8 @@ function App() {
         </Route>
 
         
-        
-
         {/* 
-       
+      
 
        
         <Route path='/category'>
@@ -129,10 +127,10 @@ function App() {
 
        
         */}
-
-      </Switch>
+</Switch>
     </div>
-  )
+    
+    )
 }
 
 export default App

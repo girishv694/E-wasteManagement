@@ -1,6 +1,7 @@
 import { Container } from "./Container_sk"
 import "../css/e_waste.css"
 import { Link } from "react-router-dom"
+import {CustomerLocation} from "./CustomerLocation"
 
 const Ewaste = () => {
     return (
@@ -8,15 +9,10 @@ const Ewaste = () => {
             <div id="top_bar">
                 <div id="city_name">
                     <label id="cityname_label">Your City</label>
-                    <select name="city_name" id="city_select">
-                        <option value="">Mumbai</option>
-                        <option value="">Pune</option>
-                        <option value="">Delhi</option>
-                        <option value="">Hyderabad</option>
-                        <option value="">Bangalore</option>
-                        <option value="">Kolkata</option>
-                        <option value="">Chennai</option>
-                    </select>
+                    <p name="city_name" id="city_select">
+                    <CustomerLocation/> 
+                    </p>
+                    {/* */}
                 </div>
 
                 <div id="img_div">

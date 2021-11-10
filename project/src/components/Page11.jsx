@@ -1,12 +1,12 @@
-import React from 'react'
+import {React} from 'react'
 import { Link } from 'react-router-dom'
-// import"../css/Page.css"
+import"../css/Page.css"
 import '../css/page11.css'
 import { Div } from './Container'
-import {useState} from 'react'
+import { useState } from 'react'
 // Page-3 Pushpendra
 function Page11() {
-  const [show,setShow] = useState(false)
+   const [show,setShow] = useState(false)
   return (
    
      
