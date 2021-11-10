@@ -11,7 +11,9 @@ function Page11() {
    
      
         <Div>
-        <div className='header'>
+        <div >
+        <img src="http://localhost:3000/Images/backarrow1.svg" alt="" id="arrow" />
+
           <div className='page11-login'>
             <p clasName='login'>Please Login</p>
             <p className='page11-phone'>Please enter your phone number</p>
