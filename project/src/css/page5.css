@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .img_div { 
 margin: 32px 24px 0px 24px;
 }
@@ -32,3 +33,49 @@ margin: 32px 24px 0px 24px;
   line-height: 25px;
 }
 
+=======
+.img{
+  position: relative;
+  width: 363px;
+height: 286px;
+left: 24px;
+top: 32px;
+}
+
+.img img{
+  max-width: 100%;
+}
+
+.headerp5 h1{
+  position: relative;
+width: 331px;
+left: 24px;
+top: 60px;
+text-align: left;
+font-family:'Avenir_Next';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 33px;
+
+color: #292D32;
+
+}
+
+.headerp5 p{
+  position: relative;
+  top: 120px;
+  left: 24px;
+  text-decoration: none;
+  width: 332px;
+  font-family: 'Avenir_Next';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 25px;
+
+
+color: #292D32;
+
+}
+>>>>>>> 5f47eb4099ea75cd6d7ccdb52e6d52321541ea77
