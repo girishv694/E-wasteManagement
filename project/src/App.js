@@ -2,16 +2,18 @@ import React from 'react'
 import './App.css'
 import { Switch, Route } from 'react-router-dom'
 
+import Home from './components/Home'
+import Language from './components/Language'
+import ScrapeItem from './components/ScrapeItem'
+import { Date } from './components/Date'
+import Scrapesold from './components/Scrapesold'
+import Location from './components/Location'
 
-import Page1 from './components/Page1'
-import Page2 from './components/Page2'
-import Page3 from './components/Page3'
-import { Page5 } from './components/Page5'
 import { Page20 } from './components/Page20'
 import { Page21 } from './components/Page21'
 
-import Page7 from './components/Page7'
-import Page8 from './components/Page8'
+
+
 
 import { Page11 } from './components/Page11'
 
@@ -29,49 +31,48 @@ import Payment from './components/Payment'
 import { Bargain } from './components/Bargain'
 
 
+
+
+
+
+
+
 function App() {
   return (
     <div className='app'>
       <Switch>
 
-        
-
         <Route path='/payment'>
           <Payment />
         </Route>
 
-        
-
         <Route path='/home'>
-          <Page1 />
+          <Home />
         </Route>
 
         <Route path='/language'>
-          <Page2 />
+          <Language />
         </Route>
 
         <Route path='/scrapeitem'>
-          <Page3 />
+          <ScrapeItem/>
         </Route>
-
 
         <Route path='/date'>
-          <Page5 />
+          <Date />
         </Route>
 
-
         <Route path='/scrapesold'>
-          <Page7></Page7>
+         <Scrapesold/>
         </Route>
 
         <Route path='/location'>
-          <Page8></Page8>
+        <Location/>
         </Route>
 
         <Route path='/congrats'>
           <Congratulation />
         </Route>
-
 
         <Route path='/register'>
           <Register />
@@ -95,8 +96,6 @@ function App() {
           <Category />
         </Route>
 
-    
-        
         <Route path='/bargain'>
          <Bargain/>
         </Route>
@@ -109,11 +108,9 @@ function App() {
           <Page21 />
         </Route>
 
-
         <Route path='/pick'>
           <Pickup />
         </Route>
-
 
         <Route path='/page11'>
           <Page11 />
@@ -126,8 +123,6 @@ function App() {
         <Route path='/upi'>
           <Upi />
         </Route>
-
-    
 
         <Route path='/miniature'>
           <Miniature />
