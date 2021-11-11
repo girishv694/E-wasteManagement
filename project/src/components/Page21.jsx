@@ -8,53 +8,35 @@ export const Page21 = () => {
   return (
     <>
      <Div>
-     <div className='container_mainp5'>
-        <div className='Container_p5'>
-          <div className='header_p21'>
-            <Link to='/page20'>
-              <h2 className='back_p20'>
-                <img src='Images/backarrow1.svg' alt='' />
-              </h2>
-            </Link>
-            <h1>App</h1>
-          </div>
-          <div className='front_p21'>
-            <h1>Pickup Confirmation</h1>
-          </div>
-          <div className='block_p21'>
-            <div className=''>
-              <h1>Get paid</h1>
-              <h1>550</h1>
-            </div>
-            <div className=''>
-              <h1>Scrap Item</h1>
-              <h1>AC</h1>
-            </div>
-            <div className=''>
-              <h1>Quantity</h1>
-              <h1>1</h1>
-            </div>
-          </div>
-          <div className='mid_p21'>
-            <div className=''>
-              <img id='locus_p21' src='Images/location.png' alt='' />
-            </div>
+     <img src='Images/backarrow1.svg' alt='' id='arrow' />
 
-            <h3 >Receive from Vikas -   </h3><span><CustomerLocation/></span>
-            <img src='Images/downarr.png' id='down_p21' alt='' />
-          </div>
-          <h3 className='intr_p21'>Any Instructions</h3>
-          <form action='' className='form_p21'>
-            <input type='text' />
-          </form>
+     <div  id="pickup-statement">Pickup Confirmation</div>
 
-          <div className='CONT_p21'>
-            <Link>
-              <button className='but_p21'>Continue</button>
-            </Link>
-          </div>
-        </div>
-      </div>
+     <div id="price-detail">
+       <div id="noborder">
+         <div>
+         <p id="left">Get paid</p>
+         <p >₹500</p>
+         </div>
+       </div>
+       <div id="noborder">
+       <div>
+         <p id="left">Scrap item</p>
+         <p >AC</p>
+         </div>
+       </div>
+       <div >
+       <div>
+         <p id="left">Quantity</p>
+         <p >1</p>
+         </div>
+       </div>
+     </div>
+
+     <div id="instruct">Any Instructions</div>
+     <input type="text" name="" id="" id="instr-input" />
+
+     <div id="pickup-btn">Continue</div>
      </Div>
     </>
   )
