@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Div } from './Container'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 import '../css/category.css'
 export const Category = () => {
@@ -75,9 +76,10 @@ export const Category = () => {
           </div>
         ) : null}
 
-        <div className='select' >
+       <Link to="/bargain">
+       <div className='select' >
           <div> Not satisfied with the price</div>
-        </div>
+        </div></Link>
       </Div>
     </>
   )
