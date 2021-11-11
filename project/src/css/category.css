@@ -96,7 +96,12 @@
 }
 
 .imgupload {
-  width: 90%;
+  /* width: 90%; */
+  width: 363px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  
   margin: 10px auto;
   background-color: white;
   position: relative;
@@ -117,11 +122,19 @@
   visibility: hidden;
 }
 .custom-file-input::before {
-  width: 100%;
+  /* width: 100%; */
   content: "Upload scrap item's image";
   cursor: pointer;
   font-size: 18px;
+
 }
+
+#upload_icon{
+  width: 24px;
+  height: 24px;
+  margin-left: 50px;
+}
+
 
 .select {
   width: 90%;
@@ -147,8 +160,8 @@
   background-color: #8dded4;
 }
 
-.imgupload img {
+/* .imgupload img {
   position: relative;
   margin-top: 1px;
   width: 20px;
-}
+} */
