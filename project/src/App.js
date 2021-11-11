@@ -116,7 +116,7 @@ function App() {
 
 
 
-        {/* <Route path='/page21'>
+         <Route path='/page21'>
           <Page21 />
         </Route>
 
@@ -124,7 +124,7 @@ function App() {
           <Page20 />
         </Route>
 
-         */}
+         
 
 
         <Route path='/signup'>

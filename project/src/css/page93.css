@@ -1,10 +1,22 @@
-#e-waste{
-margin-top: 86px;
+#b_arrow_93{
+    width: 24px;
+    height: 24px;
+    position: relative;
+    left: 24px;
+    top: 24px;
+    
+}
+
+#b_arrow_93img{
+width: 24px;
+height: 24px;
+}
+
+#ewaste{
+width: 411px;
 height: 44px;
-/* text-align: center; */
-display: flex;
-align-items: center;
-justify-content: center;
+margin-top: 62px;
+
 background: #FFFFFF;
 border-radius: 6px;
 
@@ -13,38 +25,47 @@ font-style: normal;
 font-weight: 600;
 font-size: 18px;
 line-height: 25px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+color: #292D32;
 }
 
-#content_div{
-    /* margin-top: 110px; */
-    width: 363px;
-    height: 390px;
-    margin: auto;
+
+#top_margin{
+    margin-top: 110px;
+}
+.waste_category{
+   
     display: grid;
     grid-template-columns: 111px 111px 111px;
-    grid-template-rows: 113px 113px 113px;
-    grid-column-gap: 15px;
-    grid-row-gap: 28px;
-    
+    grid-gap: 15px;
+    margin-left: 24px;
+    margin-bottom: 28px;
+    grid-template-rows: 113px;
 }
-#content_div div{
-    background: #FFFFFF;
-    box-sizing: border-box;
-    border-radius: 10px;
+
+.waste_item{
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    text-align: center;
 
     font-family: "Avenir_Next";
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
+
+    border: 2px solid #E9EEF2;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 
-.prod_img{
+.waste_item_img{
+    margin-top: 15px;
     width: 64px;
     height: 64px;
 }
-

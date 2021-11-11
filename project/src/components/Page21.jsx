@@ -1,6 +1,9 @@
 import '../css/page21.css'
 import { Link } from 'react-router-dom'
 
+import {CustomerLocation} from "./CustomerLocation"
+// let area = CustomerLocation;
+
 export const Page21 = () => {
   return (
     <>
@@ -36,7 +39,7 @@ export const Page21 = () => {
               <img id='locus_p21' src='Images/location.png' alt='' />
             </div>
 
-            <h3>Receive from Vikas - Mumbai 400008</h3>
+            <h3 >Receive from Vikas -   </h3><span><CustomerLocation/></span>
             <img src='Images/downarr.png' id='down_p21' alt='' />
           </div>
           <h3 className='intr_p21'>Any Instructions</h3>
