@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Div } from './Container'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 import '../css/category.css'
 export const Category = () => {
@@ -38,15 +39,15 @@ export const Category = () => {
         <div id='selectCategory'>Select from the category</div>
 
         <div id='priceDiv'>
-          <div>
+          <div onClick={uploadImg}>
             <div className='ton'>1 Ton</div>
             <div className='tonPrice'>₹300/piece</div>
           </div>
-          <div>
+          <div onClick={uploadImg}>
             <div className='ton'>1.5 Ton</div>
             <div className='tonPrice'>₹3000/piece</div>
           </div>
-          <div>
+          <div onClick={uploadImg}>
             <div className='ton'>2 Ton</div>
             <div className='tonPrice'>₹300/piece</div>
           </div>
@@ -54,7 +55,7 @@ export const Category = () => {
 
         {show ? (
           <div className='imgupload'>
-            <div>
+            <div >
               {/* <img src='Images/upload.svg' alt='' /> Upload scrap item's image */}
               <input
                 type='file'
@@ -75,9 +76,10 @@ export const Category = () => {
           </div>
         ) : null}
 
-        <div className='select' onClick={uploadImg}>
+       <Link to="/bargain">
+       <div className='select' >
           <div> Not satisfied with the price</div>
-        </div>
+        </div></Link>
       </Div>
     </>
   )
