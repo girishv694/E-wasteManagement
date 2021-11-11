@@ -48,6 +48,7 @@ function Register() {
     e.preventDefault();
      await axios.post('http://localhost:3001/api/register',user)
      console.log(user)
+     
 
   }
 

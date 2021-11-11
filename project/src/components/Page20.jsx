@@ -55,7 +55,7 @@ export const Page20 = () => {
               <button className=''>10:00 AM - 01:00PM</button>
             </div>
             <div className='CONT_p20'>
-              <Link to='/page21'>
+              <Link to='/pickupconfirmation'>
                 <button className='but_p20'>Continue</button>
               </Link>
             </div>

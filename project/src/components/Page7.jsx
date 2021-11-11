@@ -18,7 +18,7 @@ const Page7 = () => {
                 <p>You will receive your bill according to the negotiations done on the app, and the money will be transferred immediately to your bank account.</p>
             </div>
 
-            <Link id="Link" to="/page8">
+            <Link id="Link" to="/location">
                 <button id="getStart_btn">
                     Get Started
                 </button>

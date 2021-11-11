@@ -6,7 +6,7 @@ import { Div } from "./Container"
 const Congratulation = () => {
     return (
         <Div>
-            <Link to="/page11">
+            <Link to="/register">
             <div className="c_img_div">
                 <img src="Images/congrats.png" alt="" className="c_img" />
             </div>

@@ -40,34 +40,43 @@ function App() {
 
         
 
-        <Route path='/page1'>
+        <Route path='/home'>
           <Page1 />
         </Route>
 
-        <Route path='/page2'>
+        <Route path='/language'>
           <Page2 />
         </Route>
 
-        <Route path='/page3'>
+        <Route path='/scrapeitem'>
           <Page3 />
         </Route>
 
 
-        <Route path='/page5'>
+        <Route path='/date'>
           <Page5 />
         </Route>
 
 
-        <Route path='/page7'>
+        <Route path='/scrapesold'>
           <Page7></Page7>
         </Route>
 
-        <Route path='/page8'>
+        <Route path='/location'>
           <Page8></Page8>
         </Route>
 
         <Route path='/congrats'>
           <Congratulation />
+        </Route>
+
+
+        <Route path='/register'>
+          <Register />
+        </Route>
+
+        <Route path='/login'>
+          <Login />
         </Route>
         <Route path='/page11'>
           <Page11 />
@@ -78,8 +87,12 @@ function App() {
         </Route>
 
 
-        <Route path='/page93'>
+        <Route path='/itemcategory'>
           <Page93 />
+        </Route>
+
+        <Route path='/iteminformation'>
+          <Category />
         </Route>
 
         <Route path='/pick'>
@@ -87,14 +100,18 @@ function App() {
         </Route>
 
 
-        <Route path='/category'>
-          <Category />
-        </Route>
-
+        
         <Route path='/bargain'>
          <Bargain/>
         </Route>
 
+        <Route path='/appointment'>
+          <Page20 />
+        </Route>
+
+        <Route path='/pickupconfirmation'>
+          <Page21 />
+        </Route>
 
 
         <Route path='/end'>
@@ -105,52 +122,12 @@ function App() {
           <Upi />
         </Route>
 
-        <Route path='/register'>
-          <Register />
-        </Route>
-
-        <Route path='/login'>
-          <Login />
-        </Route>
-
-
-
-
-         <Route path='/page21'>
-          <Page21 />
-        </Route>
-
-        <Route path='/page20'>
-          <Page20 />
-        </Route>
-
-         
-
-
-        <Route path='/signup'>
-          <h1>Signup Page</h1>
-        </Route>
-
-        <Route path='/checkout'>
-          <h1>Checkout Page</h1>
-        </Route>
+    
 
         <Route path='/miniature'>
           <Miniature />
         </Route>
-
-
-        
-      
-
-       
-        <Route path='/category'>
-          <Category />
-        </Route>
-
-       
-       
-        
+    
       
 
 
