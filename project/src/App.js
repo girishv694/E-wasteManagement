@@ -135,8 +135,12 @@ function App() {
           <h1>Checkout Page</h1>
         </Route>
 
+        <Route path='/miniature'>
+          <Miniature />
+        </Route>
 
-        {/* 
+
+        
       
 
        
@@ -145,12 +149,9 @@ function App() {
         </Route>
 
        
-        <Route path='/mini/miniature'>
-          <Miniature />
-        </Route>
-
+       
         
-        */}
+      
 
 
       
