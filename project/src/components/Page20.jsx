@@ -1,15 +1,16 @@
 import '../css/Page20.css'
 import { Link } from 'react-router-dom'
-
+import { Div } from './Container'
 export const Page20 = () => {
   return (
     <>
+      <Div>
       <div className='container_mainp5'>
         <div className='Container_p5'>
           <div className='header_p20'>
             <Link>
               <h2 className='back_p20'>
-                <img src='Images/backarrow1.svg' alt='' />
+                <img src='Images/backarrow1.svg' alt='' id="arrow" />
               </h2>
             </Link>
             <h1>Appointment</h1>
@@ -45,7 +46,8 @@ export const Page20 = () => {
               </div>
             </div>
             <div className='tag_p20'>
-              <h1>Your availabilty on that day</h1>
+            Your availibility on that day
+              {/* <h1>Your availabilty on that day</h1> */}
             </div>
             <div className='time_p20'>
               <button className=''>10:00 AM - 01:00PM</button>
@@ -60,6 +62,7 @@ export const Page20 = () => {
           </div>
         </div>
       </div>
+      </Div>
     </>
   )
 }

@@ -1,11 +1,6 @@
-.Container_p5 {
-  width: 411px;
-  /* height: 712px; */
-}
 
 .header_p20 {
   display: flex;
-  margin-top: 36px;
   width: 80%;
 }
 .header_p20 > h1 {
@@ -17,6 +12,9 @@
   line-height: 33px;
   letter-spacing: 0em;
   text-align: center;
+  position: relative;
+  top:10px;
+  left: 20px;
 }
 .back_p20 {
   display: flex;
@@ -46,11 +44,15 @@
   font-weight: 400;
   height: 50px;
   line-height: 25px;
+  position: relative;
+    left: 24px;
 }
 .block_cl_p20 {
   width: 320px;
   height: 180px;
-  margin-top: 16px;
+  position: relative;
+  top: 10px;
+  left: 24px;
 }
 .A_p20 {
   width: 100%;
@@ -105,6 +107,9 @@
   background-color: white;
   display: flex;
   align-items: center;
+  position: relative;
+  left: 35px;
+  justify-content: center;
 }
 .tag_p20 > h1 {
   font-family: 'Avenir_Next';
@@ -123,6 +128,8 @@
   margin-top: 8px;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+  left: 10px;
 }
 .time_p20 > button {
   width: 147px;
@@ -145,8 +152,10 @@
 .but_p20 {
   width: 325px;
   height: 51px;
-  margin-top: 180px;
-
+ 
+  position: relative;
+  top: 100px;
+  left: 32px;
   background: #ffffff;
   border: 1px solid #ebebeb;
   box-sizing: border-box;
@@ -158,3 +167,4 @@
   line-height: 25px;
   letter-spacing: 0em;
 }
+
