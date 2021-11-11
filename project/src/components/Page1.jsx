@@ -5,7 +5,7 @@ import { Div } from './Container'
 function Page1() {
     return (
 
-        <Link to="/page2">
+        <Link to="/language">
             <Div>
                 <div id="container">
                     <div>

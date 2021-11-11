@@ -6,7 +6,7 @@ import { Div } from "./Container";
 // Page-3 Pushpendra
 function Page3() {
   return (
-    <Link to="/page5">
+    <Link to="/date">
         <Div>
     <div >
       

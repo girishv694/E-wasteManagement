@@ -5,7 +5,7 @@ import { Div } from './Container'
 export const Page5 = () => {
   return (
     <>
-    <Link to='/page7'>
+    <Link to='/scrapesold'>
       <Div>
       <div className='container_mainp5'>
         

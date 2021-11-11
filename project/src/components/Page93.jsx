@@ -19,7 +19,7 @@ const Page93 = () => {
                     Mobile
                 </div>
 
-                <Link id="Link" to="/category">
+                <Link id="Link" to="/iteminformation">
                 <div className="waste_item">
                     <img src="Images/ac_frame.png" alt="" className="waste_item_img" />
                     AC
