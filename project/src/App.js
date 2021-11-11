@@ -78,9 +78,7 @@ function App() {
         <Route path='/login'>
           <Login />
         </Route>
-        <Route path='/page11'>
-          <Page11 />
-        </Route>
+     
 
         <Route path='/ewaste'>
           <Ewaste />
@@ -95,11 +93,7 @@ function App() {
           <Category />
         </Route>
 
-        <Route path='/pick'>
-          <Pickup />
-        </Route>
-
-
+    
         
         <Route path='/bargain'>
          <Bargain/>
@@ -113,6 +107,15 @@ function App() {
           <Page21 />
         </Route>
 
+
+        <Route path='/pick'>
+          <Pickup />
+        </Route>
+
+
+        <Route path='/page11'>
+          <Page11 />
+        </Route>
 
         <Route path='/end'>
           <Lastpage />
