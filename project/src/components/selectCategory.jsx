@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 
 import { useState } from "react"
 import { Div } from "./Container"
@@ -23,16 +23,16 @@ export const Category=()=>{
         Select from the category
     </div>
 
-    <div id="priceDiv">
-        <div>
+    <div id="priceDiv" >
+        <div onClick={uploadImg}>
          <div className="ton">1 Ton</div>
          <div className="tonPrice">₹300/peice</div>
         </div>
-        <div>
+        <div onClick={uploadImg}>
        <div className="ton">1.5 Ton</div>
        <div className="tonPrice">₹3000/peice</div>
         </div>
-        <div>
+        <div onClick={uploadImg}>
         <div className="ton">1 Ton</div>
         <div className="tonPrice">₹300/peice</div>
         </div>
@@ -44,9 +44,10 @@ export const Category=()=>{
      </div>:null
     }
 
-    <div className="select" onClick={uploadImg} >
+    <Link to="/bargain">
+    <div className="select"  >
            <div> Not satisfied with the price</div>
-        </div>
+        </div></Link>
 </Div>
 
 

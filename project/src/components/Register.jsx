@@ -5,7 +5,8 @@ import{useState} from 'react'
 import '../css/page11.css'
 import axios from 'axios'
 import { Div } from './Container'
-
+import {Forms} from './Form'
+import '../css/register.css'
 function Register() {
 
   const[user,setuser] = useState({
@@ -18,6 +19,7 @@ function Register() {
   const {username,email,password} = user;
 
   const inputchange = (e) =>{
+    
   setuser({
     ...user,[e.target.name]:e.target.value
   })
@@ -51,18 +53,23 @@ function Register() {
 
 
   return (
-    <div className='header'>
-    
+    <div >
+    {/* onSubmit={e=>submit(e)} */}
         <Div>
-         <form onSubmit={e=>submit(e)}> 
+        <img src="http://localhost:3000/Images/backarrow1.svg" id="arrow" alt="" id="arrow" />
+      
+        <div id="headinglog">Registration</div>
+         <div id="formdiv">
+         <Forms funct={submit} > 
          <input type="text" name="username" id="username" placeholder="username" value={username} onChange={e=>inputchange(e)}/><br/><br/>
          <input type="email" name="email" id="email" placeholder="email" value={email}  onChange={e=>inputchange(e)}/><br/><br/>
          <input type="text" name="password" id="password" placeholder="password" value={password}  onChange={e=>inputchange(e)}/><br/><br/>
-         <button>Register</button>
+        <input type="submit" id="submit" value="Signup"/>
 
-         </form>
+         </Forms>
+         </div>
 
-         <p>already have an account? <Link to="/login">Sign in</Link></p>
+         <p id="signpara">already have an account? <Link to="/login" id="signinlink">Sign in</Link></p>
          
         </Div>
         </div>

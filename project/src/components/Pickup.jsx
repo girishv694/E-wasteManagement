@@ -14,9 +14,10 @@ const Pickup = () => {
                 We will be coming for your scrap pick up
             </div>
 
-            <div id="pick-btn">
+           <Link to="/end">
+           <div id="pick-btn">
                 Pickup details
-            </div>
+            </div></Link>
 
         </Div>
 

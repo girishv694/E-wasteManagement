@@ -26,6 +26,7 @@ import Upi from './components/Upiaddress'
 import { Register } from './components/Register'
 import Login from './components/Login'
 import Payment from './components/Payment'
+import { Bargain } from './components/Bargain'
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
           <Payment />
         </Route>
 
+        
 
         <Route path='/page1'>
           <Page1 />
@@ -83,9 +85,17 @@ function App() {
         <Route path='/pick'>
           <Pickup />
         </Route>
+
+
         <Route path='/category'>
           <Category />
         </Route>
+
+        <Route path='/bargain'>
+         <Bargain/>
+        </Route>
+
+
 
         <Route path='/end'>
           <Lastpage />
