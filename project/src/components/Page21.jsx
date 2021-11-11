@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom'
 
 import {CustomerLocation} from "./CustomerLocation"
 // let area = CustomerLocation;
-
+import { Div } from './Container'
 export const Page21 = () => {
   return (
     <>
-      <div className='container_mainp5'>
+     <Div>
+     <div className='container_mainp5'>
         <div className='Container_p5'>
           <div className='header_p21'>
             <Link to='/page20'>
@@ -54,6 +55,7 @@ export const Page21 = () => {
           </div>
         </div>
       </div>
+     </Div>
     </>
   )
 }

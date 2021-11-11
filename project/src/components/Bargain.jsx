@@ -1,5 +1,6 @@
 import { Div } from "./Container";
 import '../css/bargain.css'
+import { Link } from "react-router-dom";
 export const Bargain=()=>{
     return <>
 
@@ -22,9 +23,10 @@ export const Bargain=()=>{
             </div>
         </div>
 
-        <div id="bargain-cont">
+       <Link to="/page20" >
+       <div id="bargain-cont">
         Continue
-        </div>
+        </div></Link>
         </Div>
 
     </>
