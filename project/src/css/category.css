@@ -1,158 +1,154 @@
-#categoryDiv{
-    position: relative;
-left: 0%;
-right: 0%;
-top: 5.45%;
-bottom: 84.2%;
+#categoryDiv {
+  position: relative;
+  left: 0%;
+  right: 0%;
+  top: 5.45%;
+  bottom: 84.2%;
 
-/* COLOUR BASE-1 */
+  /* COLOUR BASE-1 */
 
-background: #FFFFFF;
-text-align: center;
-border-radius: 6px;
+  background: #ffffff;
+  text-align: center;
+  border-radius: 6px;
 
+  /* #292D32 */
+  padding: 3px;
+  color: #292d32;
 
-/* #292D32 */
-padding: 3px;
-color: #292D32;
-
-
-font-family: 'Avenir_Next';
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 25px;
+  font-family: 'Avenir_Next';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
 }
 
+#selectCategory {
+  position: relative;
 
-#selectCategory{
-    position: relative;
-    
-    top: 100px;
-    font-family: 'Avenir_Next';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    
-    text-align: center;
-    
-    color: #292D32;
-line-height: 25px;
+  top: 100px;
+  font-family: 'Avenir_Next';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
 
+  text-align: center;
+
+  color: #292d32;
+  line-height: 25px;
 }
 
-#priceDiv{
-    display: flex;
-    width: 90%;
-    margin: 5px auto;
-   flex-direction: column;
-    position: relative;
-    top:120px;
-    
+#priceDiv {
+  display: flex;
+  width: 90%;
+  margin: 5px auto;
+  flex-direction: column;
+  position: relative;
+  top: 120px;
 }
 
-#priceDiv>div:hover{
-    background-color: #8DDED4;
+#priceDiv > div:hover {
+  background-color: #8dded4;
 }
 
+#priceDiv > div {
+  width: 100%;
 
-#priceDiv >div{
-    width: 100%;
-   
-    text-align: center;
-    height: 55px;
-    margin:10px auto;
-    background: #FFFFFF;
-    padding: 15px 0px;
-    display: flex;
-    border: 2px solid #E9EEF2;
-    box-sizing: border-box;
-    border-radius: 10px;
-    text-align: center;
+  text-align: center;
+  height: 55px;
+  margin: 10px auto;
+  background: #ffffff;
+  padding: 15px 0px;
+  display: flex;
+  border: 2px solid #e9eef2;
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
 }
 
-
-#arrow{
-    position: relative;
-    top: 10px;
-    left: 15px;
+#arrow {
+  position: relative;
+  top: 10px;
+  left: 15px;
 }
 
-.ton{
-    position: relative;
-    left: 95px;
-    font-family: 'Avenir_Next';
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 25px;
+.ton {
+  position: relative;
+  left: 95px;
+  font-family: 'Avenir_Next';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
 
-color: #292D32;
+  color: #292d32;
 }
 
-.tonPrice{
-    position: relative;
-    left: 130px;
-    font-family: 'Avenir_Next';
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 25px;
+.tonPrice {
+  position: relative;
+  left: 130px;
+  font-family: 'Avenir_Next';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
 
-
-color: #292D32;
+  color: #292d32;
 }
 
-.imgupload{
-    width: 90%;
-    margin: 10px auto;
-    background-color: white;
-    position: relative;
-    top: 150px;
-    text-align: center;
-    border-radius: 5px;
-   padding: 5px;
-    font-family: 'Avenir_Next';
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 25px;
-/* identical to box height */
+.imgupload {
+  width: 90%;
+  margin: 10px auto;
+  background-color: white;
+  position: relative;
+  top: 150px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: 'Avenir_Next';
+  font-style: normal;
+  font-weight: normal;
+  /* line-height: 25px; */
+  /* identical to box height */
 
-
-color: #000000;
+  color: #000000;
 }
 
-.select{
-    width: 90%;
-    margin: 10px auto;
-    background-color: white;
-    position: relative;
-    top: 170px;
-    padding: 5px;
-    text-align: center;
-    border-radius: 5px;
-
-
-    font-family: 'Avenir_Next';
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 25px;
-/* identical to box height */
-
-
-color: #000000;
-
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  width: 100%;
+  content: "Upload scrap item's image";
+  cursor: pointer;
+  font-size: 18px;
 }
 
-.select:hover{
-    background-color: #8DDED4;
+.select {
+  width: 90%;
+  margin: 10px auto;
+  background-color: white;
+  position: relative;
+  top: 170px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+
+  font-family: 'Avenir_Next';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+
+  color: #000000;
 }
 
-.imgupload img{
-    position: relative;
-    margin-top: 1px;
-    width: 20px;
-   
+.select:hover {
+  background-color: #8dded4;
+}
+
+.imgupload img {
+  position: relative;
+  margin-top: 1px;
+  width: 20px;
 }
