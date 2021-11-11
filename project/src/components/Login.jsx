@@ -48,13 +48,13 @@ function Login() {
     const data = await response.json();
     console.log(data)
 
-    if(data.User){
+    if(data.user){
         alert("login successful")
         setmessage("successful");
         window.location.href="/page5"
     }
     else{
-        setmessage("Email or Password do not match");
+        setmessage(data.message)
     }
   }
 
@@ -64,7 +64,7 @@ function Login() {
         <div>
             <Div>
             <form onSubmit={e=>submit(e)}>
-                <input type="email" name="email"  placeholder="Enter email"  value={email} onChange={e=>oninput(e)}/><br/><br/>
+                <input type="text" name="email"  placeholder="Enter email"  value={email} onChange={e=>oninput(e)}/><br/><br/>
                 <input type="text" name="password" placeholder="Enter password" value={password} onChange={e=>oninput(e)}/><br/><br/>
                 <button>Sign in</button>
                 {

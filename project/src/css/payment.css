@@ -1,0 +1,98 @@
+#paradiv{
+    position: relative;
+    top: 90px;
+    width: 347px;
+    height: 66px;
+    margin: 0px 24px 0px 24px;
+
+    font-family: "Avenir_Next";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    color: #292D32;
+}
+#b_arrow_div{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 500px;
+    top: 24px;
+}
+
+#b_arrow{
+  
+width: 24px;
+height: 24px;
+
+}
+
+#div_upi{
+    width: 363px;
+    height: 88px;
+    margin: 190px 24px 0px 24px;
+}
+
+#div_gpay{
+    width: 363px;
+    height: 88px;
+    margin: 65px 24px 0px 24px;
+}
+
+
+#div_cash{
+    width: 363px;
+    height: 88px;
+    margin: 65px 24px 0px 24px;
+}
+
+.upi_img{
+    width: 120px;
+    height: 60px;
+}
+.gpay_img{
+    width: 100px;
+    height: 40px;
+}
+.cash_img{
+    width: 98px;
+    height: 49.66px;
+}
+
+.method_display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment_para{
+    font-family: "Avenir_Next";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    /* #292D32 */
+
+    color: #292D32;
+}
+
+
+#payment_btn{
+width: 171px;
+height: 51px;
+margin: 50px 0px 0px 120px;
+background: #FFFFFF;
+box-shadow: 0px 4px 44px -6px rgba(24, 39, 75, 0.09), 0px 8px 24px -4px rgba(24, 39, 75, 0.08);
+border-radius: 6px;
+
+font-family: "Avenir_Next";
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+}

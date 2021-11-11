@@ -25,13 +25,21 @@ import Lastpage from './components/Lastpage'
 import Upi from './components/Upiaddress'
 import { Register } from './components/Register'
 import Login from './components/Login'
+import Payment from './components/Payment'
+
 
 
 function App() {
   return (
     <div className='app'>
-       <Switch>
-      <Route path='/page1'>
+      <Switch>
+
+        <Route path='/payment'>
+          <Payment />
+        </Route>
+
+
+        <Route path='/page1'>
           <Page1 />
         </Route>
 
@@ -59,8 +67,8 @@ function App() {
 
         <Route path='/congrats'>
           <Congratulation />
-        </Route> 
-         <Route path='/page11'>
+        </Route>
+        <Route path='/page11'>
           <Page11 />
         </Route>
 
@@ -73,29 +81,28 @@ function App() {
           <Page93 />
         </Route>
 
-
         <Route path='/pick'>
           <Pickup />
         </Route>
         <Route path='/category'>
-         <Category/>
+          <Category />
         </Route>
 
         <Route path='/end'>
-         <Lastpage/>
+          <Lastpage />
         </Route>
 
         <Route path='/upi'>
-         <Upi/>
+          <Upi />
         </Route>
 
         <Route path='/register'>
-          <Register/>
-          </Route>
+          <Register />
+        </Route>
 
-          <Route path='/login'>
-            <Login/>
-            </Route>
+        <Route path='/login'>
+          <Login />
+        </Route>
 
 
 
@@ -110,7 +117,7 @@ function App() {
 
          */}
 
-        
+
         <Route path='/signup'>
           <h1>Signup Page</h1>
         </Route>
@@ -119,7 +126,7 @@ function App() {
           <h1>Checkout Page</h1>
         </Route>
 
-        
+
         {/* 
       
 
@@ -134,13 +141,14 @@ function App() {
         </Route>
 
         
-
-       
         */}
-</Switch>
+
+
+      
+      </Switch>
     </div>
-    
-    )
+
+  )
 }
 
 export default App

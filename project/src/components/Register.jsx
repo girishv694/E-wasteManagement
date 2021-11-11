@@ -15,6 +15,8 @@ function Register() {
 
   })
 
+  const [error,seterror] = useState("")
+
   const {username,email,password} = user;
 
   const inputchange = (e) =>{
@@ -44,8 +46,17 @@ function Register() {
 
   const submit = async e =>{
     e.preventDefault();
-     await axios.post('http://localhost:3001/api/register',user)
-     console.log(user)
+    const data =  await axios.post('http://localhost:3001/api/register',user)
+    
+  if(data){
+    seterror("Registered successfully")
+  }
+  else{
+    seterror("Please check entered details")
+  }
+    
+
+
 
   }
 
@@ -63,6 +74,7 @@ function Register() {
          </form>
 
          <p>already have an account? <Link to="/login">Sign in</Link></p>
+         {error}
          
         </Div>
         </div>
