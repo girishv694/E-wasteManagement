@@ -30,7 +30,7 @@ const Ewaste = () => {
             <div id="first_row">
 
                 <div className="waste_div">
-                    
+
                     <Link to="/page93" style={{ textDecoration: "none", color: "black" }}>
                         <img className="waste_img" src="Images/E-waste.png" alt="" />
                     </Link>
@@ -69,21 +69,21 @@ const Ewaste = () => {
 
 
             <div id="bottom_bar">
-                <div>
+                <div className="bottom_divs">
                     <img className="bottom_img" src="Images/home151.png" alt="" />
-                    <p className="bottom_p">Home</p>
+                    Home
                 </div>
-                <div>
+                <div className="bottom_divs">
                     <img className="bottom_img" src="Images/feed151.png" alt="" />
-                    <p className="bottom_p">Feed</p>
+                    Feed
                 </div>
-                <div>
+                <div className="bottom_divs">
                     <img className="bottom_img" src="Images/voice151.png" alt="" />
-                    <p className="bottom_p">Voice</p>
+                    Voice
                 </div>
-                <div>
+                <div className="bottom_divs">
                     <img className="bottom_img" src="Images/profile151.png" alt="" />
-                    <p className="bottom_p">Profile</p>
+                    Profile
                 </div>
 
             </div>
