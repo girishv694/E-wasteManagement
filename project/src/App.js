@@ -34,6 +34,8 @@ function App() {
     <div className='app'>
       <Switch>
 
+        
+
         <Route path='/payment'>
           <Payment />
         </Route>
