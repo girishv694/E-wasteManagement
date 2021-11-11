@@ -13,7 +13,7 @@
   letter-spacing: 0em;
   text-align: center;
   position: relative;
-  top:10px;
+  top:20px;
   left: 20px;
 }
 .back_p20 {
@@ -38,7 +38,7 @@
   width: 95%;
 }
 .header_text_p20 > h6 {
-  margin-top: 8px;
+  
   font-size: 18px;
   font-family: 'Avenir_Next';
   font-weight: 400;
@@ -46,12 +46,13 @@
   line-height: 25px;
   position: relative;
     left: 24px;
+    top: 30px;
 }
 .block_cl_p20 {
   width: 320px;
   height: 180px;
   position: relative;
-  top: 10px;
+  top: 60px;
   left: 24px;
 }
 .A_p20 {
@@ -99,7 +100,7 @@
   font-family: 'Avenir_Next';
 }
 .tag_p20 {
-  margin-top: 35px;
+  
   margin-bottom: 5px;
   width: 363px;
   height: 44px;
@@ -110,6 +111,7 @@
   position: relative;
   left: 35px;
   justify-content: center;
+  top: 100px;
 }
 .tag_p20 > h1 {
   font-family: 'Avenir_Next';
@@ -125,7 +127,7 @@
 .time_p20 {
   width: 320px;
   height: 95px;
-  margin-top: 8px;
+  top: 120px;
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -154,7 +156,7 @@
   height: 51px;
  
   position: relative;
-  top: 100px;
+  top: 200px;
   left: 32px;
   background: #ffffff;
   border: 1px solid #ebebeb;
