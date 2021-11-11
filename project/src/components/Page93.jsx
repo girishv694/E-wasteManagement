@@ -1,5 +1,6 @@
 import { Container } from "./Container_sk"
 import "../css/page93.css"
+import { Link } from 'react-router-dom'
 
 const Page93 = () => {
     return (
@@ -18,10 +19,12 @@ const Page93 = () => {
                     Mobile
                 </div>
 
+                <Link id="Link" to="/category">
                 <div className="waste_item">
                     <img src="Images/ac_frame.png" alt="" className="waste_item_img" />
                     AC
                 </div>
+                </Link>
 
                 <div className="waste_item">
                     <img src="Images/tv_frame.png" alt="" className="waste_item_img" />
