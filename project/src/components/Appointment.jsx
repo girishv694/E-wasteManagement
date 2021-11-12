@@ -1,7 +1,7 @@
-import '../css/Page20.css'
+import '../css/appointment.css'
 import { Link } from 'react-router-dom'
 import { Div } from './Container'
-export const Page20 = () => {
+export const Appointment = () => {
   return (
     <>
       <Div>

@@ -1,7 +1,6 @@
 import { React } from 'react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
-// import"../css/Page.css"
 import '../css/page11.css'
 import axios from 'axios'
 import { Div } from './Container'
@@ -52,12 +51,14 @@ function Register() {
     <div>
       {/* onSubmit={e=>submit(e)} */}
       <Div>
+      <Link to='/congrats' id='#'>
         <img
           src='http://localhost:3000/Images/backarrow1.svg'
           id='arrow'
           alt=''
           id='arrow'
         />
+        </Link>
 
         <div id='headinglog'>Registration</div>
         <div id='formdiv'>

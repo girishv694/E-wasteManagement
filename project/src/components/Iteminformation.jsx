@@ -3,9 +3,8 @@ import { Div } from './Container'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 
-import '../css/category.css'
-
-export const Category = () => {
+import '../css/iteminformation.css'
+export const Iteminformation = () => {
   const [show, setShow] = useState(false)
   const [data,setData]=useState([])
  
