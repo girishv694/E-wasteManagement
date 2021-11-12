@@ -6,9 +6,6 @@ import { Link } from 'react-router-dom'
 import '../css/iteminformation.css'
 export const Iteminformation = () => {
   const [show, setShow] = useState(false)
-<<<<<<< HEAD
-
-=======
   const [data,setData]=useState([])
  
 async function getdata(){
@@ -20,7 +17,6 @@ async function getdata(){
   useEffect(()=>{
      getdata()
   },[])
->>>>>>> b6466a2d95538c123a43f7b3cc4a4fb30239f55b
   const uploadImg = () => {
     setShow(!show)
   }
