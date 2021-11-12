@@ -125,7 +125,9 @@ const Itemcategory = () => {
 
         </Container>:
          <Div>
-         <img src='Images/backarrow1.svg' alt='' id='arrow' />
+         <img src='Images/backarrow1.svg' alt='' id='arrow' onClick={()=>{
+             setShow1(true)
+         }}/>
          <div id='categoryDiv'>{param}</div>
  
          <div id='selectCategory'>Select from the category</div>
