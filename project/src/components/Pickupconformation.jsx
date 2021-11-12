@@ -1,10 +1,10 @@
-import '../css/pickupinformation.css'
+import '../css/pickupconformation.css'
 import { Link } from 'react-router-dom'
 
 import {CustomerLocation} from "./CustomerLocation"
 // let area = CustomerLocation;
 import { Div } from './Container'
-export const Pickupinformation = () => {
+export const Pickupconformation = () => {
   return (
     <>
      <Div>

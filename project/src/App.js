@@ -18,13 +18,14 @@ import { Iteminformation } from './components/Iteminformation'
 import { Bargain } from './components/Bargain'
 
 import { Appointment } from './components/Appointment'
-import { Pickupinformation } from './components/Pickupinformation'
+import { Pickupconformation } from './components/Pickupconformation'
 import { Page11 } from './components/Page11'
 import Miniature from './components/Miniature'
 import Pickup from './components/Pickup'
 import Payment from './components/Payment'
 import Upi from './components/Upiaddress'
 import Lastpage from './components/Lastpage'
+
 
 
 
@@ -100,7 +101,7 @@ function App() {
         </Route>
 
         <Route path='/pickupconfirmation'>
-          <Pickupinformation />
+          <Pickupconformation />
         </Route>
 
 
