@@ -38,7 +38,9 @@ export const Pickupconformation = () => {
         <div id="instruct">Any Instructions</div>
         <input type="text" name="" id="" id="instr-input" />
 
-        <div id="pickup-btn">Continue</div>
+      <Link to="/productotp">
+      <div id="pickup-btn">Continue</div>
+      </Link>
       </Div>
     </>
   )

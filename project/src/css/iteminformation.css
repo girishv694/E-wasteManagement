@@ -52,7 +52,7 @@
 
 #priceDiv > div {
   width: 100%;
-
+  cursor: pointer;
   text-align: center;
   height: 55px;
   margin: 10px auto;

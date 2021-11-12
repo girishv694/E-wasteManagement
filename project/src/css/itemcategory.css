@@ -63,6 +63,7 @@ color: #292D32;
     border: 2px solid #E9EEF2;
     box-sizing: border-box;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .waste_item_img{
