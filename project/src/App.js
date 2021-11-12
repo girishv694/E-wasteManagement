@@ -73,7 +73,6 @@ function App() {
           <Ewaste />
         </Route>
 
-
         <Route path='/itemcategory'>
           <Itemcategory />
         </Route>
