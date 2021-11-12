@@ -4,29 +4,35 @@ import { Switch, Route } from 'react-router-dom'
 
 
 import Home from './components/Home'
-import Page2 from './components/Page2'
-import Page3 from './components/Page3'
-import { Page5 } from './components/Page5'
-import { Page20 } from './components/Page20'
-import { Page21 } from './components/Page21'
-
-import Page7 from './components/Page7'
-import Page8 from './components/Page8'
-
-import { Page11 } from './components/Page11'
-
-import Itemcategory from './components/Itemcategory'
-import { Iteminformation } from './components/Iteminformation'
-import Miniature from './components/Miniature'
-import Ewaste from './components/Ewaste'
+import Language from './components/Language'
+import ScrapeItem from './components/ScrapeItem'
+import { Date } from './components/Date'
+import Scrapesold from './components/Scrapesold'
+import Location from './components/Location'
 import Congratulation from './components/Congratulation'
-import Pickup from './components/Pickup'
-import Lastpage from './components/Lastpage'
-import Upi from './components/Upiaddress'
 import { Register } from './components/Register'
 import Login from './components/Login'
-import Payment from './components/Payment'
+import Ewaste from './components/Ewaste'
+import Itemcategory from './components/Itemcategory'
+import { Iteminformation } from './components/Iteminformation'
 import { Bargain } from './components/Bargain'
+
+import { Appointment } from './components/Appointment'
+import { Pickupinformation } from './components/Pickupinformation'
+import { Page11 } from './components/Page11'
+import Miniature from './components/Miniature'
+import Pickup from './components/Pickup'
+import Payment from './components/Payment'
+import Upi from './components/Upiaddress'
+import Lastpage from './components/Lastpage'
+
+
+
+
+
+
+
+
 
 
 
@@ -36,44 +42,27 @@ function App() {
     <div className='app'>
       <Switch>
 
-
-        <Route path='/payment'>
-          <Payment />
-          {/* <Otp/> */}
-        </Route>
-        {/* <Route path='/'>
-          {/* <Payment /> */}
-          {/* <Otp/>
-        </Route> */} 
-
-
-        
-
-        <Route path='/home'>
-          <Home />
-          {/* <Otp/> */}
-        </Route>
-
+        {/* Start from 2nd page */}
         <Route path='/language'>
-          <Page2 />
+          <Language />
         </Route>
 
         <Route path='/scrapeitem'>
-          <Page3 />
+          <ScrapeItem />
         </Route>
 
 
         <Route path='/date'>
-          <Page5 />
+          <Date />
         </Route>
 
 
         <Route path='/scrapesold'>
-          <Page7></Page7>
+          <Scrapesold />
         </Route>
 
         <Route path='/location'>
-          <Page8></Page8>
+          <Location/>
         </Route>
 
         <Route path='/congrats'>
@@ -88,7 +77,6 @@ function App() {
         <Route path='/login'>
           <Login />
         </Route>
-     
 
         <Route path='/ewaste'>
           <Ewaste />
@@ -103,18 +91,16 @@ function App() {
           <Iteminformation />
         </Route>
 
-    
-        
         <Route path='/bargain'>
-         <Bargain/>
+          <Bargain />
         </Route>
 
         <Route path='/appointment'>
-          <Page20 />
+          <Appointment />
         </Route>
 
         <Route path='/pickupconfirmation'>
-          <Page21 />
+          <Pickupinformation />
         </Route>
 
 
@@ -131,20 +117,28 @@ function App() {
           <Lastpage />
         </Route>
 
+        <Route path='/payment'>
+          <Payment />
+        </Route>
+
         <Route path='/upi'>
           <Upi />
         </Route>
 
-    
+
 
         <Route path='/miniature'>
           <Miniature />
         </Route>
-    
-      
+
+        
+        <Route path='/'>
+          <Home />
+        </Route>
 
 
-      
+
+
       </Switch>
     </div>
 
