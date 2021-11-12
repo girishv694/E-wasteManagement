@@ -6,7 +6,21 @@ import { Link } from 'react-router-dom'
 import '../css/iteminformation.css'
 export const Iteminformation = () => {
   const [show, setShow] = useState(false)
+<<<<<<< HEAD
 
+=======
+  const [data,setData]=useState([])
+ 
+async function getdata(){
+  let res=await axios.get("http://localhost:4000/AC")
+
+  setData(res)
+}
+
+  useEffect(()=>{
+     getdata()
+  },[])
+>>>>>>> b6466a2d95538c123a43f7b3cc4a4fb30239f55b
   const uploadImg = () => {
     setShow(!show)
   }
@@ -27,7 +41,7 @@ export const Iteminformation = () => {
 
         <div id='selectCategory'>Select from the category</div>
 
-        <div id='priceDiv'>
+         <div id='priceDiv'>
           <div onClick={uploadImg}>
             <div className='ton'>1 Ton</div>
             <div className='tonPrice'>₹300/piece</div>
@@ -41,6 +55,8 @@ export const Iteminformation = () => {
             <div className='tonPrice'>₹300/piece</div>
           </div>
         </div>
+         
+       
 
         {/* <img src='Images/upload.svg' alt='' /> Upload scrap item's image */}
         {show ? (

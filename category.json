@@ -1,0 +1,48 @@
+{
+ "AC":[
+            {
+              "type":"1 Ton",
+            "price":"₹300"
+            },
+            {
+              "type":"1 Ton",
+            "price":"₹300"
+            },
+             {
+              "type":"1 Ton",
+            "price":"₹300"
+            }
+        ],
+    
+      "CRT":[
+
+      ],
+    
+      "L":[
+
+      ],
+      "Printer":[
+
+      ],
+
+      "Battery":[
+
+      ],
+      "Fridge":[
+
+      ],
+      "Washing Machine":[
+
+      ],
+      "Music Syatem":[
+
+      ],
+  "Medical-waste": [
+    {
+     
+    }
+  ],
+  "Data-centre-waste": {
+   
+  }
+}

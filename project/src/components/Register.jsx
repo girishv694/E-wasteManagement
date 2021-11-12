@@ -44,7 +44,7 @@ function Register() {
   const submit = async (e) => {
     e.preventDefault()
     await axios.post('http://localhost:3001/api/register', user)
-    console.log(user)
+    
   }
 
   return (
@@ -107,7 +107,7 @@ function Register() {
             />
             <br />
             <br />
-            <input type='submit' id='submit' value='Signup' />
+           <Link to="/login"> <input type='submit' id='submit' value='Signup' /></Link>
           </Forms>
         </div>
 
