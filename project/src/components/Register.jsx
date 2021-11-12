@@ -6,7 +6,10 @@ import axios from 'axios'
 import { Div } from './Container'
 import { Forms } from './Form'
 import '../css/register.css'
+import {useHistory} from 'react-router-dom'
 function Register() {
+
+  const history = useHistory();
   const [user, setuser] = useState({
     username: '',
     email: '',
@@ -14,6 +17,8 @@ function Register() {
     phone: '',
   })
 
+
+  const [message,setmessage] = useState("")
   const { username, email, password ,phone} = user
 
   const inputchange = (e) => {
@@ -23,29 +28,41 @@ function Register() {
     })
   }
 
-  // const submit = async  e =>{
-  //   e.preventDefault();
-  //   const response = await fetch('http://localhost:3001/register',{
-  //     method :'POST',
-  //     headers :{
-  //        'Content-Type' :'application/json',
-  //     },
-  //     body :JSON.stringify({
-  //       username,
-  //       email,
-  //       password,
-  //     })
-  //   })
 
-  //   const data = await response.json();
-  //   console.log(data)
-  // }
 
-  const submit = async (e) => {
-    e.preventDefault()
-    await axios.post('http://localhost:3001/api/register', user)
-    
+  const submit = async  e =>{
+    e.preventDefault();
+
+    if(username && password && phone && email){
+    const response = await fetch('http://localhost:3002/user/register',{
+      method :'POST',
+      headers :{
+         'Content-Type' :'application/json',
+      },
+      body :JSON.stringify({
+        username,
+        email,
+        password,
+        phone
+
+      })
+    })
+
+    const data = await response.json();
+    if(data.error){
+        setmessage(data.error)
+       }
+       else{
+        setmessage("Registered successfully")
+        history.push('/login')
+       }
+    } else{
+      setmessage("Fill all the fields");
+    }
+  
+  
   }
+
 
   return (
     <div>
@@ -63,6 +80,7 @@ function Register() {
         <div id='headinglog'>Registration</div>
         <div id='formdiv'>
           <Forms funct={submit}>
+          {message}
             <input
               type='text'
               name='username'
@@ -107,9 +125,10 @@ function Register() {
             />
             <br />
             <br />
-           <Link to="/login"> <input type='submit' id='submit' value='Signup' /></Link>
+            <input type='submit' id='submit' value='Signup' />
           </Forms>
         </div>
+       
 
         <p id='signpara'>
           already have an account?{' '}

@@ -4,13 +4,16 @@ import {useState} from 'react'
 import axios from 'axios'
 import { Forms } from './Form'
 import  '../css/register.css'
+import {Link,useHistory} from 'react-router-dom'
 
 function Login() {
-
+  const history = useHistory();
     const[user,setuser] = useState({
         email: "",
         password : ""
     })
+
+    const [message,setmessage] = useState("")
 
     const {email,password} = user;
 
@@ -20,22 +23,9 @@ function Login() {
         });
     }
 
-    // const submit = async e =>{
-    //     e.preventDefault();
-    //    const response =  await axios.post('http://localhost:3001/api/signin',user)
-
-    //     const data1 = await response.json()
-
-    //     if(data1.User){
-    //         alert("login successful")
-    //     }
-    // }
-
-
-
  const submit = async  e =>{
     e.preventDefault();
-    const response = await fetch('http://localhost:3001/api/signin',{
+    const response = await fetch('http://localhost:3002/user/login',{
       method :'POST',
       headers :{
          'Content-Type' :'application/json',
@@ -47,15 +37,17 @@ function Login() {
     })
 
     const data = await response.json();
-    console.log(data)
+    if(data.error){
+        setmessage(data.error)
+       }
+       else{
+        setmessage("Login successfully")
+        history.push('/ewaste')
+       }
 
-    if(data.User){
-        alert("login successful")
-        window.location.href="/page5"
-    }
-    else{
-        alert("unsucessful")
-    }
+    
+
+    
   }
 
 
@@ -63,14 +55,17 @@ function Login() {
     return (
         <div>
             <Div>
-            <img src="http://localhost:3000/Images/backarrow1.svg" id="arrow" alt="" id="arrow" />
+                <Link to="/register">
+            <img src="http://localhost:3000/Images/backarrow1.svg" id="arrow" alt="" id="arrow" /></Link>
         <div id="headinglog">Login</div>
+       
 
             <div id="formdiv">
             <Forms funct={submit}>
                 <input type="email" name="email"  placeholder="Enter email"  value={email} onChange={e=>oninput(e)}/><br/><br/>
                 <input type="text" name="password" placeholder="Enter password" value={password} onChange={e=>oninput(e)}/><br/><br/>
                <input type="submit" id="submit"  value="Sign in"/>
+               {message}
             </Forms>
             </div>
             </Div>

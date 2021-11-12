@@ -1,0 +1,38 @@
+#otpcont{
+    position: relative;
+    width: 363px;
+height: 290px;
+
+
+top: 100px;
+margin: auto;
+background: #FFFFFF;
+border-radius: 6px;
+}
+
+#otpcont input{
+    position: relative;
+    top: 15px;
+    width: 20%;
+    margin: 9px ;
+    background: #FFFFFF;
+/* COLOUR divider */
+
+border: 2px solid #E9EEF2;
+box-sizing: border-box;
+border-radius: 6px;
+}
+
+#otppara{
+    font-family: 'Avenir_Next';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+
+/* #292D32 */
+position: relative;
+top: 50px;
+left: 10px;
+color: #292D32;
+}
