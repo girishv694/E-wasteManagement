@@ -42,6 +42,7 @@ export const Category = () => {
         {/* <img src='Images/upload.svg' alt='' /> Upload scrap item's image */}
         {show ? (
           <div className='imgupload'>
+            <img src="Images/upload1.png" alt="" id="upload_icon" />
             <input
               class='custom-file-input'
               type='file'

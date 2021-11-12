@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 // import"../css/Page.css"
-import "../css/page3.css";
+import "../css/scrapeitem.css";
 import { Div } from "./Container";
 // Page-3 Pushpendra
-function Page3() {
+function ScrapeItem() {
   return (
-    <Link to="/page5">
+    <Link to="/date">
         <Div>
     <div >
       
@@ -38,4 +38,4 @@ function Page3() {
   );
 }
 
-export default Page3;
+export default ScrapeItem;

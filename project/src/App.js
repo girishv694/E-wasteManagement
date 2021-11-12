@@ -2,16 +2,18 @@ import React from 'react'
 import './App.css'
 import { Switch, Route } from 'react-router-dom'
 
+import Home from './components/Home'
+import Language from './components/Language'
+import ScrapeItem from './components/ScrapeItem'
+import { Date } from './components/Date'
+import Scrapesold from './components/Scrapesold'
+import Location from './components/Location'
 
-import Page1 from './components/Page1'
-import Page2 from './components/Page2'
-import Page3 from './components/Page3'
-import { Page5 } from './components/Page5'
 import { Page20 } from './components/Page20'
 import { Page21 } from './components/Page21'
 
-import Page7 from './components/Page7'
-import Page8 from './components/Page8'
+
+
 
 import { Page11 } from './components/Page11'
 
@@ -29,6 +31,12 @@ import Payment from './components/Payment'
 import { Bargain } from './components/Bargain'
 
 
+
+
+
+
+
+
 function App() {
   return (
     <div className='app'>
@@ -38,71 +46,32 @@ function App() {
           <Payment />
         </Route>
 
-        
-
-        <Route path='/page1'>
-          <Page1 />
+        <Route path='/home'>
+          <Home />
         </Route>
 
-        <Route path='/page2'>
-          <Page2 />
+        <Route path='/language'>
+          <Language />
         </Route>
 
-        <Route path='/page3'>
-          <Page3 />
+        <Route path='/scrapeitem'>
+          <ScrapeItem/>
         </Route>
 
-
-        <Route path='/page5'>
-          <Page5 />
+        <Route path='/date'>
+          <Date />
         </Route>
 
-
-        <Route path='/page7'>
-          <Page7></Page7>
+        <Route path='/scrapesold'>
+         <Scrapesold/>
         </Route>
 
-        <Route path='/page8'>
-          <Page8></Page8>
+        <Route path='/location'>
+        <Location/>
         </Route>
 
         <Route path='/congrats'>
           <Congratulation />
-        </Route>
-        <Route path='/page11'>
-          <Page11 />
-        </Route>
-
-        <Route path='/ewaste'>
-          <Ewaste />
-        </Route>
-
-
-        <Route path='/page93'>
-          <Page93 />
-        </Route>
-
-        <Route path='/pick'>
-          <Pickup />
-        </Route>
-
-
-        <Route path='/category'>
-          <Category />
-        </Route>
-
-        <Route path='/bargain'>
-         <Bargain/>
-        </Route>
-
-
-
-        <Route path='/end'>
-          <Lastpage />
-        </Route>
-
-        <Route path='/upi'>
-          <Upi />
         </Route>
 
         <Route path='/register'>
@@ -112,45 +81,54 @@ function App() {
         <Route path='/login'>
           <Login />
         </Route>
+     
 
-
-
-
-         <Route path='/page21'>
-          <Page21 />
-        </Route>
-
-        <Route path='/page20'>
-          <Page20 />
-        </Route>
-
-         
-
-
-        <Route path='/signup'>
-          <h1>Signup Page</h1>
-        </Route>
-
-        <Route path='/checkout'>
-          <h1>Checkout Page</h1>
+        <Route path='/ewaste'>
+          <Ewaste />
         </Route>
 
 
-        {/* 
-      
+        <Route path='/itemcategory'>
+          <Page93 />
+        </Route>
 
-       
-        <Route path='/category'>
+        <Route path='/iteminformation'>
           <Category />
         </Route>
 
-       
-        <Route path='/mini/miniature'>
-          <Miniature />
+        <Route path='/bargain'>
+         <Bargain/>
         </Route>
 
-        
-        */}
+        <Route path='/appointment'>
+          <Page20 />
+        </Route>
+
+        <Route path='/pickupconfirmation'>
+          <Page21 />
+        </Route>
+
+        <Route path='/pick'>
+          <Pickup />
+        </Route>
+
+        <Route path='/page11'>
+          <Page11 />
+        </Route>
+
+        <Route path='/end'>
+          <Lastpage />
+        </Route>
+
+        <Route path='/upi'>
+          <Upi />
+        </Route>
+
+        <Route path='/miniature'>
+          <Miniature />
+        </Route>
+    
+      
 
 
       

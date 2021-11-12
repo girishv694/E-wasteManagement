@@ -31,7 +31,7 @@ const Ewaste = () => {
 
                 <div className="waste_div">
 
-                    <Link to="/page93" style={{ textDecoration: "none", color: "black" }}>
+                    <Link to="/itemcategory" style={{ textDecoration: "none", color: "black" }}>
                         <img className="waste_img" src="Images/E-waste.png" alt="" />
                     </Link>
                     E-waste

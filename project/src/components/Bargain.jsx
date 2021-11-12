@@ -37,7 +37,7 @@ export const Bargain = () => {
           </div>
         </div>
 
-        <Link to='/page20'>
+        <Link to='/appointment'>
           <div id='bargain-cont'>Continue</div>
         </Link>
       </Div>
