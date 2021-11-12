@@ -32,9 +32,10 @@ const Itemcategory = () => {
     }
     return <>
        { show1? <Container >
+            <Link to="/ewaste">
             <div id="b_arrow_93">
                 <img id="b_arrow_93img" src="Images/back_arrow.png" alt="" />
-            </div>
+            </div></Link>
 
             <div id="ewaste">
                 E-Waste
@@ -80,7 +81,7 @@ const Itemcategory = () => {
 
                 <div className="waste_item" onClick={()=>{
            setShow1(false)
-           setParam("printer")
+           setParam("Printer")
        }}>
                     <img src="Images/printer.png" alt="" className="waste_item_img" />
                     Printer
@@ -88,7 +89,7 @@ const Itemcategory = () => {
 
                 <div className="waste_item" onClick={()=>{
            setShow1(false)
-           setParam("battery")
+           setParam("Battery")
        }}>
                     <img src="Images/battery.png" alt="" className="waste_item_img" />
                     Battery
@@ -107,7 +108,7 @@ const Itemcategory = () => {
 
                 <div className="waste_item" onClick={()=>{
            setShow1(false)
-           setParam("Washing Machine")
+           setParam("Washing-Machine")
        }}>
                     <img src="Images/w_machine.png" alt="" className="waste_item_img" />
                     Washing Machine
@@ -115,7 +116,7 @@ const Itemcategory = () => {
 
                 <div className="waste_item" onClick={()=>{
            setShow1(false)
-           setParam("Music Syste")
+           setParam("Music System")
        }}>
                     <img src="Images/music.png" alt="" className="waste_item_img" />
                     Music System
