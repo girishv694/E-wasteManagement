@@ -28,22 +28,31 @@ import Login from './components/Login'
 import Payment from './components/Payment'
 import { Bargain } from './components/Bargain'
 
-
+import Otp from './Otp'
 function App() {
   return (
     <div className='app'>
       <Switch>
 
         
-
+<Route path ='/otp'>
+  <Otp/>
+  </Route>
         <Route path='/payment'>
           <Payment />
+          {/* <Otp/> */}
         </Route>
+        {/* <Route path='/'>
+          {/* <Payment /> */}
+          {/* <Otp/>
+        </Route> */} 
+
 
         
 
         <Route path='/home'>
           <Page1 />
+          {/* <Otp/> */}
         </Route>
 
         <Route path='/language'>
