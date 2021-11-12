@@ -14,7 +14,7 @@ function Page11() {
   const [num, setNum] = useState(0)
   const [num1, setNum1] = useState(0)
   const [arbs, setArb] = useState(0)
-  const [inputValue, setInputValue] = useState('')
+  // const [inputValue, setInputValue] = useState('')
 
   async function OTP() {
     let arb = Math.floor(Math.random() * 10000)
@@ -30,7 +30,7 @@ http://2factor.in/API/V1/81b9a7b3-4312-11ec-a13b-0200cd936042/SMS/${num}/${arb}`
   }
 
   function OTPC() {
-    if (arbs == +num1) {
+    if (arbs === +num1) {
       setShow2(true)
     } else {
       setShow2(false)
@@ -96,7 +96,7 @@ http://2factor.in/API/V1/81b9a7b3-4312-11ec-a13b-0200cd936042/SMS/${num}/${arb}`
               <button className='but_p11' onClick={() => OTPC()}>
                 Verify OTP
               </button>
-            ) : show2 == true ? (
+            ) : show2 === true ? (
               <Link to='/ewaste'>
                 <div className='but_p11f'>Continue</div>
               </Link>

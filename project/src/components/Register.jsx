@@ -14,7 +14,7 @@ function Register() {
     phone: '',
   })
 
-  const { username, email, password ,phone} = user
+  const { username, email, password, phone } = user
 
   const inputchange = (e) => {
     setuser({
@@ -51,13 +51,13 @@ function Register() {
     <div>
       {/* onSubmit={e=>submit(e)} */}
       <Div>
-      <Link to='/congrats' id='#'>
-        <img
-          src='http://localhost:3000/Images/backarrow1.svg'
-          id='arrow'
-          alt=''
-          id='arrow'
-        />
+        <Link to='/congrats' id='#'>
+          <img
+            src='http://localhost:3000/Images/backarrow1.svg'
+            id='arrow'
+            alt=''
+            id='arrow'
+          />
         </Link>
 
         <div id='headinglog'>Registration</div>
