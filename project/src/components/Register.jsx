@@ -12,9 +12,10 @@ function Register() {
     username: '',
     email: '',
     password: '',
+    phone: '',
   })
 
-  const { username, email, password } = user
+  const { username, email, password ,phone} = user
 
   const inputchange = (e) => {
     setuser({
@@ -84,11 +85,22 @@ function Register() {
             <br />
             <br />
             <input
-              type='text'
+              type='password'
               name='password'
               id='password'
               placeholder='password'
               value={password}
+              onChange={(e) => inputchange(e)}
+              required
+            />
+            <br />
+            <br />
+            <input
+              type='number'
+              name='phone'
+              id='phone'
+              placeholder='Mobile No'
+              value={phone}
               onChange={(e) => inputchange(e)}
               required
             />
