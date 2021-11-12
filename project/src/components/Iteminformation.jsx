@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import '../css/iteminformation.css'
 export const Iteminformation = () => {
   const [show, setShow] = useState(false)
- 
+
   const uploadImg = () => {
     setShow(!show)
   }
@@ -20,7 +20,9 @@ export const Iteminformation = () => {
   return (
     <>
       <Div>
-        <img src='Images/backarrow1.svg' alt='' id='arrow' />
+        <Link to='/itemcategory' id='#'>
+          <img src='Images/backarrow1.svg' alt='' id='arrow' />
+        </Link>
         <div id='categoryDiv'>AC</div>
 
         <div id='selectCategory'>Select from the category</div>

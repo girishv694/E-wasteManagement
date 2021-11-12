@@ -28,16 +28,6 @@ import Lastpage from './components/Lastpage'
 
 
 
-
-
-
-
-
-
-
-
-
-
 function App() {
   return (
     <div className='app'>
