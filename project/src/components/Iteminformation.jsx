@@ -31,7 +31,9 @@ async function getdata(){
   return (
     <>
       <Div>
-        <img src='Images/backarrow1.svg' alt='' id='arrow' />
+        <Link to='/itemcategory' id='#'>
+          <img src='Images/backarrow1.svg' alt='' id='arrow' />
+        </Link>
         <div id='categoryDiv'>AC</div>
 
         <div id='selectCategory'>Select from the category</div>
