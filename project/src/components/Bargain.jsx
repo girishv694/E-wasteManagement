@@ -11,7 +11,7 @@ export const Bargain = () => {
   return (
     <>
       <Div>
-        <Link to='/iteminformation' id='#'>
+        <Link to='/itemcategory' id='#'>
           <img
             src='http://localhost:3000/Images/backarrow1.svg'
             id='arrow'

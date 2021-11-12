@@ -1,68 +1,68 @@
-#Link{
-    text-decoration: none;
+#Link {
+  text-decoration: none;
 }
 
-#scrap_sold_img{
-position: relative;
-top: 32px;
-width: 363px;
-height: 286px;
-margin: 0px 24px 0px 24px;
+#scrap_sold_img {
+  position: relative;
+  top: 32px;
+  width: 363px;
+  height: 286px;
+  margin: 0px 24px 0px 24px;
 }
 
-#heading{
-width: 331px;
-height: 33px;
-margin: 49px 56px 0px 24px;
+#heading {
+  width: 331px;
+  height: 33px;
+  margin: 49px 56px 0px 24px;
 
-font-family: Avenir Next;
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 33px;
-color: #292D32;
-
+  font-family: 'Avenir_Next';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #292d32;
 }
 
-#para_div{
-width: 331px;
-height: 100px;
-margin: 63px 56px 0px 24px;
+#para_div {
+  width: 331px;
+  height: 100px;
+  margin: 63px 56px 0px 24px;
 
-font-family: 'Avenir_Next';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 25px;
-display: flex;
-align-items: center;
-color: #292D32;
+  font-family: 'Avenir_Next';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  color: #292d32;
 }
 
-#getStart_btn{
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 10px 16px;
+#getStart_btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
 
-width: 210px;
-height: 45px;
-margin-top: 139px;
-margin-left: 100px;
+  width: 210px;
+  height: 45px;
+  margin-top: 139px;
+  margin-left: 100px;
 
-background: #41C8B7;
-border-radius: 10px;
-outline: none;
+  background: #41c8b7;
+  border-radius: 10px;
+  outline: none;
+  border: none;
 
-font-family: 'Avenir_Next';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 25px;
+  font-family: 'Avenir_Next';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
 
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 
-color: #292D32;
+  color: #292d32;
 }

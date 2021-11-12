@@ -13,7 +13,7 @@ const Congratulation = () => {
 
             <div id="content_div">
                 <h2>Congratulations! </h2>
-                <p>You are just one sign up away from us</p>
+                <h3>You are just one sign up away from us</h3>
             </div>
             </Link>
        </Div>

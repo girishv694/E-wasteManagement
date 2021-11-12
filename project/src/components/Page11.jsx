@@ -22,6 +22,7 @@ function Page11() {
         `http://localhost:3001/api/getNum/${v._id}`
       )
       OTP(response.data)
+      setNum(response.data)
     } catch (error) {
       console.error(error)
     }
@@ -31,9 +32,11 @@ function Page11() {
     let arb = Math.floor(Math.random() * 10000)
     setArb(arb)
     try {
-      const response = await axios.get(`
-      http://2factor.in/API/V1/81b9a7b3-4312-11ec-a13b-0200cd936042/SMS/${mm}/${arb}`)
-      console.log(response)
+      console.log('read here')
+      //commented to save 50 tries, please use cautiously
+      // const response = await axios.get(`
+      // http://2factor.in/API/V1/81b9a7b3-4312-11ec-a13b-0200cd936042/SMS/${mm}/${arb}`)
+      // console.log(response)
     } catch (error) {
       console.error(error)
     }
@@ -57,14 +60,16 @@ function Page11() {
     <>
       <Div>
         <div>
-          <img
-            src='http://localhost:3000/Images/backarrow1.svg'
-            alt=''
-            id='arrow'
-            onClick={() => {
-              setShow(false)
-            }}
-          />
+          <Link to='/login'>
+            <img
+              src='http://localhost:3000/Images/backarrow1.svg'
+              alt=''
+              id='arrow'
+              onClick={() => {
+                setShow(false)
+              }}
+            />
+          </Link>
           <div className='page11-login'>
             <p className='login'>Enter OTP</p>
             <p className='page11-phone'>We've sent an OTP on +91 {num}</p>

@@ -22,6 +22,8 @@ color: #292D32;
     width: 95%; 
     position: relative;
     top:40px;
+
+    
 }
 
 #btn-cont>div{
@@ -39,6 +41,7 @@ color: #292D32;
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
+
 }
 
 #btn-cont>div:hover{

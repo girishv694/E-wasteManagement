@@ -12,7 +12,13 @@ const Miniature = () => {
             </div>
 
             <div id="btn-cont">
-                <div>Yes</div>
+
+                <div>
+                    <Link to='/payment' style={{color: "#292D32"}}>
+                        Yes
+                    </Link>
+                </div>
+
                 <div>No</div>
 
             </div>
@@ -30,9 +36,9 @@ const Miniature = () => {
 
                 <p>We charge only Rs 50 for this service</p>
             </div>
-            <Link to='/payment' id='#'>
-                <button id="cont-btn">Countinue</button>
-            </Link>
+
+            <button id="cont-btn">Countinue</button>
+
         </Div>
 
 

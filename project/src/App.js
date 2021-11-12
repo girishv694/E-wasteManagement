@@ -26,6 +26,7 @@ import Pickup from './components/Pickup'
 import Payment from './components/Payment'
 import Upi from './components/Upiaddress'
 import Lastpage from './components/Lastpage'
+import { Productotp } from './components/Productotp'
 
 
 
@@ -94,7 +95,11 @@ function App() {
           <Pickupconformation />
         </Route>
 
+        <Route path='/productotp'>
+          <Productotp/>
+        </Route>
 
+        
         <Route path='/miniature'>
           <Miniature />
         </Route>
@@ -107,8 +112,6 @@ function App() {
           <Upi />
         </Route>
         
-
-
         <Route path='/pick'>
           <Pickup />
         </Route>
@@ -125,6 +128,8 @@ function App() {
         
 
         
+
+       
 
 
 

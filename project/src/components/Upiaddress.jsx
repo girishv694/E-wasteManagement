@@ -6,8 +6,11 @@ const Upi=()=>{
     return <>
 
         <Div>
+            
+        <Link to='/payment'>
         <img src="http://localhost:3000/Images/backarrow1.svg" alt="" id="arrow" />
-        
+        </Link>
+
         <div id="formdiv">
         <Forms>
             <input type="text" placeholder="Enter UPI Address"/>

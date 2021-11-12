@@ -4,7 +4,7 @@ import '../css/pickup.css'
 const Pickup = () => {
     return <>
         <Div>
-            <Link id="Link" to="/page5">
+            <Link id="Link" to="/upi">
                 <img src="Images/backarrow1.svg" alt="" id="arrow" />
             </Link>
 

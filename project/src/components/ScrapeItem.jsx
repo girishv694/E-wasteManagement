@@ -24,7 +24,7 @@ function ScrapeItem() {
             </div>
             <div className="page3-waste">
               <p>We collect metals, electronic waste, machines and plastics</p></div>
-            <div className='rollers'>
+            <div className='rollers_p1'>
               <div></div>
               <div></div>
               <div></div>

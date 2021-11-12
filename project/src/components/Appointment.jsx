@@ -1,7 +1,24 @@
 import '../css/appointment.css'
 import { Link } from 'react-router-dom'
 import { Div } from './Container'
+import { useState, useEffect } from 'react'
 export const Appointment = () => {
+  const [d, setD] = useState([])
+  useEffect(() => {
+    let a = []
+
+    for (let i = 1; i < 6; i++) {
+      const today = new Date()
+      let t1 = new Date()
+      t1.setDate(today.getDate() + i)
+      // t1 = t1.split(' ')
+      a.push(t1)
+    }
+    setD(a)
+    return () => {}
+  }, [])
+  const today = new Date()
+  console.log(typeof today)
   return (
     <>
       <Div>
@@ -10,7 +27,7 @@ export const Appointment = () => {
             <div className='header_p20'>
               <Link to='/bargain' id='#'>
                 <h2 className='back_p20'>
-                  <img src='Images/backarrow1.svg' alt='' id="arrow" />
+                  <img src='Images/backarrow1.svg' alt='' id='arrow' />
                 </h2>
               </Link>
               <h1>Appointment</h1>
@@ -21,24 +38,12 @@ export const Appointment = () => {
               </div>
               <div className='block_cl_p20'>
                 <div className='A_p20'>
-                  <button className=''>
-                    <h6>Monday</h6>
-                    <h6>25</h6>
-                  </button>
-                  <button className=''>
-                    <h6>Monday</h6>
-                    <h6>25</h6>
-                  </button>
-                  <button className=''>
-                    <h6>Monday</h6>
-                    <h6>25</h6>
-                  </button>
-                </div>
-                <div className='B_p20'>
-                  <button className=''>
-                    <h6>Monday</h6>
-                    <h6>25</h6>
-                  </button>
+                  {d.map((e) => {
+                    ;<button className=''>
+                      <h6>{e}</h6>
+                      <h6>25</h6>
+                    </button>
+                  })}
                   <button className=''>
                     <h6>Monday</h6>
                     <h6>25</h6>

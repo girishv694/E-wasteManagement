@@ -57,9 +57,9 @@ align-items: center;
 color: #292D32;
 }
 
-.rollers {
-    position: relative;
-    top: 10px;
+.rollers_p1 {
+    position: absolute;
+    top: 700px;
     margin-left:184px;
     margin-top:41px;
     width: 43px;
@@ -68,15 +68,15 @@ color: #292D32;
     /* background-color: aquamarine; */
     justify-content: space-between;
   }
-  .rollers > div {
+  .rollers_p1 > div {
     width: 10px;
     height: 10px;
     border-radius: 10px;
     background-color: #c4c4c4;
   }
-  .rollers > div:nth-child(1) {
+  .rollers_p1 > div:nth-child(1) {
     background-color: #41c8b7;
   }
-  .rollers > div:nth-child(2) {
+  .rollers_p1 > div:nth-child(2) {
     background-color: #c4c4c4;
   }

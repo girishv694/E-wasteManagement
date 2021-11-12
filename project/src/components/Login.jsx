@@ -1,15 +1,18 @@
 import React from 'react'
 import { Div } from './Container'
 import { useState } from 'react'
-import axios from 'axios'
 import { Forms } from './Form'
 import '../css/register.css'
+import { Link, useHistory } from 'react-router-dom'
 
 function Login() {
+  const history = useHistory()
   const [user, setuser] = useState({
     email: '',
     password: '',
   })
+
+  const [message, setmessage] = useState('')
 
   const { email, password } = user
 
@@ -20,19 +23,9 @@ function Login() {
     })
   }
 
-  // const submit = async e =>{
-  //     e.preventDefault();
-  //    const response =  await axios.post('http://localhost:3001/api/signin',user)
-
-  //     const data1 = await response.json()
-
-  //     if(data1.User){
-  //         alert("login successful")
-  //     }
-  // }
-
   const submit = async (e) => {
     e.preventDefault()
+    // const response = await fetch('http://localhost:3001/user/login', {
     const response = await fetch('http://localhost:3001/api/signin', {
       method: 'POST',
       headers: {
@@ -45,26 +38,27 @@ function Login() {
     })
 
     const data = await response.json()
-    // console.log(data.user)
-    //setting up number api
+    console.log(data)
     localStorage.setItem('testObject', JSON.stringify(data.user))
-    if (data.user) {
-      alert('login successful')
-      window.location.href = '/page11'
+    if (data.error) {
+      setmessage(data.error)
     } else {
-      alert('unsucessful')
+      setmessage('Login successfully')
+      history.push('/page11')
     }
   }
 
   return (
     <div>
       <Div>
-        <img
-          src='http://localhost:3000/Images/backarrow1.svg'
-          id='arrow'
-          alt=''
-          id='arrow'
-        />
+        <Link to='/register'>
+          <img
+            src='http://localhost:3000/Images/backarrow1.svg'
+            id='arrow'
+            alt=''
+            id='arrow'
+          />
+        </Link>
         <div id='headinglog'>Login</div>
 
         <div id='formdiv'>
@@ -88,6 +82,7 @@ function Login() {
             <br />
             <br />
             <input type='submit' id='submit' value='Sign in' />
+            {message}
           </Forms>
         </div>
       </Div>

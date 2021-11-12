@@ -2,11 +2,13 @@ import { React } from 'react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import '../css/page11.css'
-import axios from 'axios'
 import { Div } from './Container'
 import { Forms } from './Form'
 import '../css/register.css'
+import { useHistory } from 'react-router-dom'
 function Register() {
+  const history = useHistory()
+  const [sp, setSp] = useState(' ')
   const [user, setuser] = useState({
     username: '',
     email: '',
@@ -14,6 +16,7 @@ function Register() {
     phone: '',
   })
 
+  const [message, setmessage] = useState('')
   const { username, email, password, phone } = user
 
   const inputchange = (e) => {
@@ -23,28 +26,34 @@ function Register() {
     })
   }
 
-  // const submit = async  e =>{
-  //   e.preventDefault();
-  //   const response = await fetch('http://localhost:3001/register',{
-  //     method :'POST',
-  //     headers :{
-  //        'Content-Type' :'application/json',
-  //     },
-  //     body :JSON.stringify({
-  //       username,
-  //       email,
-  //       password,
-  //     })
-  //   })
-
-  //   const data = await response.json();
-  //   console.log(data)
-  // }
-
   const submit = async (e) => {
     e.preventDefault()
-    console.log('c')
-    await axios.post('http://localhost:3001/api/register', user)
+
+    if (username && password && phone && email) {
+      // const response = await fetch('http://localhost:3001/user/register', {
+      const response = await fetch('http://localhost:3001/api/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          username,
+          email,
+          password,
+          phone,
+        }),
+      })
+
+      const data = await response.json()
+      if (data.error) {
+        setmessage(data.error)
+      } else {
+        setmessage('Registered successfully')
+        history.push('/login')
+      }
+    } else {
+      setmessage('Fill all the fields')
+    }
   }
 
   return (
@@ -63,6 +72,7 @@ function Register() {
         <div id='headinglog'>Registration</div>
         <div id='formdiv'>
           <Forms funct={submit}>
+            {message}
             <input
               type='text'
               name='username'
@@ -114,7 +124,7 @@ function Register() {
         <p id='signpara'>
           already have an account?
           <Link to='/login' id='signinlink'>
-            Sign in
+            {sp}Sign in
           </Link>
         </p>
       </Div>
