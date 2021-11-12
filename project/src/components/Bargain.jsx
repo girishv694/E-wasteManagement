@@ -11,12 +11,13 @@ export const Bargain = () => {
   return (
     <>
       <Div>
-        <img
-          src='http://localhost:3000/Images/backarrow1.svg'
-          id='arrow'
-          alt=''
-          id='arrow'
-        />
+        <Link to='/iteminformation' id='#'>
+          <img
+            src='http://localhost:3000/Images/backarrow1.svg'
+            id='arrow'
+            alt=''
+          />
+        </Link>
 
         <div id='bargain-statement'>Bargain corner</div>
 

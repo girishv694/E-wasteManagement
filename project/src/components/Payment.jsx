@@ -1,5 +1,6 @@
 import { Container } from "./Container_sk"
 import "../css/payment.css"
+import { Link } from 'react-router-dom'
 const Payment = () => {
     return (
         <Container>
@@ -13,6 +14,7 @@ const Payment = () => {
                 Select money acceptance mode
             </div>
 
+            <Link to='/upi' id='#'>
             <div id="div_upi" className="method_display">
                 <div>
                     <img className="upi_img" src="Images/upi_logo.png" alt="" />
@@ -21,6 +23,7 @@ const Payment = () => {
                     Get money in the bank account through UPI
                 </div>
             </div>
+            </Link>
 
             <div id="div_gpay" className="method_display">
                 <div>

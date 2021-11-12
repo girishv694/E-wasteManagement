@@ -16,24 +16,16 @@ import Ewaste from './components/Ewaste'
 import Itemcategory from './components/Itemcategory'
 import { Iteminformation } from './components/Iteminformation'
 import { Bargain } from './components/Bargain'
-
 import { Appointment } from './components/Appointment'
-import { Pickupinformation } from './components/Pickupinformation'
+import { Pickupconformation } from './components/Pickupconformation'
+
+
 import { Page11 } from './components/Page11'
 import Miniature from './components/Miniature'
 import Pickup from './components/Pickup'
 import Payment from './components/Payment'
 import Upi from './components/Upiaddress'
 import Lastpage from './components/Lastpage'
-
-
-
-
-
-
-
-
-
 
 
 
@@ -82,7 +74,6 @@ function App() {
           <Ewaste />
         </Route>
 
-
         <Route path='/itemcategory'>
           <Itemcategory />
         </Route>
@@ -100,8 +91,22 @@ function App() {
         </Route>
 
         <Route path='/pickupconfirmation'>
-          <Pickupinformation />
+          <Pickupconformation />
         </Route>
+
+
+        <Route path='/miniature'>
+          <Miniature />
+        </Route>
+        
+        <Route path='/payment'>
+          <Payment />
+        </Route>
+
+        <Route path='/upi'>
+          <Upi />
+        </Route>
+        
 
 
         <Route path='/pick'>
@@ -117,20 +122,13 @@ function App() {
           <Lastpage />
         </Route>
 
-        <Route path='/payment'>
-          <Payment />
-        </Route>
+        
 
-        <Route path='/upi'>
-          <Upi />
-        </Route>
+        
 
 
 
-        <Route path='/miniature'>
-          <Miniature />
-        </Route>
-
+        
         
         <Route path='/'>
           <Home />
