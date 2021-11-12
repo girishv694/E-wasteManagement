@@ -41,8 +41,8 @@ function Login() {
         setmessage(data.error)
        }
        else{
-        setmessage("Registered successfully")
-        history.push('/page5')
+        setmessage("Login successfully")
+        history.push('/ewaste')
        }
 
     

@@ -1,44 +1,40 @@
-import {React} from 'react'
+import { React } from 'react'
 import { Link } from 'react-router-dom'
-import{useState} from 'react'
-// import"../css/Page.css"
+import { useState } from 'react'
 import '../css/page11.css'
 import axios from 'axios'
 import { Div } from './Container'
-import {Forms} from './Form'
+import { Forms } from './Form'
 import '../css/register.css'
 import {useHistory} from 'react-router-dom'
 function Register() {
+
   const history = useHistory();
-
-  const[user,setuser] = useState({
-    username : "",
-    email : "",
-    password:""
-
+  const [user, setuser] = useState({
+    username: '',
+    email: '',
+    password: '',
+    phone: '',
   })
 
- 
-  const [error,seterror] = useState("")
 
-  const {username,email,password} = user;
+  const [message,setmessage] = useState("")
+  const { username, email, password ,phone} = user
 
-  const inputchange = (e) =>{
-    
-  setuser({
-    ...user,[e.target.name]:e.target.value
-  })
-  };
-
+  const inputchange = (e) => {
+    setuser({
+      ...user,
+      [e.target.name]: e.target.value,
+    })
+  }
 
 
 
   const submit = async  e =>{
     e.preventDefault();
 
-    if(username && email && password){
-    
-    const res = await fetch('http://localhost:3002/user/register',{
+    if(username && password && phone && email){
+    const response = await fetch('http://localhost:3002/user/register',{
       method :'POST',
       headers :{
          'Content-Type' :'application/json',
@@ -47,46 +43,102 @@ function Register() {
         username,
         email,
         password,
+        phone
+
       })
     })
 
-    const data = await res.json();
-   if(data.error){
-    seterror(data.error)
-   }
-   else{
-     seterror("Registered successfully")
-     history.push('/login')
-   }
-    
-    
-  }
-  }
-
-return (
-    <div >
-    {/* onSubmit={e=>submit(e)} */}
-        <Div>
-        <img src="http://localhost:3000/Images/backarrow1.svg" id="arrow" alt="" id="arrow" />
-      
-        <div id="headinglog">Registration</div>
-         <div id="formdiv">
-           {error}
-           
-         <Forms funct={submit} > 
-         <input type="text" name="username" id="username" placeholder="username" value={username} onChange={e=>inputchange(e)}/><br/><br/>
-         <input type="email" name="email" id="email" placeholder="email" value={email}  onChange={e=>inputchange(e)}/><br/><br/>
-         <input type="text" name="password" id="password" placeholder="password" value={password}  onChange={e=>inputchange(e)}/><br/><br/>
-        <input type="submit" id="submit" value="Signup"/>
-
-         </Forms>
-         </div>
-
-         <p id="signpara">already have an account? <Link to="/login" id="signinlink">Sign in</Link></p>
-         
-        </Div>
-        </div>
-  )}
+    const data = await response.json();
+    if(data.error){
+        setmessage(data.error)
+       }
+       else{
+        setmessage("Registered successfully")
+        history.push('/login')
+       }
+    } else{
+      setmessage("Fill all the fields");
+    }
   
+  
+  }
+
+
+  return (
+    <div>
+      {/* onSubmit={e=>submit(e)} */}
+      <Div>
+      <Link to='/congrats' id='#'>
+        <img
+          src='http://localhost:3000/Images/backarrow1.svg'
+          id='arrow'
+          alt=''
+          id='arrow'
+        />
+        </Link>
+
+        <div id='headinglog'>Registration</div>
+        <div id='formdiv'>
+          <Forms funct={submit}>
+          {message}
+            <input
+              type='text'
+              name='username'
+              id='username'
+              placeholder='username'
+              value={username}
+              onChange={(e) => inputchange(e)}
+              required
+            />
+            <br />
+            <br />
+            <input
+              type='email'
+              name='email'
+              id='email'
+              placeholder='email'
+              value={email}
+              onChange={(e) => inputchange(e)}
+              required
+            />
+            <br />
+            <br />
+            <input
+              type='password'
+              name='password'
+              id='password'
+              placeholder='password'
+              value={password}
+              onChange={(e) => inputchange(e)}
+              required
+            />
+            <br />
+            <br />
+            <input
+              type='number'
+              name='phone'
+              id='phone'
+              placeholder='Mobile No'
+              value={phone}
+              onChange={(e) => inputchange(e)}
+              required
+            />
+            <br />
+            <br />
+            <input type='submit' id='submit' value='Signup' />
+          </Forms>
+        </div>
+       
+
+        <p id='signpara'>
+          already have an account?{' '}
+          <Link to='/login' id='signinlink'>
+            Sign in
+          </Link>
+        </p>
+      </Div>
+    </div>
+  )
+}
 
 export { Register }

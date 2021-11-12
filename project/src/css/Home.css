@@ -1,5 +1,37 @@
-.main{
-    margin-top: 0;
-    background-color: rgb(200, 200, 221);
-    height: 400px;
+#container > div {
+    width: 90%;
+    margin: auto;
 }
+#container img{
+    max-width: 100%;
+    margin-top: 90px;
+}
+
+#heading p{
+    
+color: black;
+font-family: Crimson Text;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+text-align: center;
+margin: 2px;
+
+}
+
+#para p{
+    color: #292D32;
+    position: relative;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 50px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+  
+  

@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 import { Container } from "./Container_sk"
-import "../css/page8.css"
+import "../css/location.css"
 
-const Page8 = () => {
+const Location = () => {
     return (
         <Container>
             <Link to="/congrats">
@@ -29,4 +29,4 @@ const Page8 = () => {
     )
 }
 
-export default Page8
+export default Location

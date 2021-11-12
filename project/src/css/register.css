@@ -5,13 +5,13 @@
 
 #formdiv{
     position: relative;
-    top: 80px;
+    top: 60px;
    
 }
 
 #signpara{
     position: relative;
-    top: 200px;
+    top: 120px;
     font-family: 'Avenir_Next';
 font-style: normal;
 font-weight: 600;
@@ -24,12 +24,12 @@ text-decoration: none;
 
 #signinlink{
     text-decoration: none;
-    color: black;
+    color:grey;
 }
 
-/* #submit:hover{
+#submit:hover{
     background-color: #41C8B7;
-} */
+}
 
 #headinglog{
     text-align: center;
@@ -45,4 +45,5 @@ background-color: white;
 width: 100%;
 margin: auto;
 padding: 15px 0;
+border-radius: 6px;
 }

@@ -1,7 +1,7 @@
-import "../css/page7.css"
+import "../css/scrapesold.css"
 import { Link } from 'react-router-dom'
 import { Container } from "./Container_sk"
-const Page7 = () => {
+const Scrapesold = () => {
     return (
 
         <Container>
@@ -18,7 +18,7 @@ const Page7 = () => {
                 <p>You will receive your bill according to the negotiations done on the app, and the money will be transferred immediately to your bank account.</p>
             </div>
 
-            <Link id="Link" to="/page8">
+            <Link id="Link" to="/location">
                 <button id="getStart_btn">
                     Get Started
                 </button>
@@ -29,5 +29,5 @@ const Page7 = () => {
     )
 }
 
-export default Page7
+export default Scrapesold
 

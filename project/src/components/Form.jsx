@@ -8,7 +8,7 @@ margin: auto;
 
 & input{
     width:100%;
-    padding:25px;
+    padding:15px;
     border:none;
     background:white;
     border-radius:6px;

@@ -1,9 +1,8 @@
-import { Container } from './Container_sk'
-import '../css/page2.css'
+import '../css/language.css'
 import { Link } from 'react-router-dom'
 import { Div } from './Container'
 // import { Button } from './Button'
-const Page2 = () => {
+const Language = () => {
   return (
     <>
       <Div>
@@ -12,7 +11,7 @@ const Page2 = () => {
             <h1>Select app language</h1>
           
         </p>
-        <Link to='/page3'>
+        <Link to='/scrapeitem'>
           <button className="lang_btn">English</button>
           <button className="lang_btn">Hindi</button>
         </Link>
@@ -21,4 +20,4 @@ const Page2 = () => {
   )
 }
 
-export default Page2
+export default Language
