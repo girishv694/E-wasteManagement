@@ -5,17 +5,19 @@
             "price":"₹300"
             },
             {
-              "type":"1 Ton",
-            "price":"₹300"
+              "type":"1.5 Ton",
+            "price":"₹400"
             },
              {
-              "type":"1 Ton",
-            "price":"₹300"
+              "type":"2 Ton",
+            "price":"₹500"
             }
         ],
     
       "CRT":[
-
+          {
+            "type":""
+          }
       ],
     
       "L":[
