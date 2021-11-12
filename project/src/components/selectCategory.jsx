@@ -6,8 +6,9 @@ import { Link } from 'react-router-dom'
 import '../css/category.css'
 export const Category = () => {
   const [show, setShow] = useState(false)
+ 
   const uploadImg = () => {
-    setShow(true)
+    setShow(!show)
   }
 
   function onFileChange(event) {

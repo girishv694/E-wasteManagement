@@ -1,7 +1,7 @@
-import "../css/page7.css"
+import "../css/scrapesold.css"
 import { Link } from 'react-router-dom'
 import { Container } from "./Container_sk"
-const Page7 = () => {
+const Scrapesold = () => {
     return (
 
         <Container>
@@ -29,5 +29,5 @@ const Page7 = () => {
     )
 }
 
-export default Page7
+export default Scrapesold
 

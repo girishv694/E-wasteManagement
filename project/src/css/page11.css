@@ -1,10 +1,10 @@
 .page11-login {
   /* border:1px solid black; */
   position: relative;
-  width: 297px;
+  width: 93%;
   height: 74px;
-  top: 150px;
-  left: 30px;
+ top: 150px;
+  left: 7%;
   line-height: 33px;
   /* display: flex; */
   align-items: center;
@@ -28,10 +28,19 @@
   margin-top: 20px;
 }
 
-.page11-input{
-  
-}
+
 .input_p11 {
+  position:relative;
+  width: 363px;
+  height: 55px;
+  margin-left: 24px;
+  top: 200px;
+  border: none;
+  background: rgba(1, 1, 1, 0.06);
+  border-radius: 6px;
+  color: black;
+}
+.input_p1 {
   position:relative;
   width: 363px;
   height: 55px;
@@ -57,23 +66,7 @@
 
   /* position: static; */
 }
-.input_p11 p {
-  width: 77px;
-  height: 25px;
-  left: 8px;
-  top: 8px;
-  font-family: Avenir_Next;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
-  /* identical to box height */
-  border: none;
-  /* display: flex; */
-  align-items: center;
 
-  color: #191d1e;
-}
 .but_p11:hover {
   background-color: #41c8b7;
 }
@@ -93,23 +86,34 @@
   /* background-color: #2196F3; */
   padding: 5px;
 }
-.grid-container > div {
-  background-color: #ffffff;
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.input_p11[type="number"]
+{
+    font-size:20px;
+}
+.input_p1[type="text"]
+{
+    font-size:20px;
+}
+.but_p11f {
+  position: relative;
+  width: 325px;
+  height: 51px;
+  left: 43px;
+  top: 210px;
+  border: none;
+  background: #41c8b7;
+  border: 0.1px solid rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+  border-radius: 6px;
+  cursor: pointer;
   text-align: center;
-  padding: 5px 0;
-  border-radius: 3px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 35px;
-  color: #000000;
-}
-
-#disp{
-  display: grid;
-}
-
-#blue{
-  background-color: #41c8b7;
+  line-height: 51px;
+  
+  /* position: static; */
 }

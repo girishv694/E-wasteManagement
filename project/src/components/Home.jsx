@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import '../css/page1.css'
+import '../css/home.css'
 import { Div } from './Container'
-function Page1() {
+function Home() {
     return (
 
         <Link to="/language">
@@ -30,4 +30,4 @@ function Page1() {
     )
 }
 
-export default Page1
+export default Home

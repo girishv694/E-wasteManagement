@@ -3,7 +3,7 @@ import './App.css'
 import { Switch, Route } from 'react-router-dom'
 
 
-import Page1 from './components/Page1'
+import Home from './components/Home'
 import Page2 from './components/Page2'
 import Page3 from './components/Page3'
 import { Page5 } from './components/Page5'
@@ -28,16 +28,13 @@ import Login from './components/Login'
 import Payment from './components/Payment'
 import { Bargain } from './components/Bargain'
 
-import Otp from './Otp'
+// import Otp from './Otp'
 function App() {
   return (
     <div className='app'>
       <Switch>
 
-        
-<Route path ='/otp'>
-  <Otp/>
-  </Route>
+
         <Route path='/payment'>
           <Payment />
           {/* <Otp/> */}
@@ -51,7 +48,7 @@ function App() {
         
 
         <Route path='/home'>
-          <Page1 />
+          <Home />
           {/* <Otp/> */}
         </Route>
 

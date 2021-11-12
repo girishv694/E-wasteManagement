@@ -5,7 +5,7 @@
 
 #formdiv{
     position: relative;
-    top: 80px;
+    top: 60px;
    
 }
 
@@ -24,7 +24,7 @@ text-decoration: none;
 
 #signinlink{
     text-decoration: none;
-    color: black;
+    color:grey;
 }
 
 #submit:hover{
@@ -45,4 +45,5 @@ background-color: white;
 width: 100%;
 margin: auto;
 padding: 15px 0;
+border-radius: 6px;
 }

@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 // import"../css/Page.css"
-import "../css/page3.css";
+import "../css/scrapeitem.css";
 import { Div } from "./Container";
 // Page-3 Pushpendra
-function Page3() {
+function ScrapeItem() {
   return (
     <Link to="/date">
-        <Div>
-    <div >
-      
+      <Div>
+        <div >
+
           <div className="page3-img">
             <img src="Images/page-3.png" alt="Page"></img>
             <div className="page3-sell">
@@ -31,11 +31,11 @@ function Page3() {
             </div>
           </div>
 
-    </div>
-      
-    </Div>
-      </Link>
+        </div>
+
+      </Div>
+    </Link>
   );
 }
 
-export default Page3;
+export default ScrapeItem;
