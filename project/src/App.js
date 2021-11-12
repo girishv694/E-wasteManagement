@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css'
 import { Switch, Route } from 'react-router-dom'
 
-
+import User from './components/User'
 import Page1 from './components/Page1'
 import Page2 from './components/Page2'
 import Page3 from './components/Page3'
@@ -26,6 +26,7 @@ import Upi from './components/Upiaddress'
 import { Register } from './components/Register'
 import Login from './components/Login'
 import Payment from './components/Payment'
+import { Bargain } from './components/Bargain'
 
 
 
@@ -38,6 +39,7 @@ function App() {
           <Payment />
         </Route>
 
+        
 
         <Route path='/page1'>
           <Page1 />
@@ -84,9 +86,17 @@ function App() {
         <Route path='/pick'>
           <Pickup />
         </Route>
+
+
         <Route path='/category'>
           <Category />
         </Route>
+
+        <Route path='/bargain'>
+         <Bargain/>
+        </Route>
+
+
 
         <Route path='/end'>
           <Lastpage />
@@ -107,7 +117,7 @@ function App() {
 
 
 
-        {/* <Route path='/page21'>
+         <Route path='/page21'>
           <Page21 />
         </Route>
 
@@ -115,7 +125,7 @@ function App() {
           <Page20 />
         </Route>
 
-         */}
+         
 
 
         <Route path='/signup'>
@@ -124,6 +134,10 @@ function App() {
 
         <Route path='/checkout'>
           <h1>Checkout Page</h1>
+        </Route>
+
+        <Route path='/user'>
+          <User/>
         </Route>
 
 

@@ -21,7 +21,7 @@ const CustomerLocation = () => {
     let finalAPIEndpoint = `${API_endpoint}lat=${latitude}&lon=${longitude}&appid=${API_Key}`;
     axios.get(finalAPIEndpoint).then((res) => {
       setCity(res.data);
-      console.log(res.data);
+      // console.log(res.data);
     });
   }, []);
 
@@ -36,7 +36,7 @@ const CustomerLocation = () => {
     let finalAPIEndpoint = `${API_endpoint}lat=${latitude}&lon=${longitude}&appid=${API_Key}`;
     axios.get(finalAPIEndpoint).then((res) => {
       setCity(res.data);
-      console.log(res.data);
+      // console.log(res.data);
     });
   }, [latitude, longitude]);
 

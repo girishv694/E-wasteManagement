@@ -1,7 +1,7 @@
 import { Container } from "./Container_sk"
 import "../css/e_waste.css"
 import { Link } from "react-router-dom"
-import {CustomerLocation} from "./CustomerLocation"
+import { CustomerLocation } from "./CustomerLocation"
 
 const Ewaste = () => {
     return (
@@ -10,9 +10,9 @@ const Ewaste = () => {
                 <div id="city_name">
                     <label id="cityname_label">Your City</label>
                     <p name="city_name" id="city_select">
-                    <CustomerLocation/> 
+                        <CustomerLocation />
                     </p>
-                    {/* */}
+
                 </div>
 
                 <div id="img_div">
@@ -28,25 +28,29 @@ const Ewaste = () => {
 
 
             <div id="first_row">
-                <Link to="page93">
+
                 <div className="waste_div">
-                    <img className="waste_img" src="Images/E-waste.png" alt="" />
-                    <p>E-waste</p>
+
+                    <Link to="/page93" style={{ textDecoration: "none", color: "black" }}>
+                        <img className="waste_img" src="Images/E-waste.png" alt="" />
+                    </Link>
+                    E-waste
+
                 </div>
-                </Link>
+
                 <div className="waste_div">
-                <img className="waste_img" src="Images/med-waste.png" alt="" />
+                    <img className="waste_img" src="Images/med-waste.png" alt="" />
                     <p>Medical-waste</p>
                 </div>
             </div>
 
             <div id="second_row">
                 <div className="waste_div">
-                <img className="waste_img" src="Images/data-waste.png" alt="" />
+                    <img className="waste_img" src="Images/data-waste.png" alt="" />
                     <p>Data-centre E-waste</p>
                 </div>
                 <div className="waste_div">
-                <img className="waste_img" src="Images/metal-waste.png" alt="" />
+                    <img className="waste_img" src="Images/metal-waste.png" alt="" />
                     <p>Metal-waste</p>
                 </div>
             </div>
@@ -65,21 +69,21 @@ const Ewaste = () => {
 
 
             <div id="bottom_bar">
-                <div>
+                <div className="bottom_divs">
                     <img className="bottom_img" src="Images/home151.png" alt="" />
-                    <p className="bottom_p">Home</p>
+                    Home
                 </div>
-                <div>
+                <div className="bottom_divs">
                     <img className="bottom_img" src="Images/feed151.png" alt="" />
-                    <p className="bottom_p">Feed</p>
+                    Feed
                 </div>
-                <div>
+                <div className="bottom_divs">
                     <img className="bottom_img" src="Images/voice151.png" alt="" />
-                    <p className="bottom_p">Voice</p>
+                    Voice
                 </div>
-                <div>
+                <div className="bottom_divs">
                     <img className="bottom_img" src="Images/profile151.png" alt="" />
-                    <p className="bottom_p">Profile</p>
+                    Profile
                 </div>
 
             </div>

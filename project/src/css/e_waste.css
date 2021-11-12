@@ -118,6 +118,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .waste_img{
@@ -147,18 +148,26 @@ background: #41C8B7;
 border-radius: 10px 10px 0px 0px;
 }
 
+.bottom_divs{
+    font-family: "Avenir_Next";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
 
 .bottom_img{
 width: 24px;
 height: 24px;
-margin-bottom: -15px;
 }
 
-.bottom_p{
-font-family: "Avenir_Next";
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 16px;
-}
+
   
