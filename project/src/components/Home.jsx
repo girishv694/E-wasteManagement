@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import '../css/home.css'
+import '../css/Home.css'
 import { Div } from './Container'
 function Home() {
     return (

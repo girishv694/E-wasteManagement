@@ -16,7 +16,7 @@ function Register() {
 
   })
 
-  const {username,email,password} = user;
+  const {username,email,password,number} = user;
 
   const inputchange = (e) =>{
     
@@ -64,9 +64,10 @@ function Register() {
          <Forms funct={submit} > 
          <input type="text" name="username" id="username" placeholder="username" value={username} onChange={e=>inputchange(e)}/><br/><br/>
          <input type="email" name="email" id="email" placeholder="email" value={email}  onChange={e=>inputchange(e)}/><br/><br/>
-         <input type="text" name="password" id="password" placeholder="password" value={password}  onChange={e=>inputchange(e)}/><br/><br/>
-        <input type="submit" id="submit" value="Signup"/>
-
+         <input type="password" name="password" id="password" placeholder="password" value={password}  onChange={e=>inputchange(e)}/><br/><br/>
+         <input type="number" name="phone" id="" placeholder="Enter your number"value={number} onChange={(e)=>inputchange(e)} /><br/><br/>
+     <Link to="/login">   <input type="submit" id="submit" value="Signup" />
+</Link>
          </Forms>
          </div>
 
