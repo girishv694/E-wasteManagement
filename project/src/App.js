@@ -88,7 +88,7 @@ function App() {
           <Itemcategory />
         </Route>
 
-        <Route path='/iteminformation'>
+        <Route path='/iteminformation/AC'>
           <Iteminformation />
         </Route>
 

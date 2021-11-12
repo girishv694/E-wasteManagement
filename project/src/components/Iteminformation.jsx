@@ -11,12 +11,13 @@ export const Iteminformation = () => {
 async function getdata(){
   let res=await axios.get("http://localhost:4000/AC")
 
-  setData(res)
+  setData(res.data)
 }
 
   useEffect(()=>{
      getdata()
   },[])
+
   const uploadImg = () => {
     setShow(!show)
   }
@@ -36,18 +37,16 @@ async function getdata(){
         <div id='selectCategory'>Select from the category</div>
 
          <div id='priceDiv'>
-          <div onClick={uploadImg}>
-            <div className='ton'>1 Ton</div>
-            <div className='tonPrice'>₹300/piece</div>
+        {
+          data.map((el)=>{
+            return  <div onClick={uploadImg}>
+            <div className='ton'>{el.type}</div>
+            <div className='tonPrice'>{el.price}</div>
           </div>
-          <div onClick={uploadImg}>
-            <div className='ton'>1.5 Ton</div>
-            <div className='tonPrice'>₹3000/piece</div>
-          </div>
-          <div onClick={uploadImg}>
-            <div className='ton'>2 Ton</div>
-            <div className='tonPrice'>₹300/piece</div>
-          </div>
+
+            
+          })
+        }
         </div>
          
        
