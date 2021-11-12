@@ -32,11 +32,6 @@ import { Bargain } from './components/Bargain'
 
 
 
-
-
-
-
-
 function App() {
   return (
     <div className='app'>
@@ -46,9 +41,7 @@ function App() {
           <Payment />
         </Route>
 
-        <Route path='/home'>
-          <Home />
-        </Route>
+      
 
         <Route path='/language'>
           <Language />
@@ -128,7 +121,9 @@ function App() {
           <Miniature />
         </Route>
     
-      
+        <Route path='/'>
+          <Home />
+        </Route>
 
 
       

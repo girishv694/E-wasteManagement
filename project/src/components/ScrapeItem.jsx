@@ -7,9 +7,9 @@ import { Div } from "./Container";
 function ScrapeItem() {
   return (
     <Link to="/date">
-        <Div>
-    <div >
-      
+      <Div>
+        <div >
+
           <div className="page3-img">
             <img src="Images/page-3.png" alt="Page"></img>
             <div className="page3-sell">
@@ -31,10 +31,10 @@ function ScrapeItem() {
             </div>
           </div>
 
-    </div>
-      
-    </Div>
-      </Link>
+        </div>
+
+      </Div>
+    </Link>
   );
 }
 
