@@ -1,8 +1,8 @@
 import { Container } from "./Container_sk"
-import "../css/page93.css"
+import "../css/itemcategory.css"
 import { Link } from 'react-router-dom'
 
-const Page93 = () => {
+const Itemcategory = () => {
     return (
         <Container>
             <div id="b_arrow_93">
@@ -73,4 +73,4 @@ const Page93 = () => {
     )
 }
 
-export default Page93
+export default Itemcategory

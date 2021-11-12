@@ -17,8 +17,8 @@ import { Page21 } from './components/Page21'
 
 import { Page11 } from './components/Page11'
 
-import Page93 from './components/Page93'
-import { Category } from './components/selectCategory'
+import Itemcategory from './components/Itemcategory'
+import { Iteminformation } from './components/Iteminformation'
 import Miniature from './components/Miniature'
 import Ewaste from './components/Ewaste'
 import Congratulation from './components/Congratulation'
@@ -29,6 +29,7 @@ import { Register } from './components/Register'
 import Login from './components/Login'
 import Payment from './components/Payment'
 import { Bargain } from './components/Bargain'
+
 
 
 
@@ -82,11 +83,11 @@ function App() {
 
 
         <Route path='/itemcategory'>
-          <Page93 />
+          <Itemcategory />
         </Route>
 
         <Route path='/iteminformation'>
-          <Category />
+          <Iteminformation />
         </Route>
 
         <Route path='/bargain'>
