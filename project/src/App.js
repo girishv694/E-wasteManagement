@@ -107,8 +107,6 @@ function App() {
           <Upi />
         </Route>
         
-
-
         <Route path='/pick'>
           <Pickup />
         </Route>

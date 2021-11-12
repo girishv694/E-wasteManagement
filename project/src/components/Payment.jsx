@@ -5,24 +5,25 @@ const Payment = () => {
     return (
         <Container>
 
-            <div id="b_arrow_div">
-                <img id="b_arrow" src="Images/back_arrow.png" alt="" />
-            </div>
-
+            <Link to='/miniature' id='#'>
+                <div id="b_arrow_div">
+                    <img id="b_arrow" src="Images/back_arrow.png" alt="" />
+                </div>
+            </Link>
 
             <div id="paradiv">
                 Select money acceptance mode
             </div>
 
             <Link to='/upi' id='#'>
-            <div id="div_upi" className="method_display">
-                <div>
-                    <img className="upi_img" src="Images/upi_logo.png" alt="" />
+                <div id="div_upi" className="method_display">
+                    <div>
+                        <img className="upi_img" src="Images/upi_logo.png" alt="" />
+                    </div>
+                    <div className="payment_para">
+                        Get money in the bank account through UPI
+                    </div>
                 </div>
-                <div className="payment_para">
-                    Get money in the bank account through UPI
-                </div>
-            </div>
             </Link>
 
             <div id="div_gpay" className="method_display">
