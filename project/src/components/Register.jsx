@@ -31,7 +31,7 @@ function Register() {
 
     if (username && password && phone && email) {
       const response = await fetch('http://localhost:3002/user/register', {
-      // const response = await fetch('http://localhost:3001/api/register', {
+        // const response = await fetch('http://localhost:3001/api/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -72,7 +72,10 @@ function Register() {
         <div id='headinglog'>Registration</div>
         <div id='formdiv'>
           <Forms funct={submit}>
-            {message}
+            <div className="message">
+              {message}
+            </div>
+
             <input
               type='text'
               name='username'
@@ -95,23 +98,25 @@ function Register() {
             />
             <br />
             <br />
-            <input
-              type='password'
-              name='password'
-              id='password'
-              placeholder='password'
-              value={password}
-              onChange={(e) => inputchange(e)}
-              required
-            />
-            <br />
-            <br />
+
             <input
               type='number'
               name='phone'
               id='phone'
               placeholder='Mobile No'
               value={phone}
+              onChange={(e) => inputchange(e)}
+              required
+            />
+
+            <br />
+            <br />
+            <input
+              type='password'
+              name='password'
+              id='password'
+              placeholder='password'
+              value={password}
               onChange={(e) => inputchange(e)}
               required
             />

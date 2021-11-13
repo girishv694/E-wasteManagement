@@ -83,3 +83,8 @@
 .rollers_p2 > div:nth-child(3) {
   background-color: #41c8b7;
 }
+
+
+.container_mainp5{
+  cursor: pointer;
+}
