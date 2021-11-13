@@ -1,19 +1,95 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
-}
+  "AC":[
+             {
+               "type":"1 Ton",
+             "price":"₹300/piece"
+             },
+             {
+               "type":"1.5 Ton",
+             "price":"₹400/piece"
+             },
+              {
+               "type":"2 Ton",
+             "price":"₹500/piece"
+             }
+         ],
+     
+       "CRT":[
+           {
+             "type":"",
+             "price":""
+           }
+       ],
+       "Mobile":[
+         {
+           "type":"4 Gb Ram",
+           "price":"₹500/piece"
+         },
+         {
+           "type":"8 Gb Ram",
+           "price":"₹1000/piece"
+         }
+       ],
+     
+       "L":[
+ 
+       ],
+       "Printer":[
+ 
+       ],
+ 
+       "Battery":[
+ 
+       ],
+       "Fridge":[
+         {
+           "type":"Single Door",
+           "price":"₹2000/piece"
+         },
+         {
+           "type":"Double Door",
+           "price":"₹2800/piece"
+         }
+ 
+       ],
+       "Washing-Machine":[
+         {
+           "type":"5 Kg",
+           "price":"₹3000/piece"
+         },
+         {
+           "type":"6 Kg",
+           "price":"₹3400/piece"
+         },
+         {
+           "type":"6.5 Kg",
+           "price":"₹3600/piece"
+         }
+ 
+       ],
+       "Music Syatem":[
+ 
+       ],
+   "Medical-waste": [
+     {
+      
+     }
+   ],
+   "Data-centre-waste": {
+    
+   },
+ "Time":[
+   {
+     "t":"10:00 AM - 01:00PM",
+     "status":false
+   },
+   {
+     "t":"02:00 AM - 05:00PM",
+     "status":false
+   },
+   {
+     "t":"05:00 AM - 08:00PM",
+     "status":false
+   }
+ ]
+ }
