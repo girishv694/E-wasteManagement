@@ -30,8 +30,8 @@ function Register() {
     e.preventDefault()
 
     if (username && password && phone && email) {
-      // const response = await fetch('http://localhost:3001/user/register', {
-      const response = await fetch('http://localhost:3001/api/register', {
+      const response = await fetch('http://localhost:3002/user/register', {
+      // const response = await fetch('http://localhost:3001/api/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
