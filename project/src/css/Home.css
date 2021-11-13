@@ -1,14 +1,36 @@
 #container > div {
     width: 90%;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 #container img{
     max-width: 100%;
+    margin-top: 100px;
     
 }
 
-#home{
-    margin-top: 20px;
+#heading{
+    width: 331
+px
+;
+    margin: 49
+px
+ 56
+px
+ 0
+px
+ 24
+px
+;
+    font-family: 'Avenir_Next';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #292d32;
 }
 
 #heading p{
