@@ -13,8 +13,8 @@ const Upi=()=>{
 
         <div id="formdiv">
         <Forms>
-            <input type="text" placeholder="Enter UPI Address"/>
-            <input type="text" placeholder="Confirm Upi Address" />
+            <input type="text" placeholder="Enter UPI Address" required/>
+            <input type="text" placeholder="Confirm Upi Address"  required/>
         </Forms>
         </div>
         

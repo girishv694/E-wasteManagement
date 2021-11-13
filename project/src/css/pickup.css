@@ -32,9 +32,50 @@ color: #292D32;
 
 }
 
-#pick-btn{
+#userinfo{
     position: relative;
     top: 200px;
+    left: 80px;
+    width: 349px;
+height: 38px;
+margin: auto;
+font-family: 'Avenir_Next';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+/* display: flex;
+align-items: center;
+text-align: center;
+justify-self: center; */
+/* #292D32 */
+
+color: #292D32;
+}
+
+#userinfo p{
+font-family: 'Avenir_Next';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+position: relative;
+
+/* #292D32 */
+
+color: #292D32;
+}
+
+#left{
+    left: 60px;
+}
+
+#pick-btn{
+    position: relative;
+    top: 240px;
     width: 325px;
     color: black;
 height: 51px;

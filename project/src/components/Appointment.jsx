@@ -76,7 +76,8 @@ export const Appointment = () => {
 
    async function getdata(){
      let res = await axios.post('http://localhost:3002/appointment',obj)
-     console.log(res);
+  //   console.log(res.data._id);
+     localStorage.setItem("appointment_id",JSON.stringify(res.data._id))
    }
    
   return (
@@ -114,6 +115,7 @@ export const Appointment = () => {
                 </button>
                
                   </>
+
                   })} 
                 </div>
               </div>
