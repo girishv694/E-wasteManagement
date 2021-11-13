@@ -73,7 +73,7 @@ function Login() {
             <br />
             <br />
             <input
-              type='text'
+              type='password'
               name='password'
               placeholder='Enter password'
               value={password}
