@@ -48,4 +48,5 @@
 }
 .lang_btn:hover {
   background-color: #41c8b7;
+  cursor: pointer;
 }

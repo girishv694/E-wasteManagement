@@ -47,3 +47,13 @@ margin: auto;
 padding: 15px 0;
 border-radius: 6px;
 }
+
+.message{
+    color: red;
+    text-align: center;
+    font-family: 'Avenir_Next';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+}

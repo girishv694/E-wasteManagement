@@ -81,7 +81,10 @@ function Login() {
             <br />
             <br />
             <input type='submit' id='submit' value='Sign in' />
+
+            <div className="message">
             {message}
+            </div>
           </Forms>
         </div>
       </Div>
