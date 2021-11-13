@@ -29,7 +29,6 @@ export const Productotp = () => {
     return () => {}
   }, [])
 
-  console.log(arbs)
   function test() {
     if (+num5 == arbs) {
       setBl(true)
