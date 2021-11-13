@@ -13,29 +13,17 @@ function Page11() {
   const [num, setNum] = useState(0)
   const [num1, setNum1] = useState(0)
   const [arbs, setArb] = useState(0)
-  // const [inputValue, setInputValue] = useState('')
 
-  async function ret() {
+  async function OTP() {
     const v = JSON.parse(localStorage.getItem('testObject'))
-    try {
-      const response = await axios.get(
-        `http://localhost:3001/api/getNum/${v._id}`
-      )
-      OTP(response.data)
-      setNum(response.data)
-    } catch (error) {
-      console.error(error)
-    }
-  }
-
-  async function OTP(mm) {
     let arb = Math.floor(Math.random() * 10000)
     setArb(arb)
+    setNum(v)
     try {
       console.log('read here')
       //commented to save 50 tries, please use cautiously
-      const response = await axios.get(`
-      http://2factor.in/API/V1/81b9a7b3-4312-11ec-a13b-0200cd936042/SMS/${mm}/${arb}`)
+      // const response = await axios.get(`
+      // http://2factor.in/API/V1/81b9a7b3-4312-11ec-a13b-0200cd936042/SMS/${v}/${arb}`)
       // console.log(response)
     } catch (error) {
       console.error(error)
@@ -44,8 +32,7 @@ function Page11() {
   }
 
   useEffect(() => {
-    ret()
-
+    OTP()
     return () => {}
   }, [])
 

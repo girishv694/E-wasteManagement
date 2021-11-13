@@ -26,7 +26,6 @@ function Login() {
   const submit = async (e) => {
     e.preventDefault()
     const response = await fetch('http://localhost:3002/user/login', {
-    // const response = await fetch('http://localhost:3001/api/signin', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -44,7 +43,7 @@ function Login() {
       setmessage(data.error)
     } else {
       setmessage('Login successfully')
-      history.push('/page11')
+       history.push('/page11')
     }
   }
 
