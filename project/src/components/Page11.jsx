@@ -25,7 +25,7 @@ function Page11() {
       //extra
       // const response = await axios.get(`
       // http://2factor.in/API/V1/76e0fd80-444c-11ec-a13b-0200cd936042/SMS/${v}/${arb}`)
-      // // console.log(response)
+      //  console.log(response)
     } catch (error) {
       console.error(error)
     }
