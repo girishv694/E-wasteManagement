@@ -8,17 +8,19 @@ const Itemcategory = () => {
   const [show1, setShow1] = useState(true)
   const [show, setShow] = useState(false)
   const [data, setData] = useState([])
-  const [param, setParam] = useState()
+  const [param, setParam] = useState("")
 
-  async function getdata() {
-    let res = await axios.get(`http://localhost:4000/${param}`)
+  async function getingdata() {
+    let res = await axios.get(`http://localhost:3002/category/${param}`)
 
-    setData(res.data)
+    setData(res.data[0].item)
+    console.log(res.data[0].item);
   }
 
   useEffect(() => {
-    getdata()
-  }, [param])
+
+    getingdata()
+  },[param])
 
   const uploadImg = () => {
     setShow(!show)
@@ -189,7 +191,7 @@ const Itemcategory = () => {
             })}
           </div>
 
-          {/* <img src='Images/upload.svg' alt='' /> Upload scrap item's image */}
+         
           {show ? (
             <div className='imgupload'>
               <img src='Images/upload1.png' alt='' id='upload_icon' />

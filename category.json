@@ -77,5 +77,19 @@
   ],
   "Data-centre-waste": {
    
+  },
+"Time":[
+  {
+    "t":"10:00 AM - 01:00PM",
+    "status":false
+  },
+  {
+    "t":"02:00 AM - 05:00PM",
+    "status":false
+  },
+  {
+    "t":"05:00 AM - 08:00PM",
+    "status":false
   }
+]
 }
