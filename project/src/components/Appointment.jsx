@@ -2,23 +2,80 @@ import '../css/appointment.css'
 import { Link } from 'react-router-dom'
 import { Div } from './Container'
 import { useState, useEffect } from 'react'
+import axios from 'axios'
 export const Appointment = () => {
   const [d, setD] = useState([])
+  const [time, setTime] = useState([])
+  const [vl, setVl] = useState(false)
+  let n = localStorage.getItem('testObject')
+
+  const [obj, setObj] = useState({
+    num: n,
+    time: '',
+    date: '',
+    day: '',
+    month: '',
+  })
   useEffect(() => {
     let a = []
-
+    let t = []
     for (let i = 1; i < 6; i++) {
-      const today = new Date()
-      let t1 = new Date()
-      t1.setDate(today.getDate() + i)
-      // t1 = t1.split(' ')
-      a.push(t1)
+      let sub = []
+      const d = new Date()
+      let t1 = d.getDay()
+      let t2 = d.getDate()
+      let t3 = d.getMonth()
+
+      sub.push(t1 + i)
+      sub.push(t2 + i)
+
+      sub.push(false)
+      sub.push(t3)
+      a.push(sub)
     }
+
     setD(a)
+    gettime()
+
     return () => {}
   }, [])
-  const today = new Date()
-  console.log(typeof today)
+
+  async function gettime() {
+    let res = await axios.get('http://localhost:4000/Time')
+
+    setTime(res.data)
+  }
+
+  const hovereffect = (el) => {
+    let res = d.map((elm) => {
+      if (elm !== el) {
+        elm[2] = false
+      } else {
+        elm[2] = true
+      }
+      return elm
+    })
+    setD(res)
+  }
+
+  const hovereffecttime = (el) => {
+    let res = time.map((elm) => {
+      if (elm !== el) {
+        elm.status = false
+      } else {
+        elm.status = true
+      }
+      return elm
+    })
+    setTime(res)
+  }
+
+  async function getdata() {
+    setVl(true)
+    let res = await axios.post('http://localhost:3002/appointment', obj)
+    console.log(res)
+  }
+
   return (
     <>
       <Div>
@@ -39,15 +96,54 @@ export const Appointment = () => {
               <div className='block_cl_p20'>
                 <div className='A_p20'>
                   {d.map((e) => {
-                    ;<button className=''>
-                      <h6>{e}</h6>
-                      <h6>25</h6>
-                    </button>
+                    return (
+                      <>
+                        <button
+                          id={e[2] ? 'hovers' : null}
+                          onClick={() => {
+                            hovereffect(e)
+                            obj.date = e[1]
+                            obj.day =
+                              e[0] % 7 === 0
+                                ? 'Sunday'
+                                : e[0] % 7 === 1
+                                ? 'Monday'
+                                : e[0] % 7 === 2
+                                ? 'Tuesday'
+                                : e[0] % 7 === 3
+                                ? 'Wednesday'
+                                : e[0] % 7 === 4
+                                ? 'Thursday'
+                                : e[0] % 7 === 5
+                                ? 'Friday'
+                                : e[0] % 7 === 6
+                                ? 'Saturday'
+                                : null
+                            obj.month = e[3]
+                          }}
+                        >
+                          {' '}
+                          {e[0] % 7 === 0
+                            ? 'Sunday'
+                            : e[0] % 7 === 1
+                            ? 'Monday'
+                            : e[0] % 7 === 2
+                            ? 'Tuesday'
+                            : e[0] % 7 === 3
+                            ? 'Wednesday'
+                            : e[0] % 7 === 4
+                            ? 'Thursday'
+                            : e[0] % 7 === 5
+                            ? 'Friday'
+                            : e[0] % 7 === 6
+                            ? 'Saturday'
+                            : null}
+                          <br />
+                          <h6>{e[1]}</h6>
+                        </button>
+                      </>
+                    )
                   })}
-                  <button className=''>
-                    <h6>Monday</h6>
-                    <h6>25</h6>
-                  </button>
                 </div>
               </div>
               <div className='tag_p20'>
@@ -55,14 +151,32 @@ export const Appointment = () => {
                 {/* <h1>Your availabilty on that day</h1> */}
               </div>
               <div className='time_p20'>
-                <button className=''>10:00 AM - 01:00PM</button>
-                <button className=''>10:00 AM - 01:00PM</button>
-                <button className=''>10:00 AM - 01:00PM</button>
+                {time.map((el) => {
+                  return (
+                    <>
+                      <button
+                        id={el.status ? 'hovers' : null}
+                        onClick={() => {
+                          hovereffecttime(el)
+                          obj.time = el.t
+                        }}
+                      >
+                        {el.t}
+                      </button>
+                    </>
+                  )
+                })}
               </div>
               <div className='CONT_p20'>
-                <Link to='/pickupconfirmation'>
-                  <button className='but_p20'>Continue</button>
-                </Link>
+                {!vl ? (
+                  <button className='but_p20' onClick={getdata}>
+                    Continue
+                  </button>
+                ) : (
+                  <Link to='/pickupconfirmation'>
+                    <button className='but_p20'>Continue</button>
+                  </Link>
+                )}
               </div>
             </div>
           </div>

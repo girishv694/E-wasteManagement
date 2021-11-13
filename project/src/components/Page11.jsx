@@ -16,16 +16,16 @@ function Page11() {
 
   async function OTP() {
     const v = JSON.parse(localStorage.getItem('testObject'))
+    setNum(v)
     let arb = Math.floor(Math.random() * 10000)
     setArb(arb)
-    setNum(v)
     try {
       console.log('read here')
       //commented to save 50 tries, please use cautiously
       //extra
-      // const response = await axios.get(`
-      // http://2factor.in/API/V1/76e0fd80-444c-11ec-a13b-0200cd936042/SMS/${v}/${arb}`)
-      //  console.log(response)
+      const response = await axios.get(`
+      http://2factor.in/API/V1/76e0fd80-444c-11ec-a13b-0200cd936042/SMS/${v}/${arb}`)
+      console.log(response)
     } catch (error) {
       console.error(error)
     }

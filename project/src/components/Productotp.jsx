@@ -2,10 +2,43 @@ import { Div } from './Container'
 import { Link } from 'react-router-dom'
 import '../css/productotp.css'
 import { useState, useEffect } from 'react'
+const axios = require('axios').default
 
 export const Productotp = () => {
   const [num5, SetNum5] = useState('')
-  console.log(num5)
+  const [arbs, setArb] = useState(0)
+  const [bl, setBl] = useState(false)
+  const v = JSON.parse(localStorage.getItem('testObject'))
+
+  async function ot() {
+    let arb = Math.floor(Math.random() * 10000)
+    setArb(arb)
+    try {
+      console.log('read here')
+      // commented to save 50 tries, please use cautiously
+      // extra
+      // const response = await axios.get(`
+      // http://2factor.in/API/V1/76e0fd80-444c-11ec-a13b-0200cd936042/SMS/${v}/${arb}`)
+      // console.log(response)
+    } catch (error) {
+      console.error(error)
+    }
+  }
+  useEffect(() => {
+    ot()
+    return () => {}
+  }, [])
+
+  console.log(arbs)
+  function test() {
+    if (+num5 == arbs) {
+      setBl(true)
+    } else {
+      setBl(null)
+      console.log('try again')
+    }
+  }
+
   return (
     <>
       <Div>
@@ -67,10 +100,20 @@ export const Productotp = () => {
             Show the OTP to pickup executive while selling scrap
           </p>
         </div>
-
-        <Link to='/miniature'>
-          <div id='bargain-cont'>Continue</div>
-        </Link>
+        {!bl ? (
+          <div
+            id='bargain-cont'
+            onClick={() => {
+              test()
+            }}
+          >
+            Check
+          </div>
+        ) : (
+          <Link to='/miniature'>
+            <div id='bargain-cont'>Continue</div>
+          </Link>
+        )}
       </Div>
     </>
   )
