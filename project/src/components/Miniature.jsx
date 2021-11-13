@@ -5,8 +5,9 @@ const Miniature = () => {
     return <>
         <Div>
 
-            <img src="http://localhost:3000/Images/backarrow1.svg" alt="" id="arrow" />
-
+            <Link to='/productotp'>
+                <img src="http://localhost:3000/Images/backarrow1.svg" alt="" id="arrow" />
+            </Link>
             <div id="statement">
                 Do you want to a Memorabilia miniature of the sold item
             </div>
@@ -14,7 +15,7 @@ const Miniature = () => {
             <div id="btn-cont">
 
                 <div>
-                    <Link to='/payment' style={{color: "#292D32"}}>
+                    <Link to='/payment' style={{ color: "#292D32" }}>
                         Yes
                     </Link>
                 </div>
