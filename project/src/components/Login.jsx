@@ -37,13 +37,13 @@ function Login() {
     })
 
     const data = await response.json()
-    console.log(data)
+    // console.log(data)
     localStorage.setItem('testObject', JSON.stringify(data.user))
     if (data.error) {
       setmessage(data.error)
     } else {
       setmessage('Login successfully')
-       history.push('/page11')
+      history.push('/page11')
     }
   }
 
