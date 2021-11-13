@@ -41,9 +41,9 @@ export const Appointment = () => {
   }, [])
 
   async function gettime() {
-    let res = await axios.get('http://localhost:4000/Time')
+    let res = await axios.get('http://localhost:3002/category/Time')
 
-    setTime(res.data)
+    setTime(res.data[0].item)
   }
 
   const hovereffect = (el) => {
