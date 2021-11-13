@@ -38,7 +38,8 @@ const Miniature = () => {
                 <p>We charge only Rs 50 for this service</p>
             </div>
 
-            <button id="cont-btn">Countinue</button>
+           <Link to="/payment">
+           <button id="cont-btn">Countinue</button></Link>
 
         </Div>
 

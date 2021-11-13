@@ -10,7 +10,7 @@ function Home() {
                 <div id="container">
                     <div>
                         <div>
-                            <img src="Images/page1Image.png" alt="" ></img>
+                            <img id="home" src="Images/page1Image.png" alt="" ></img>
                         </div>
 
                         <div id="heading">

@@ -58,3 +58,6 @@ color: black;
 #upisubmit:hover{
     background-color: #8DDED4;
 }
+#formdiv input{
+    margin: 10px
+}

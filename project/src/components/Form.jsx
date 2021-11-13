@@ -12,7 +12,7 @@ margin: auto;
     border:none;
     background:white;
     border-radius:6px;
-
+    
     font-family: 'Avenir_Next';
     font-style: normal;
     font-weight: 600;
