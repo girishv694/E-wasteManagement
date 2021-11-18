@@ -13,7 +13,7 @@
 # Features
 1. users sign-in/sign-up with validation (authentication and Authorization).
 2. OTP verification.
-3. Reciept image uploading features.
+3. Receipt image uploading features.
 4. Users Location will find automatically
 5. Calender for Appointment.
 6. Bargaining feature.
