@@ -1,0 +1,117 @@
+#statement{
+position: relative;
+width: 363px;
+height: 50px;
+left: 24px;
+top: 15px;
+
+font-family: 'Avenir_Next';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+
+/* #292D32 */
+
+color: #292D32;
+
+}
+
+#btn-cont{
+    display: flex;
+    width: 95%; 
+    position: relative;
+    top:40px;
+
+    
+}
+
+#btn-cont>div{
+    width: 43%;
+    margin: 10px;
+    position: relative;
+    left: 15px;
+     background:#FFFFFF;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 4px 44px -6px rgba(24, 39, 75, 0.09), 0px 8px 24px -4px rgba(24, 39, 75, 0.08);
+    border-radius: 6px;
+    font-family: 'Avenir_Next';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+
+}
+
+#btn-cont>div:hover{
+    background-color: #8DDED4;
+}
+
+#img-cont{
+    display: flex;
+    flex-direction: column;
+    width: 88%;
+    margin: auto;
+    height: 380px;
+    position: relative;
+    top: 60px;
+    border-radius: 10px;
+    background-color: #fff;
+    align-items: center;
+}
+
+#img-cont div{
+    position: relative;
+    height: 79.29px;
+    margin: 10px auto;
+    width: 171px;
+   
+}
+
+#img-cont>div img{
+    width: 100%;
+    min-height: 100%;
+    border-radius: 5px;
+}
+
+#img-cont p{
+    text-align: center;
+    font-family: 'Avenir_Next';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+color: #292D32;
+position: relative;
+top: 30px;
+padding-bottom: 5px;
+}
+
+#cont-btn{
+    position: relative;
+     top: 100px;
+    left: 120px; 
+    width: 171px;
+    height: 51px;
+background: #FEFEFE;
+box-shadow: 0px 4px 44px -6px rgba(24, 39, 75, 0.09), 0px 8px 24px -4px rgba(24, 39, 75, 0.08);
+border-radius: 6px;
+font-family: 'Avenir_Next';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+/* #292D32 */
+border: none;
+border-radius: 10px;
+color: #292D32;
+
+
+}
+
+
+#cont-btn:hover{
+    background-color:#8DDED4 ;
+}

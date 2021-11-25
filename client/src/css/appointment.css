@@ -1,0 +1,163 @@
+.header_p20 {
+  display: flex;
+  width: 80%;
+}
+.header_p20 > h1 {
+  margin-left: 25px;
+  font-family: 'Avenir_Next';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: center;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+.back_p20 {
+  display: flex;
+  width: 25px;
+  height: 90%;
+  justify-content: right;
+}
+.back_p20 > img {
+  align-self: flex-end;
+  width: 24px;
+  height: 24px;
+}
+.block_p20 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  align-items: center;
+  width: 338px;
+}
+.header_text_p20 {
+  width: 95%;
+}
+.header_text_p20 > h6 {
+  font-size: 18px;
+  font-family: 'Avenir_Next';
+  font-weight: 400;
+  height: 50px;
+  line-height: 25px;
+  position: relative;
+  left: 24px;
+  top: 30px;
+}
+.block_cl_p20 {
+  width: 320px;
+  height: 180px;
+  position: relative;
+  top: 60px;
+  left: 24px;
+}
+.A_p20 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.block_cl_p20 > div:nth-child(1) {
+  justify-content: space-between;
+}
+.block_cl_p20 > div > button {
+  width: 83px;
+  height: 70px;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.A_p20{
+  display: flex;
+  flex-direction: column;
+}
+.A_p20 > button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+#hovers {
+  background-color: #8dded4;
+}
+.A_p20  button > h6 {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  line-height: 35px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Avenir_Next';
+}
+.tag_p20 {
+  margin-bottom: 5px;
+  width: 363px;
+  height: 44px;
+  border-radius: 6px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 35px;
+  justify-content: center;
+  top: 100px;
+}
+.tag_p20 > h1 {
+  font-family: 'Avenir_Next';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  line-height: 25px;
+  margin-left: 25px;
+}
+.time_p20 {
+  width: 320px;
+  height: 95px;
+  top: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  left: 10px;
+}
+.time_p20 > button {
+  width: 147px;
+  height: 40px;
+  border-radius: 6px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: white;
+  font-family: 'Avenir_Next';
+  text-align: center;
+  line-height: 40px;
+  font-weight: 600;
+  font-size: 12px;
+  border: none;
+}
+.time_p20 > button:hover,
+.but_p20:hover {
+  background-color: #8dded4;
+}
+.but_p20 {
+  width: 325px;
+  height: 51px;
+
+  position: relative;
+  top: 200px;
+  left: 32px;
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-family: 'Avenir_Next';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0em;
+}

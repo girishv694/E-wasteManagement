@@ -1,0 +1,82 @@
+
+.page3-img img{
+  position: relative;
+  left: 30px;
+}
+
+.header{
+  position: relative;
+  top: 7px;
+}
+
+.page3-sell {
+  margin-top: 18px;
+  /* border: 1px solid black; */
+  /* margin-right: 56px; */
+  margin-left: 24px;
+  font-family: "Avenir_next";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+
+  color: #292d32;
+}
+.page3-junkyard{
+    
+    /* border:1px solid black; */
+margin-top:30px;
+margin-right: 56px;
+font-family: "Avenir_next";
+margin-left:24px;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 25px;
+display: flex;
+align-items: center;
+
+color: #292D32;
+
+}
+.page3-waste{
+    /* border: 1px solid black; */
+    margin-top:41px;
+    margin-left:24px;
+    margin-right:56px;
+    font-family: Avenir_next;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 25px;
+display: flex;
+align-items: center;
+
+color: #292D32;
+}
+
+.rollers_p1 {
+    position: absolute;
+    top: 700px;
+    margin-left:184px;
+    margin-top:41px;
+    width: 43px;
+    height: 10px;
+    display: flex;
+    /* background-color: aquamarine; */
+    justify-content: space-between;
+  }
+  .rollers_p1 > div {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #c4c4c4;
+  }
+  .rollers_p1 > div:nth-child(1) {
+    background-color: #41c8b7;
+  }
+  .rollers_p1 > div:nth-child(2) {
+    background-color: #c4c4c4;
+  }

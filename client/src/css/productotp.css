@@ -1,0 +1,72 @@
+#otpcont {
+  position: relative;
+  width: 363px;
+  height: 290px;
+
+  top: 100px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 6px;
+}
+
+#otpcont input {
+  position: relative;
+  top: 15px;
+  width: 20%;
+  margin: 9px;
+  background: #ffffff;
+  /* COLOUR divider */
+
+  border: 2px solid #e9eef2;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+#otppara {
+  font-family: 'Avenir_Next';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+
+  /* #292D32 */
+  position: relative;
+  top: 50px;
+  left: 10px;
+  color: #292d32;
+}
+@import url('https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css');
+.form-control {
+  -webkit-transition: none;
+  transition: none;
+  width: 32px;
+  height: 62px;
+  text-align: center;
+  font-size: 19px;
+}
+
+.form-control:focus {
+  color: rgb(65, 200, 183);
+  background-color: #ffffff;
+  border-color: #884377;
+  outline: 0;
+}
+
+.form-control.form-control-solid {
+  background-color: #f3f6f9;
+  border-color: #f3f6f9;
+  color: rgb(0, 0, 0);
+  transition: color 0.15s ease, background-color 0.15s ease,
+    border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.form-control.form-control-solid:active,
+.form-control.form-control-solid.active,
+.form-control.form-control-solid:focus,
+.form-control.form-control-solid.focus {
+  background-color: rgb(65, 200, 183);
+  border-color: rgb(65, 200, 183);
+  color: rgb(0, 0, 0);
+  transition: color 0.15s ease, background-color 0.15s ease,
+    border-color 0.15s ease, box-shadow 0.15s ease;
+}

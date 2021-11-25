@@ -1,0 +1,64 @@
+#page8_div {
+  position: relative;
+  top: 294px;
+  width: 363px;
+  height: 240px;
+  margin: 0px 24px 0px 24px;
+  background: #ffffff;
+  border-radius: 16px;
+}
+
+.loc_icon {
+  width: 24px;
+  height: 24px;
+  margin: auto;
+  margin-top: 15px;
+}
+
+#page8_content1 {
+  width: 297px;
+  height: 50px;
+  margin-left: 33px;
+  margin-top: 30px;
+  font-family: 'Avenir_Next';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #292d32;
+}
+
+#page8_content2 {
+  width: 254px;
+  height: 25px;
+  margin-left: 55px;
+  margin-top: 30px;
+  font-family: 'Avenir_Next';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #407bff;
+}
+
+#page8_content3 {
+  width: 44px;
+  height: 25px;
+  margin-left: 160px;
+  margin-top: 25px;
+  font-family: 'Avenir_Next';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #407bff;
+}

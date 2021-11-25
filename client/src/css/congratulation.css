@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.c_img_div {
+  position: relative;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.c_img {
+  width: 363px;
+  height: 286px;
+}
+
+#content_div {
+  width: 363px;
+  height: 150px;
+  margin: 100px 24px 0px 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 29px 0px 30px 0px;
+
+  background: #ffffff;
+  border-radius: 16px;
+
+  font-family: 'Avenir_Next';
+  text-decoration: none;
+  color: black;
+}
+
+#content_div > h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+#content_div > h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 25px;
+}

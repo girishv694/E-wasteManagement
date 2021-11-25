@@ -1,0 +1,133 @@
+#pickup-statement{
+  position: relative;
+  width: 226px;
+height: 33px;
+left: 94px;
+top: 39px;
+
+font-family: 'Avenir_Next';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 33px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+
+/* #292D32 */
+
+color: #292D32;
+
+
+}
+
+#price-detail{
+  display: flex;
+  flex-direction: column;
+  width: 363px;
+height: 202px;
+justify-content: center;
+align-items: center;
+position: relative;
+top: 150px;
+margin: auto;
+border-radius: 10px;
+background: #FFFFFF;
+}
+
+#price-detail div{
+  width: 100%;
+  height: 33%;
+margin:  auto;
+}
+#left{
+  width: 80%;
+}
+
+#price-detail>div>div{
+  display: flex;
+  flex-direction: row;
+}
+#price-detail p{
+  position: relative;
+  top: 35px;
+  left: 10px;
+  font-family: 'Avenir_Next';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* #292D32 */
+
+color: #292D32;
+
+}
+#noborder{
+  border-bottom:1px solid #C4C4C4;
+
+}
+
+#instruct{
+  position: relative;
+  top: 250px;
+  font-family: 'Avenir_Next';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* #292D32 */
+left: 30px;
+color: #292D32;
+
+}
+
+#instr-input{
+  width: 80%;
+  margin: auto;
+  border: none;
+  position: relative;
+  top:300px;
+  padding: 15px;
+  left: 30px;
+  border-radius: 10px;
+  outline: none;
+}
+
+#pickup-btn{
+  width: 171px;
+height: 51px;
+margin: auto;
+position: relative;
+top: 350px;
+background: #41C8B7;
+box-shadow: 0px 4px 44px -6px rgba(24, 39, 75, 0.09), 0px 8px 24px -4px rgba(24, 39, 75, 0.08);
+border-radius: 6px;
+font-family:' Avenir_Next';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+justify-content: center;
+/* #292D32 */
+
+color: #292D32;
+
+
+}

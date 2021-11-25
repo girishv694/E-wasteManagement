@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#formdiv{
+    position: relative;
+    top: 60px;
+   
+}
+
+#signpara{
+    position: relative;
+    top: 120px;
+    font-family: 'Avenir_Next';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+left: 37px;
+text-decoration: none;
+
+}
+
+#signinlink{
+    text-decoration: none;
+    color:grey;
+}
+
+#submit:hover{
+    background-color: #41C8B7;
+}
+
+#headinglog{
+    text-align: center;
+    font-family: 'Avenir_Next';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 25px;
+position: relative;
+top: 40px;
+color: black;
+background-color: white;
+width: 100%;
+margin: auto;
+padding: 15px 0;
+border-radius: 6px;
+}
+
+.message{
+    color: red;
+    text-align: center;
+    font-family: 'Avenir_Next';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+}

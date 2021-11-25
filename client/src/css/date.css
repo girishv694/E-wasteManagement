@@ -1,0 +1,90 @@
+.img {
+  position: relative;
+  width: 363px;
+  height: 286px;
+  left: 24px;
+  top: 32px;
+}
+
+.img img {
+  max-width: 100%;
+}
+
+.headerp5 h1 {
+  position: relative;
+  width: 331px;
+  left: 30px;
+  top: 80px;
+  text-align: left;
+  font-family: 'Avenir_Next';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+
+  color: #292d32;
+}
+
+.headerp5 p {
+  position: relative;
+  top: 120px;
+  left: 30px;
+  text-decoration: none;
+  width: 332px;
+  font-family: 'Avenir_Next';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+
+  color: #292d32;
+}
+
+.roller_p2 {
+  position: absolute;
+  top: 700px;
+  margin-left: 184px;
+  margin-top: 41px;
+  width: 43px;
+  height: 10px;
+  display: flex;
+  /* background-color: aquamarine; */
+  justify-content: space-between;
+}
+.roller_p2 > div {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #c4c4c4;
+}
+
+.roller_p2 > div:nth-child(2) {
+  background-color: #41c8b7;
+}
+
+.rollers_p2 {
+  position: absolute;
+  top: 700px;
+  margin-left: 184px;
+  margin-top: 41px;
+  width: 43px;
+  height: 10px;
+  display: flex;
+  /* background-color: aquamarine; */
+  justify-content: space-between;
+}
+.rollers_p2 > div {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #c4c4c4;
+}
+
+.rollers_p2 > div:nth-child(3) {
+  background-color: #41c8b7;
+}
+
+
+.container_mainp5{
+  cursor: pointer;
+}
