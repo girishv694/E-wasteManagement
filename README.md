@@ -14,7 +14,12 @@
 
 
 # Link of my Portfolio
-![portfolio](https://shikhatiwari-shikha-max.vercel.app/)  
+ &emsp;
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> 
+   Portfolio link
+   </a>
+  
+ 
 
 
 ### Thanks for reading!! 👍
